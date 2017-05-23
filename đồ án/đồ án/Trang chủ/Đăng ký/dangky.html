@@ -1,0 +1,240 @@
+<html>
+<head>
+    <title>
+       Đăng ký tài khoản
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+</head>
+<body>
+<header>
+        <section class="header-banner hidden-md-down">
+            <a href="index.html" title="Trang chủ">
+                <div class="banner_top">
+                    <img src="../../Images/banner_top.png"/>
+                </div>
+            </a>
+        </section>
+        <div class="header-container">
+            <div class="container container_main">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 col-sm-6 col-xs-6">
+                        <div class="logo">
+                            <a href="index.html" title="Golden mart">
+                                <img src="../../Images/logo.png" alt="Trang chủ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="support_search hidden-md-down">
+
+                            <h5>Tư vấn bán hàng : </h5><span> 0934 55 55 80 - 0934 35 35</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+
+                            <h5>Hotline : </h5><span> 0934.66.77.90</span>
+
+                        </div>
+                        <div class="search_form">
+                            <form action="https://golden-mart.bizwebvietnam.net/search" method="get" class="search-form" role="search">
+                                <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="query" value="">
+                                <span class="search-before"></span><input type="submit" value="Tìm kiếm" class="btnsearch">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
+                        <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
+                            <div>
+                                <img class="mg_bt_10" src="../../Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
+                            </div>
+                            <div>
+                            <span>
+
+                                <a class="cl_old" href="#" title="">Tài khoản</a>
+                                /
+                                <a class="cl_old"></a><a href="#" id="customer_logout_link">Đăng xuất</a>
+
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
+                            <div class="top-cart-contain">
+                                <div class="mini-cart">
+                                    <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
+                                        <div>
+                                            <img class="mg_bt_10" src="../../Images/cart.png" alt="Hướng dẫn" height="30" width="30">
+                                        </div>
+                                        <div class="cart-box">
+                                            <span class="title cl_old hidden-sm-down">Hướng dẫn</span>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </header>
+<div class="brd">
+  <div class="container">
+    <div class="row">
+      <div class="inner">
+        <ul class="breadcrumbs">
+          <li class="home"> <a title="Quay lại trang chủ" href="#">Trang chủ</a></li>
+           
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li><span>Đăng ký tài khoản</span></li>
+            
+            
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="main-container">
+    <div class=" container sign_main">
+        <div class="account-login">
+            <div class="page-title hidden-sm-down">
+                <h2 class="fw_600 txt_u">Thông tin đăng nhập</h2>
+            </div>
+            <fieldset class="col2-set">
+                <div class="registered-users">
+                    <div class="content">
+                        <p id="errorFillres" style="margin-bottom: 10px; color: rgb(220, 51, 51); display: none;"></p>
+                        
+                        <form accept-charset="UTF-8" action="/account/register" id="customer_register" method="post">                                 
+                            <ul class="form-list">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                                    <label for="id">Tên đăng nhập <span class="required">*</span></label>
+                                    <input type="text" name="FirstName" title="Tên đăng nhập" class="input-text" id="id" >
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="firstname">Họ và tên<span class="required">*</span></label>
+                                    <input type="text" value="" class="input-text" title="Họ tên" name="firstnam" id="firstnam" required="" requiredmsg="Nhập Họ tên">
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="pass">Mật khẩu<span class="required hidden-sm-down">*</span></label>
+                                    <input type="password" value="" id="password" class="input-text" title="Mật khẩu" name="password" minlength="6" required="" requiredmsg="Nhập mật khẩu" >
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="pass_re">Nhập lại mật khẩu<span class="required hidden-sm-down">*</span></label>
+                                    <input type="password" value="" minlength="6" id="password_confirmation" class="input-text" title="Nhập lại mật khẩu" name="password_confirmation" required="" requiredmsg="Nhập lại mật khẩu">
+                                </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="cmnd">Số CMND<span class="required"></span></label>
+                                    <input type="text" value="Số chứng minh nhân dân" class="input-text" title="cmnd" name="cmnd" id="cmnd" required="" requiredmsg="Nhập số CMND">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="mobile">Số điện thoại<span class="required"></span></label>
+                                    <input type="text" value="" class="input-text" title="Sồ Điện thoại" name="sdt" id="sdt" required="" requiredmsg="Nhập số điện thoại">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="address">Địa chỉ<span class="required"></span></label>
+                                    <input type="text" value="" class="input-text" title="Address" name="address" id="address" required="" requiredmsg="Nhập địa chỉ">
+                                </div>
+                         </ul> 
+                         <div">
+                             <p><input type="checkbox"> Đồng ý với điều khoản sử dụng
+                             &nbsp;
+                            <a style="color: red;" href="#">Thông tin điều khoản</a>
+                             </p>
+                         </div>                           
+                            
+                            <div class="buttons-set">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button id="send2" value="Đăng ký" type="submit" class="btn btn-primary" style="font-size: 16pt;"><span>Đăng ký</span></button> 
+                                <button id="trolai" value="Trợ lại" type="button" class="btn btn-danger" style="font-size: 16pt;"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="footer">
+            <div class="container">
+                <section class="footer-up hidden-xs-down">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                            <h5>Thông tin công ty</h5>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/thong-tin-cong-ty">Thông tin công ty</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/gioi-thieu-cong-ty">Giới thiệu công ty</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/he-thong-cac-sieu-thi">Hệ thống các siêu thị</a></li>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                            <h5>Hỗ trợ khách hàng</h5>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/lien-he-va-gop-y">Liên hệ và góp ý</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-online">Hướng dẫn mua hàng online</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-tra-gop">Hướng dẫn mua hàng trả góp</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/quy-che-quan-ly-hoat-dong">Quy chế quản lý hoạt động</a></li>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                            <h5>Chính sách mua hàng</h5>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/quy-dinh-chinh-sach">Quy định, chính sách</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-bao-hanh-doi-tra">Chính sách bảo hành - Đổi trả</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-hoi-vien">Chính sách hội viên</a></li>
+
+                            <li><a href="https://golden-mart.bizwebvietnam.net/giao-hang-va-lap-dat">Giao hàng và lắp đặt</a></li>
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                
+
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <div class="container ft">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 copyright">
+                        <p>© Bản quyền thuộc về <b style="color:#fff;">Team Ngáo</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
