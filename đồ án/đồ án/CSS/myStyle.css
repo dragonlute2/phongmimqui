@@ -68,3 +68,14 @@ input.price
     margin-right: -1px;
     border-radius: 0px;
 }
+
+.header-title .title-left h2 a
+{
+    font-weight: bold;
+}
+
+.nhomsp
+{
+    background-color: #fff;
+    border: #000000 1px solid;
+}
