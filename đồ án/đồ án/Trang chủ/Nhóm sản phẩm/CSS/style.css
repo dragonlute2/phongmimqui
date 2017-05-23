@@ -1,8 +1,19 @@
+/*===== Css Thuong Dao Quy =====*/
+/*===== Skype: facebook:thuongdope =====*/
+/*===== Bizweb Sky 2016 =====*/
+/*===== DKT Technology JSC - 266 Doi Can, Ba Dinh, Ha Noi =====*/
+
 html, body {
 	overflow-x: hidden;
 }
 
-
+@font-face {
+	font-family: 'font_awesome';
+	src: local('UTM Neo Sans Intel'), 
+		url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/fontawesome-webfont.ttf?1494039685433') format('truetype'), ;
+	font-weight: normal;
+	font-style: normal;
+}
 h1 a,
 .h1 a,
 h2 a,
@@ -27,7 +38,7 @@ index > .service_index {display:block;}
 a.title-bar:focus {color: #fff;}
 .menu-list-cate2 .text-xs-left {    min-height: 220px!important;max-height: 220px!important;}
 /*#home .cate-sidebar {display: block;}*/
-a:focus {color: #dc3333;}
+a:focus {color: none;}
 h3 {font-size: 14px;}
 a.active , .list_dm ul li a.active , .list_dm ul li a:hover {color: #dc3333;}
 ul {list-style: none!important; padding-left: 0px;}
