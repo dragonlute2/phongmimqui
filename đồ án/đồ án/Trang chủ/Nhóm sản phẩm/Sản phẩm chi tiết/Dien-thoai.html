@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
     <link rel="stylesheet" type="text/css" href="../CSS/myStyle.css"/>
-    <script type="text/javascript" src="../../../assests/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="../../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 </head>
 
 <body id="dien-thoai-1 home" class="cms-index-index cms-home-page">
@@ -753,20 +752,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <script>
-                            $(document).ready(function() {
-                                $('#showmenu').click(function() {
-                                    $('#menucontentother').slideToggle('300');
-                                    return false;
-                                });
-                            });
-                            $(".nav-drop").mouseenter(function() {
-                                $("#menucontentother").show();
-                            }).mouseleave(function() {
-                                $("#menucontentother").hide();
-                            });
 
-                        </script>
                     </div>
                 </div>
                 <div class="col-lg-3 hidden-md-down main-nav">
@@ -884,8 +870,22 @@
 
 
 
+    <script type="text/javascript" src="../../../assests/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#showmenu').click(function() {
+                $('#menucontentother').slideToggle('300');
+                return false;
+            });
+        });
+        $(".nav-drop").mouseenter(function() {
+            $("#menucontentother").show();
+        }).mouseleave(function() {
+            $("#menucontentother").hide();
+        });
 
-
+    </script>
 
 
 </body>
