@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header>
@@ -99,10 +101,10 @@
                                 </div>
                         </div>
                     </div>
-                    <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page" role="menu" style="display: none;">
+                    <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page" role="menu" style="display:none;">
                         <ul class="site-nav vertical-nav">
                           <li class="nav-item icon" data-submenu-id="thoi-trang">
-                                    <a href="#" alt="" style="background: url(../Images/diengiadung.png) 7px center no-repeat; display: block; ">
+                                    <a href="#" alt="" style="background: url(../../Images/diengiadung.png) 7px center no-repeat;">
                                         <span>Thời Trang</span>
                                     </a>
                                     <div class="submenu hidden-md-down" id="thoi-trang">
@@ -747,9 +749,9 @@
                                 return false;
                             });
                         });
-                        $(".nav-drop").mouseenter(function() {
+                        $(".nav-drop").click(function() {
                               $("#menucontentother").show();
-                        }).mouseleave(function() {
+                        }).click(function() {
                               $("#menucontentother").hide();
                         });
                         
@@ -952,5 +954,6 @@
             </div>
         </div>
     </footer>
-
+<script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
