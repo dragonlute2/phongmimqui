@@ -1,3 +1,29 @@
+<?php
+/* tạo mã bảo vệ */
+    $response_string = urlencode($_REQUEST['g-recaptcha-response']);
+    $secret = urlencode('6LcN6iIUAAAAACcJXFAfJt5SMUE6SSa0uBnBZGxn');
+    $remoteip = urlencode($_SERVER['REMOTE_ADDR']);
+    $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$response_string.'&remoteip='.$remoteip;
+  
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_HTTPGET, true);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $r = curl_exec($ch);
+    $result = json_decode($r);
+  
+if (isset($_REQUEST['caplcha'])) {  
+    /** Kiểm tra mã bảo vệ */
+    if ($result->success)
+    {
+        echo "Mã bảo vệ đúng!";
+    }
+    else {
+        echo "Mã bảo vệ sai!";
+    }
+}
+?>
+
+
 <html>
 <head>
     <title>
@@ -10,6 +36,7 @@
         <link rel="stylesheet" type="text/css" href="../../CSS/myStyle.css"/>
     <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=vi"></script>
 </head>
 <body>
 <header>
@@ -835,7 +862,7 @@
                     <div class="content">
                         <p id="errorFillres" style="margin-bottom: 10px; color: rgb(220, 51, 51); display: none;"></p>
                         
-                        <form accept-charset="UTF-8" action="/account/register" id="customer_register" method="post">                                 
+                        <form accept-charset="UTF-8" action="/account/register" id="customer_register" method="post">                             
                             <ul class="form-list">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
                                     <label for="id">Tên đăng nhập <span class="required">*</span></label>
@@ -867,7 +894,7 @@
                                     <input type="text" value="" class="input-text" title="Address" name="address" id="address" required="" requiredmsg="Nhập địa chỉ">
                                 </div>
                          </ul> 
-                         <div">
+                         <div>
                              <p><input type="checkbox"> Đồng ý với điều khoản sử dụng
                              &nbsp;
                             <a style="color: red;" href="#">Thông tin điều khoản</a>
@@ -885,6 +912,7 @@
                                 &nbsp;
                                 <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6LcN6iIUAAAAAJj0pNCDMkWMj_8XJZoeZlXa3HBF"></div>
                         </form>
                     </div>
                 </div>
