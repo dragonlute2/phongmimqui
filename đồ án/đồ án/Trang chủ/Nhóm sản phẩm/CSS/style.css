@@ -41,8 +41,6 @@ a.title-bar:focus {color: #fff;}
 a:focus {color: none;}
 h3 {font-size: 14px;}
 a.active , .list_dm ul li a.active , .list_dm ul li a:hover {color: #dc3333;}
-ul {list-style: none!important; padding-left: 0px;}
-li {list-style: none;}
 .float-left{float: left;}
 .fa {color: #fff;}
 .product-mini {padding: 9px !important;}
@@ -336,62 +334,6 @@ ul.site-nav > li > .icon {
 }
 ul.site-nav li.more-view:nth-child(10) {display:block!important;}
 
-.cate-sidebar > ul > li.icon:first-child > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/phone.png?1494039685433') 7px center no-repeat; display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(2) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/diengiadung.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(3) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/dienlanh.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(4) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/kythuatso.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(5) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/maytinhxachtay.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(6) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/tablet.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(7) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/thietbivanphong.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(8) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/tainghe.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(9) > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/thietbi.png?1494039685433') 7px center no-repeat;display:block;
-}
-
-/* hover */
-.cate-sidebar > ul > li.icon:first-child:hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/phone-hover.png?1494039685433') 7px center no-repeat; display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(2):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/diengiadung-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(3):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/dienlanh-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(4):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/kythuatso-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(5):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/maytinhxachtay-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(6):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/tablet-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(7):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/thietbivanphong-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(8):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/tainghe-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
-.cate-sidebar > ul > li.icon:nth-child(9):hover > a{
-	background : url('//bizweb.dktcdn.net/100/118/174/themes/224896/assets/thietbi-hover.png?1494039685433') 7px center no-repeat;display:block;
-}
 
 
 

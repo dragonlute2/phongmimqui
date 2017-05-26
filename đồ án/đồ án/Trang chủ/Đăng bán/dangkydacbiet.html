@@ -1,103 +1,115 @@
 <html>
 <head>
-    <title>Điện thoại 1</title>
+    <title>
+       Đăng ký tài khoản
+    </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="../../CSS/myStyle.css"/>
+    <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../CSS/popup_cart_desktop.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/owl.theme.min.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/css.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/jgrowl.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
-    <link rel="stylesheet" type="text/css" href="../CSS/product.css"/>
+
+ <style>
+            body {
+                padding-top: 70px;
+            }
+
+            .imageupload {
+                margin: 20px 0;
+            }
+        </style>
+
+
+
+
 
 </head>
 
-<body id="dien-thoai-1 home" class="cms-index-index cms-home-page">
-    <header>
-    <section class="header-banner hidden-md-down">
-        <a href="index.html" title="Trang chủ">
-            <div class="banner_top">
-                <img src="../Images/banner_top.png"/>
-            </div>
-        </a>
-    </section>
-    <div class="header-container">
-        <div class="container container_main">
-            <div class="row">
-                <div class="col-lg-3 col-md-8 col-sm-6 col-xs-6">
-                    <div class="logo">
-                        <a href="index.html" title="Golden mart">
-                            <img src="../Images/logo.png" alt="Trang chủ">
-                        </a>
-                    </div>
+
+<header>
+        <section class="header-banner hidden-md-down">
+            <a href="index.html" title="Trang chủ">
+                <div class="banner_top">
+                    <img src="../../Images/banner_top.png"/>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="support_search hidden-md-down">
-
-                        <h5>Tư vấn bán hàng : </h5><span> 0934 55 55 80 - 0934 35 35</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-
-
-                        <h5>Hotline : </h5><span> 0934.66.77.90</span>
-
-                    </div>
-                    <div class="search_form">
-                        <form action="https://golden-mart.bizwebvietnam.net/search" method="get" class="search-form" role="search">
-                            <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="query" value="">
-                            <span class="search-before"></span><input type="submit" value="Tìm kiếm" class="btnsearch">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
-                    <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
-                        <div>
-                            <img class="mg_bt_10" src="../Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
-                        </div>
-                        <div>
-							<span>
-
-								<a class="cl_old" href="#" title="">Tài khoản</a>
-								/
-								<a class="cl_old"></a><a href="#" id="customer_logout_link">Đăng xuất</a>
-
-							</span>
+            </a>
+        </section>
+        <div class="header-container">
+            <div class="container container_main">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 col-sm-6 col-xs-6">
+                        <div class="logo">
+                            <a href="index.html" title="Golden mart">
+                                <img src="../../Images/logo.png" alt="Trang chủ">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
-                        <div class="top-cart-contain">
-                            <div class="mini-cart">
-                                <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
-                                    <div>
-                                        <img class="mg_bt_10" src="../Images/cart.png" alt="Hướng dẫn" height="30" width="30">
-                                    </div>
-                                    <div class="cart-box">
-                                        <span class="title cl_old hidden-sm-down">Hướng dẫn</span>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="support_search hidden-md-down">
+
+                            <h5>Tư vấn bán hàng : </h5><span> 0934 55 55 80 - 0934 35 35</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+
+                            <h5>Hotline : </h5><span> 0934.66.77.90</span>
+
+                        </div>
+                        <div class="search_form">
+                            <form action="https://golden-mart.bizwebvietnam.net/search" method="get" class="search-form" role="search">
+                                <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="query" value="">
+                                <span class="search-before"></span><input type="submit" value="Tìm kiếm" class="btnsearch">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
+                        <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
+                            <div>
+                                <img class="mg_bt_10" src="../../Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
+                            </div>
+                            <div>
+                            <span>
+
+                                <a class="cl_old" href="#" title="">Tài khoản</a>
+                                /
+                                <a class="cl_old"></a><a href="#" id="customer_logout_link">Đăng xuất</a>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
+                            <div class="top-cart-contain">
+                                <div class="mini-cart">
+                                    <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
+                                        <div>
+                                            <img class="mg_bt_10" src="../../Images/cart.png" alt="Hướng dẫn" height="30" width="30">
+                                        </div>
+                                        <div class="cart-box">
+                                            <span class="title cl_old hidden-sm-down">Hướng dẫn</span>
+
+                                        </div>
 
                                     </div>
-
                                 </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                </div>
 
+
+                </div>
 
 
             </div>
 
 
         </div>
-
-
-    </div>
     </header>
-    <nav class="hidden-md-down">
+   <nav class="hidden-md-down">
         <div class="container">
             <div class="row nav_menu">
                 <div class="col-lg-3 col-md-4 hidden-sm-down nav-inner">
@@ -750,7 +762,20 @@
                                 
                             </ul>
                         </div>
+                        <script>
+                            $(document).ready(function() {
+                                $('#showmenu').click(function() {
+                                    $('#menucontentother').slideToggle('300');
+                                    return false;
+                                });
+                            });
+                            $(".nav-drop").mouseenter(function() {
+                                $("#menucontentother").show();
+                            }).mouseleave(function() {
+                                $("#menucontentother").hide();
+                            });
 
+                        </script>
                     </div>
                 </div>
                 <div class="col-lg-3 hidden-md-down main-nav">
@@ -802,267 +827,188 @@
         </div>
     </nav>
     <div class="brd">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <ul class="breadcrumbs">
-                        <li class="home"> <a title="Quay lại trang chủ" href="../../index.html">Trang chủ</a></li>
+  <div class="container">
+    <div class="row">
+      <div class="inner">
+        <ul class="breadcrumbs">
+          <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
+           
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li><span>Đăng bán sản phẩm</span></li>
+            
+            
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <li><a href="https://golden-mart.bizwebvietnam.net/tivi-tcl">Điện thoại di dộng</a></li>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <li> <span>Điện thoại 1</span></li>
 
 
-                    </ul>
-                </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+<body>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+<div class="page-title hidden-sm-down">
+                <h2 class="fw_600 txt_u">Thông tin bán sản phẩm</h2>
             </div>
+
+
+
+    <h3>Chọn loại sản phẩm</h3>
+    <div class="row">
+        <div class="form-group form-group-multiple-selectsp col-md-8">
+                <select class="form-control" name="values[]">
+                    <option value="">Select one</option>
+                    <option value="1">Thời trang</option>
+                    <option value="2">Đồng hồ-Trang sức</option>
+                    <option value="3">Đồ điện tử</option>
+                    <option value="4">Sức khỏe và làm đẹp</option>
+                    <option value="5">Máy tính và DTDĐ</option>
+                    <option value="6">Nhà cửa và đời sống</option>
+                    <option value="7">Đồ thể thao</option>
+                    <option value="8">Giải trí và sở thích</option>
+                    <option value="9">Đồ thể thao</option>
+                    <option value="10">Đồ cổ và đồ sưu tập</option>
+                </select>
+
+    			</span>
+      </div>
+
+
+      
+    </div>
+
+
+
+
+	<h3>Tên sản phẩm</h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-10">
+    		<div class="input-group input-group-optionp col-md-8">
+    			<input type="text" name="optionp[]" class="form-control" placeholder="Nhập tên sản phẩm">
+
+    		</div>
+    	</div>
+    </div>
+
+
+
+ <h3>Giá bán khởi điểm</h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-4">
+    			<input type="text" name="optionp[]" class="form-control" placeholder="Nhập giá">
+    	</div>
+
+  		<div class="col-xs-2">
+           <h3>VND</h3>
         </div>
     </div>
 
-    <section class="main-collection main-mr">
-        <div class="container">
-            <div class="col-main">
-                <div class="row product_info">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 prd_view_slide">
-                        <div id="large-image" class="owl-carousel not-dqowl owl-theme product-images large-image">
 
+    <h3>Giá bán</h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-4">
+    			<input type="text" name="optionp[]" class="form-control" placeholder="Nhập giá">
+    	</div>
 
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../Images/dienthoai1_1.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../Images/dienthoai1_2.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../Images/dienthoai1_1.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-
-
-                        </div>
-
-                        <div id="gallery_01" class="owl-carousel not-dqowl owl-theme thumbnail-product">
-
-                            <div class="item">
-                                <a href="#">
-                                    <img id="zoom_01" src="../Images/dienthoai1_1.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img id="zoom_01" src="../Images/dienthoai1_2.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img id="zoom_01" src="../Images/dienthoai1_1.jpg" alt="LG V10 H960">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 content_prd">
-                        <div class="product_infomation">
-                            <div class="product_title">
-                                <h1 class="fw_600"> <b> Điện thoại 1 </b></h1>
-                            </div>
-                            <div class="product-seller">
-                                <p> Người bán:
-                                    <a href="#">tranvanphong1004@gmail.com</a>
-                                </p>
-                            </div>
-                            <div class="start-time-row">
-                                <p>
-                                    Bắt đầu: <span> 25/05/2017 </span>
-                                    lúc <span> 10:00 </span>
-                                </p>
-                            </div>
-
-                            <div class="end-time-row">
-                                <p>
-                                    Kết thúc: <span> 26/05/2017 </span>
-                                    lúc <span> 10:00 </span>
-                                </p>
-                            </div>
-
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="item-price-bid">
-                                12.000.000đ
-                            </div>
-                            <div class="btn">
-                                <a href="../../index.html" class="button-bid" title="Click để đặt giá">
-                                    Bid
-                                </a>
-                            </div>
-                            <div class="">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th>Số tiền</th>
-                                        <th>Thời gian</th>
-                                        <th>Thành viên</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>40000đ</td>
-                                        <td>07:46:33</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40000đ</td>
-                                        <td>07:46:33</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40000đ</td>
-                                        <td>07:46:33</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div id="auction-stats">
-                                    Lượt xem:
-                                    <strong>32</strong>
-                                    | Tham gia: <strong>4</strong>
-                                </div>
-                                <div class="">
-                                    <a class="text_more_tab" href="#" title="Xem tất cả">Xem tất cả&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 hidden-md-down ">
-                        <div class="service">
-                            <div class="image">
-                                <img class="image-sv" src="../Images/cart-sv.png" alt="Sản phẩm đa dạng,&lt;/br&gt; mẫu mã phong phú">
-                            </div>
-                            <div class="info">
-                                <h5><span>Sản phẩm đa dạng,<br> mẫu mã phong phú</span></h5>
-                            </div>
-                        </div>
-                        <div class="service">
-                            <div class="image">
-                                <img class="image-sv" src="../Images/pig_sv.png" alt="Giá cả hợp lý,&lt;/br&gt;nhiều chính sách ưu đãi">
-                            </div>
-                            <div class="info">
-                                <h5><span>Giá cả đấu giá hợp lí</span></h5>
-                            </div>
-                        </div>
-                        <div class="service">
-                            <div class="image">
-                                <img class="image-sv" src="../Images/drop.png" alt="Hệ thống rộng lớn &lt;/br&gt;có mặt tại 54 tỉnh thành">
-                            </div>
-                            <div class="info">
-                                <h5><span>Website đơn giản<br>Bảo mật thông tin<br>khách hàng</span></h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row product_description">
-                    <div class="col-lg-12 col-xs-12 tab-product-des">
-                        <div class="prd_tabs">
-                            <ul class="tab-product nav nav-tabs responsive" role="tablist" id="tabs">
-                                <li role="presentation" class="navi-tab active"><a href="#mota" aria-controls="mota"aria-expanded="true" role="tab" data-toggle="tab">Mô tả sản phẩm</a></li>
-
-                                <li role="presentation" class="navi-tab"><a href="#luuy" aria-controls="luuy" role="tab" aria-expanded="false" data-toggle="tab">Mua hàng an toàn</a></li>
-
-
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content content-tab-product responsive" id="my-tab-content">
-                                <div role="tabpanel" class="tab-pane active tab_content" id="mota">
-
-                                    <div class="thongtinsanpham details-info">
-                                        <p><h4>LG V10 H960&nbsp;</h4>
-
-                                        <p><strong>Thiết kế sang trọng</strong></p>
-
-                                        <p style="text-align: center;"><strong><img src="../Images/dienthoai1_1.jpg" /></strong></p>
-
-                                        <p><strong>LG V10 - H960&nbsp;thiết kế&nbsp;mềm mại tinh tế</strong>&nbsp;với 4 góc bo tròn, mặt lưng cong theo độ cầm nắm của lòng bàn tay giúp cầm chắc hơn. Vỏ máy cũng được giả kim loại với các vết xước ngang, hạn chế vết ố, bám dấu vân tay.</p>
-
-                                        <p><strong>Màn hình 5.7 inch sắc nét</strong></p>
-
-                                        <p style="text-align: center;"><strong><img src="../Images/dienthoai1_2.jpg" /></strong></p>
-
-                                        <p><strong>Màn hình kích thước 5.7 inch, độ phân giải&nbsp;1440 x 2560 pixels</strong>&nbsp;hiển thị hình ảnh sắc nét, sống động. Công nghệ IPS&nbsp;giúp bạn nhìn dễ &nbsp;hơn khi ngoài trời hoặc trong điều kiền ánh sáng mạnh.</p></p>
-                                    </div>
-
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane tab_content" id="luuy">
-
-                                    <div class="row">
-                                        <div class="col-xs-12 col-lg-12 col-md-12">
-                                            <div class="tab-content">
-                                                <div id="meo-mua" class="tab-content" style="display: block;">
-                                                    <div class="content">
-                                                        <p>
-
-                                                        </p>
-                                                        <div class="title underline">
-                                                            <h2>Mẹo cho người MUA</h2>
-                                                        </div>
-                                                        <h3>Nguyên tắc “vàng”:</h3>
-                                                        <ul class="list-group">
-                                                            <li><b>     Không nên chuyển tiền trước khi nhận hàng</b>, đặc biệt đối với những hàng hoá đắt tiền như: đồ điện tử, xe cộ, thú cưng.</li>
-                                                            <li><b> Gặp nhau trực tiếp để mua bán. Kiểm tra kỹ hàng mới trả tiền.</b></li>
-                                                            <li><b> Luôn đi cùng 1 người bạn.</b></li>
-                                                            <li> Giao dịch trực tiếp ở nơi quen thuộc như địa điểm gần nhà, công ty, quán cà phê hoặc các trung tâm bảo hành có thể kiểm tra được sản phẩm.</li>
-                                                            <li> Thận trọng đối với sản phẩm hàng hiệu, đắt tiền nhưng có giá thấp đáng ngờ.</li>
-                                                            <li> Yêu cầu giấy tờ để chứng minh sở hữu mặt hàng hoặc giấy tờ cho việc giao dịch giữa bạn và người bán, đặc biệt các mặt hàng có giá trị cao.</li>
-                                                            <li> Kiểm tra kỹ các giấy tờ sản phẩm khi giao dịch, đặc biệt đối với những mặt hàng như:
-                                                            <li class="abc"> Xe máy: Cà-vẹt xe, bảo hiểm xe (nếu có), biên lai mua xe, giấy bảo hành xe cũng như giấy tờ tùy thân của người giao dịch với bạn: Chứng minh nhân dân, bằng lái xe.</li>
-                                                            <li class="abc"> Nhà đất: Giấy tờ pháp lý (Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản).</li>
-                                                            <li> Bảo quản tài sản cá nhân của bạn cẩn thận khi tham gia giao dịch.</li>
-                                                            <li> Đối với một số sản phẩm đặc thù (gia cầm sống, động vật sống,sản phẩm chính hãng, thực phẩm, …), người mua cần yêu cầu người bán cung cấp các giấy tờ chứng </li>
-                                                            <li> minh nguồn gốc, chất lượng sản phẩm hoặc các giấy tờ khác theo quy định của Nhà nước nhằm đảm bảo quyền lợi và sức khỏe của bản thân.</li>
-                                                        </ul>
-
-                                                        <h3>Những trường hợp gian lận cần cảnh giác</h3>
-                                                        <ul class="list-group">
-                                                            <li><b>Người mua đã thanh toán (chuyển khoản, chuyển qua bưu điện) nhưng không nhận được hàng do người bán không giao hàng.</b></li>
-                                                            <li>Tráo điện thoại, máy tính bảng, đồ điện tử khác: Người bán mua hàng sản phẩm chính hãng và khi kiểm tra hàng thì là chính hãng, nhưng sau khi người mua trả tiền, </li>
-                                                            <li> người bán nhanh tay tráo bằng hàng giả.</li>
-                                                        </ul>
-                                                        <p> Khi bạn gặp phải bất kì trường hợp gian lận nào, vui lòng liên hệ với bộ phận Chăm sóc Khách hàng </p>.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  		<div class="col-xs-2">
+           <h3>VND</h3>
         </div>
-    </section>
+    </div>
 
-    <footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+
+
+ <div class="imageupload panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left">Upload Image</h3>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default active">File</button>
+                    </div>
+                </div>
+                <div class="file-tab panel-body">
+                    <label class="btn btn-default btn-file">
+                        <span>Browse</span>
+                        <!-- The file is stored here. -->
+                        <input type="file" name="image-file">
+                    </label>
+                    <button type="button" class="btn btn-default">Remove</button>
+                </div>
+               
+            </div>
+
+            <!-- bootstrap-imageupload method buttons. -->
+            <button type="button" id="imageupload-disable" class="btn btn-danger">Disable</button>
+            <button type="button" id="imageupload-enable" class="btn btn-success">Enable</button>
+            <button type="button" id="imageupload-reset" class="btn btn-primary">Reset</button>
+
+
+
+</div>
+
+
+
+
+ <div class="buttons-set">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                       
+
+                                <button id="send2" value="Đăng ký" type="submit" class="button login login_sign"><span>Đăng bán</span></button>
+                                &nbsp;
+                                <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
+                            </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="footer">
             <div class="container">
                 <section class="footer-up hidden-xs-down">
@@ -1111,7 +1057,7 @@
 
 
 
-
+                
 
             </div>
         </div>
@@ -1128,29 +1074,45 @@
 
 
 
+<!-- <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
 
-    <script type="text/javascript" src="../../../assests/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="../../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../JS/productreviews.min.js"></script>
-    <script type="text/javascript" src="../JS/owl_product_details.js"> </script>
-    <script type="text/javascript" src="../JS/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#showmenu').click(function() {
-                $('#menucontentother').slideToggle('300');
-                return false;
+
+
+
+
+
+
+
+<script src="../../assests/jquery-3.1.1.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+        <script src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="dist/js/bootstrap-imageupload.js"></script>
+
+        <script>
+            var $imageupload = $('.imageupload');
+            $imageupload.imageupload();
+
+            $('#imageupload-disable').on('click', function() {
+                $imageupload.imageupload('disable');
+                $(this).blur();
+            })
+
+            $('#imageupload-enable').on('click', function() {
+                $imageupload.imageupload('enable');
+                $(this).blur();
+            })
+
+            $('#imageupload-reset').on('click', function() {
+                $imageupload.imageupload('reset');
+                $(this).blur();
             });
-        });
-        $(".nav-drop").mouseenter(function() {
-            $("#menucontentother").show();
-        }).mouseleave(function() {
-            $("#menucontentother").hide();
-        });
+        </script>
 
-    </script>
+
+
+
 
 
 
 
 </body>
-</html>
