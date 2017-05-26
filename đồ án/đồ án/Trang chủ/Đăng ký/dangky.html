@@ -1,25 +1,25 @@
 <?php
 /* tạo mã bảo vệ */
-    $response_string = urlencode($_REQUEST['g-recaptcha-response']);
-    $secret = urlencode('6LcN6iIUAAAAACcJXFAfJt5SMUE6SSa0uBnBZGxn');
-    $remoteip = urlencode($_SERVER['REMOTE_ADDR']);
-    $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$response_string.'&remoteip='.$remoteip;
-  
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_HTTPGET, true);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $r = curl_exec($ch);
-    $result = json_decode($r);
-  
+$response_string = urlencode($_REQUEST['g-recaptcha-response']);
+$secret = urlencode('6LcN6iIUAAAAACcJXFAfJt5SMUE6SSa0uBnBZGxn');
+$remoteip = urlencode($_SERVER['REMOTE_ADDR']);
+$url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$response_string.'&remoteip='.$remoteip;
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_HTTPGET, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$r = curl_exec($ch);
+$result = json_decode($r);
+
 if (isset($_REQUEST['caplcha'])) {  
-    /** Kiểm tra mã bảo vệ */
-    if ($result->success)
-    {
-        echo "Mã bảo vệ đúng!";
-    }
-    else {
-        echo "Mã bảo vệ sai!";
-    }
+/** Kiểm tra mã bảo vệ */
+if ($result->success)
+{
+    echo "Mã bảo vệ đúng!";
+}
+else {
+echo "Mã bảo vệ sai!";
+}
 }
 ?>
 
@@ -27,19 +27,19 @@ if (isset($_REQUEST['caplcha'])) {
 <html>
 <head>
     <title>
-       Đăng ký tài khoản
-    </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
-        <link rel="stylesheet" type="text/css" href="../../CSS/myStyle.css"/>
-    <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?hl=vi"></script>
+     Đăng ký tài khoản
+ </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="stylesheet" type="text/css" href="../../assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="../../assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+ <link rel="stylesheet" type="text/css" href="../../CSS/myStyle.css"/>
+ <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ <script src="https://www.google.com/recaptcha/api.js?hl=vi"></script>
 </head>
 <body>
-<header>
+    <header>
         <section class="header-banner hidden-md-down">
             <a href="index.html" title="Trang chủ">
                 <div class="banner_top">
@@ -79,12 +79,12 @@ if (isset($_REQUEST['caplcha'])) {
                                 <img class="mg_bt_10" src="../../Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
                             </div>
                             <div>
-                            <span>
+                                <span>
 
-                                <a class="cl_old" href="#" title="">Tài khoản</a>
-                                /
-                                <a class="cl_old"></a><a href="#" id="customer_logout_link">Đăng xuất</a>
-                            </span>
+                                    <a class="cl_old" href="#" title="">Tài khoản</a>
+                                    /
+                                    <a class="cl_old"></a><a href="#" id="customer_logout_link">Đăng xuất</a>
+                                </span>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
@@ -118,7 +118,7 @@ if (isset($_REQUEST['caplcha'])) {
 
         </div>
     </header>
-   <nav class="hidden-md-down">
+    <nav class="hidden-md-down">
         <div class="container">
             <div class="row nav_menu">
                 <div class="col-lg-3 col-md-4 hidden-sm-down nav-inner">
@@ -193,7 +193,7 @@ if (isset($_REQUEST['caplcha'])) {
                                                     </ul>
                                                 </div>
 
-                                                 <div class="col-md-4 text-xs-left">
+                                                <div class="col-md-4 text-xs-left">
                                                     <ul class="text-left">
                                                         <span><a href="#">Xiaomi</a></span>
 
@@ -207,7 +207,7 @@ if (isset($_REQUEST['caplcha'])) {
                                                         <li><a href="#">Xem tất cả <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                                     </ul>
                                                 </div>
-         
+                                                
                                                 <div class="col-md-4 text-xs-left">
                                                     <ul class="text-left">
                                                         <span><a href="#">Oppo</a></span>
@@ -235,7 +235,7 @@ if (isset($_REQUEST['caplcha'])) {
                                                     </ul>
                                                 </div>
 
-                                               
+                                                
                                             </div>
                                         </ul>
                                     </div>
@@ -337,7 +337,7 @@ if (isset($_REQUEST['caplcha'])) {
                                                         <li><a href="#">Xem tất cả<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                                     </ul>
                                                 </div>
-                                    
+                                                
                                             </div>
                                         </ul>
                                     </div>
@@ -583,7 +583,7 @@ if (isset($_REQUEST['caplcha'])) {
                                     </div>
                                 </li>
 
-                        
+                                
                                 <li class="nav-item icon" data-submenu-id="giai-tri-va-so-thich">
                                     <a href="#" alt=""><span>Giải trí & Sở thích</span></a>
                                     <div class="submenu hidden-md-down" id="giai-tri-va-so-thich">
@@ -716,7 +716,7 @@ if (isset($_REQUEST['caplcha'])) {
 
                                 
 
-                                 <li class="nav-item icon" data-submenu-id="do-co-va-do-suu-tap">
+                                <li class="nav-item icon" data-submenu-id="do-co-va-do-suu-tap">
                                     <a href="#" alt=""><span>Đổ cổ & Đồ sưu tập</span></a>
                                     <div class="submenu hidden-md-down" id="do-co-va-do-suu-tap">
                                         <ul class="menu-list-cate2">
@@ -836,20 +836,20 @@ if (isset($_REQUEST['caplcha'])) {
         </div>
     </nav>
     <div class="brd">
-  <div class="container">
-    <div class="row">
-      <div class="inner">
-        <ul class="breadcrumbs">
-          <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
-           
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <li><span>Đăng ký tài khoản</span></li>
-            
-            
-        </ul>
+      <div class="container">
+        <div class="row">
+          <div class="inner">
+            <ul class="breadcrumbs">
+              <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
+              
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <li><span>Đăng ký tài khoản</span></li>
+              
+              
+          </ul>
       </div>
-    </div>
   </div>
+</div>
 </div>
 <section class="main-container">
     <div class=" container sign_main">
@@ -881,7 +881,7 @@ if (isset($_REQUEST['caplcha'])) {
                                     <label for="pass_re">Nhập lại mật khẩu<span class="required hidden-sm-down">*</span></label>
                                     <input type="password" value="" minlength="6" id="password_confirmation" class="input-text" title="Nhập lại mật khẩu" name="password_confirmation" required="" requiredmsg="Nhập lại mật khẩu">
                                 </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="cmnd">Số CMND<span class="required"></span></label>
                                     <input type="text" value="Số chứng minh nhân dân" class="input-text" title="cmnd" name="cmnd" id="cmnd" required="" requiredmsg="Nhập số CMND">
                                 </div>
@@ -893,97 +893,97 @@ if (isset($_REQUEST['caplcha'])) {
                                     <label for="address">Địa chỉ<span class="required"></span></label>
                                     <input type="text" value="" class="input-text" title="Address" name="address" id="address" required="" requiredmsg="Nhập địa chỉ">
                                 </div>
-                         </ul> 
-                         <div>
-                             <p><input type="checkbox"> Đồng ý với điều khoản sử dụng
-                             &nbsp;
-                            <a style="color: red;" href="#">Thông tin điều khoản</a>
-                             </p>
-                         </div>                           
-                            
-                            <div class="buttons-set">
+                            </ul> 
+                            <div>
+                               <p><input type="checkbox"> Đồng ý với điều khoản sử dụng
+                                   &nbsp;
+                                   <a style="color: red;" href="#">Thông tin điều khoản</a>
+                               </p>
+                           </div>                           
+                           
+                           <div class="buttons-set">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             
-                                <button id="send2" value="Đăng ký" type="submit" class="button login login_sign"><span>Đăng ký</span></button>
-                                &nbsp;
-                                <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
-                            </div>
-                            <div class="g-recaptcha" data-sitekey="6LcN6iIUAAAAAJj0pNCDMkWMj_8XJZoeZlXa3HBF"></div>
-                        </form>
-                    </div>
+                            <button id="send2" value="Đăng ký" type="submit" class="button login login_sign"><span>Đăng ký</span></button>
+                            &nbsp;
+                            <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LcN6iIUAAAAAJj0pNCDMkWMj_8XJZoeZlXa3HBF"></div>
+                    </form>
                 </div>
-            </fieldset>
-        </div>
+            </div>
+        </fieldset>
     </div>
+</div>
 </section>
 
 <footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="footer">
-            <div class="container">
-                <section class="footer-up hidden-xs-down">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                            <h5>Thông tin công ty</h5>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/thong-tin-cong-ty">Thông tin công ty</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/gioi-thieu-cong-ty">Giới thiệu công ty</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/he-thong-cac-sieu-thi">Hệ thống các siêu thị</a></li>
-
-
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                            <h5>Hỗ trợ khách hàng</h5>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/lien-he-va-gop-y">Liên hệ và góp ý</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-online">Hướng dẫn mua hàng online</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-tra-gop">Hướng dẫn mua hàng trả góp</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/quy-che-quan-ly-hoat-dong">Quy chế quản lý hoạt động</a></li>
-
-
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                            <h5>Chính sách mua hàng</h5>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/quy-dinh-chinh-sach">Quy định, chính sách</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-bao-hanh-doi-tra">Chính sách bảo hành - Đổi trả</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-hoi-vien">Chính sách hội viên</a></li>
-
-                            <li><a href="https://golden-mart.bizwebvietnam.net/giao-hang-va-lap-dat">Giao hàng và lắp đặt</a></li>
-
-
-                        </div>
-                    </div>
-                </section>
-
-
-
-
-
-                
-
-            </div>
-        </div>
-        <div class="ft-bottom">
-            <div class="container ft">
+    <div class="footer">
+        <div class="container">
+            <section class="footer-up hidden-xs-down">
                 <div class="row">
-                    <div class="col-lg-12 col-xs-12 copyright">
-                        <p>© Bản quyền thuộc về <b style="color:#fff;">Team Ngáo</b>
+                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                        <h5>Thông tin công ty</h5>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/thong-tin-cong-ty">Thông tin công ty</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/gioi-thieu-cong-ty">Giới thiệu công ty</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/he-thong-cac-sieu-thi">Hệ thống các siêu thị</a></li>
+
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                        <h5>Hỗ trợ khách hàng</h5>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/lien-he-va-gop-y">Liên hệ và góp ý</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-online">Hướng dẫn mua hàng online</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-tra-gop">Hướng dẫn mua hàng trả góp</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/quy-che-quan-ly-hoat-dong">Quy chế quản lý hoạt động</a></li>
+
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
+                        <h5>Chính sách mua hàng</h5>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/quy-dinh-chinh-sach">Quy định, chính sách</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-bao-hanh-doi-tra">Chính sách bảo hành - Đổi trả</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-hoi-vien">Chính sách hội viên</a></li>
+
+                        <li><a href="https://golden-mart.bizwebvietnam.net/giao-hang-va-lap-dat">Giao hàng và lắp đặt</a></li>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            
+
+        </div>
+    </div>
+    <div class="ft-bottom">
+        <div class="container ft">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 copyright">
+                    <p>© Bản quyền thuộc về <b style="color:#fff;">Team Ngáo</b>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-<script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
