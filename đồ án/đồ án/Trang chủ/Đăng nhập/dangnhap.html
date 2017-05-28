@@ -830,7 +830,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 login_site">
                 <div id="demo" class="content">
 
-                    <form accept-charset="UTF-8" action="#" id="customer_login" method="post">
+                    <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_register" method="post" onsubmit="return valid();">
                         <h4 class="fw_600 txt_u hidden-sm-down">Thông tin đăng nhập</h4>                   
                         <ul class="form-list">
                             <li>
@@ -839,11 +839,11 @@
                             </li>
                             <li>
                                 <label for="pass">Mật khẩu</label>
-                                <input type="password" value="" class="input-text" title="Mật khẩu" name="password" id="pass" required="">
+                                <input type="password" value="" class="input-text" title="Mật khẩu" name="password" id="password" required="" minlength="6">
                             </li>
                         </ul>
                         <div class="buttons-set">
-                            <button id="login" type="submit" class="button login login_sign"><span>Đăng nhập</span></button>              
+                            <input id="login" type="submit" class="button login login_sign" value="Đăng nhập" style="font-weight: bold;"></input>              
                             <a class="hidden-xs-down tex-xs-center" href="resetmatkhau.html" onclick="" id="RecoverPassword">Quên mật khẩu?</a>
                         </div>
                     </form>
@@ -925,4 +925,24 @@
         </div>
     </footer>
     <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+    <script type="text/javascript">
+        function valid()
+        {
+            var errors=true;
+            if(document.customer_register.password.value=="123456789" && document.customer_register.id.value=="herodragon120")
+            {
+                alert('Đăng nhập thành công');
+                errors=false;
+                return true;
+            }
+            if(errors==true)
+                {
+                    alert('Tài khoản hoặc mật khẩu không chính xác');
+                }
+            return false;
+        }
+    </script>
 </body>

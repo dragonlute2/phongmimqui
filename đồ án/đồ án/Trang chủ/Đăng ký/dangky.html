@@ -862,15 +862,15 @@ echo "Mã bảo vệ sai!";
                     <div class="content">
                         <p id="errorFillres" style="margin-bottom: 10px; color: rgb(220, 51, 51); display: none;"></p>
                         
-                        <form accept-charset="UTF-8" action="/account/register" id="customer_register" method="post">                             
+                        <form accept-charset="UTF-8" action="#" id="customer_register" name="customer_register" method="post" onsubmit="return valid();">                             
                             <ul class="form-list">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
                                     <label for="id">Tên đăng nhập <span class="required">*</span></label>
-                                    <input type="text" name="FirstName" title="Tên đăng nhập" class="input-text" id="id" >
+                                    <input type="text" value="" class="input-text" title="id" name="id" id="id" required="Nhập ID" requiredmsg="Nhập ID">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="firstname">Họ và tên<span class="required">*</span></label>
-                                    <input type="text" value="" class="input-text" title="Họ tên" name="firstnam" id="firstnam" required="" requiredmsg="Nhập Họ tên">
+                                    <input type="text" value="" class="input-text" title="Họ tên" name="firstname" id="firstname" required="" requiredmsg="Nhập Họ tên">
                                 </div>
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
@@ -879,11 +879,11 @@ echo "Mã bảo vệ sai!";
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="pass_re">Nhập lại mật khẩu<span class="required hidden-sm-down">*</span></label>
-                                    <input type="password" value="" minlength="6" id="password_confirmation" class="input-text" title="Nhập lại mật khẩu" name="password_confirmation" required="" requiredmsg="Nhập lại mật khẩu">
+                                    <input type="password" value="" id="password_confirmation" class="input-text" title="Nhập lại mật khẩu" name="password_confirmation" required="" requiredmsg="Nhập lại mật khẩu" minlength="6">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
-                                    <label for="cmnd">Số CMND<span class="required"></span></label>
-                                    <input type="text" value="Số chứng minh nhân dân" class="input-text" title="cmnd" name="cmnd" id="cmnd" required="" requiredmsg="Nhập số CMND">
+                                    <label for="cmnd">Email<span class="required">*</span></label>
+                                    <input type="text" value="" class="input-text" title="Email" name="email" id="email" required="" requiredmsg="Nhập số CMND">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="mobile">Số điện thoại<span class="required"></span></label>
@@ -893,13 +893,7 @@ echo "Mã bảo vệ sai!";
                                     <label for="address">Địa chỉ<span class="required"></span></label>
                                     <input type="text" value="" class="input-text" title="Address" name="address" id="address" required="" requiredmsg="Nhập địa chỉ">
                                 </div>
-                            </ul> 
-                            <div>
-                               <p><input type="checkbox"> Đồng ý với điều khoản sử dụng
-                                   &nbsp;
-                                   <a style="color: red;" href="#">Thông tin điều khoản</a>
-                               </p>
-                           </div>                           
+                            </ul>                          
                            
                            <div class="buttons-set">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -908,9 +902,9 @@ echo "Mã bảo vệ sai!";
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             
-                            <button id="send2" value="Đăng ký" type="submit" class="button login login_sign"><span>Đăng ký</span></button>
+                            <input id="dangky" value="Đăng ký" type="submit" class="button login login_sign" style="font-weight: bold;"></input>
                             &nbsp;
-                            <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
+                            <button id="trolai" value="Trở lại" type="button" class="button login login_sign" ><span> Trở lại </span></button>        
                         </div>
                         <div class="g-recaptcha" data-sitekey="6LcN6iIUAAAAAJj0pNCDMkWMj_8XJZoeZlXa3HBF"></div>
                     </form>
@@ -986,4 +980,33 @@ echo "Mã bảo vệ sai!";
     </footer>
     <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="../../assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function valid()
+    {
+        var errors=false;
+        var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+        if(document.customer_register.password.value!=document.customer_register.password_confirmation.value)
+        {
+            alert('Mật khẩu nhập lại không chính xác');
+            errors=true;
+            return false;   
+        }
+        if(reg_mail.test(document.customer_register.email.value)==false){
+            alert('Email không hợp lệ (ví dụ: example@gmail.com)');
+            errors=true;
+            return false;
+        }
+        if(isNaN(document.customer_register.sdt.value)==true)
+        {
+            alert('Số điện thoại phải là số');
+            errors=true;
+            return false;
+        }
+        if(errors==false)
+        {
+            alert('Đăng ký thành công');
+        }
+        return true;
+    }
+    </script>
 </body>

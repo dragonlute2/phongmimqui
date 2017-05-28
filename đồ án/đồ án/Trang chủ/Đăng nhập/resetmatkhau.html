@@ -832,7 +832,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 login_site">
                 <div id="demo" class="content">
 
-                    <form accept-charset="UTF-8" action="#" id="customer_login" method="post">
+                    <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
                         <h4 class="fw_600 txt_u hidden-sm-down">Khôi phục mật khẩu</h4>    
                         <p style="line-height:15px;">Chúng tôi sẽ gửi cho bạn một email để kích hoạt việc đặt lại mật khẩu.</p>               
                         <ul class="form-list">
@@ -842,7 +842,7 @@
                             </li>
                         </ul>
                         <div class="buttons-set">
-                            <button id="reset" type="submit" class="button login login_sign"><span>&nbsp Gửi &nbsp</span></button>         &nbsp&nbsp&nbsp&nbsp     
+                            <input id="reset" type="submit" class="button login login_sign" value="  Gửi  " style="font-weight: bold;"></input>         &nbsp&nbsp&nbsp&nbsp     
                             <button id="trolai" type="button" class="button login login_sign"><span>Trở lại</span></button>
                         </div>
                     </form>
@@ -916,4 +916,22 @@
         </div>
     </footer>
     <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+         function valid()
+        {
+            var errors=false;
+            var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+            if(reg_mail.test(document.customer_login.email.value)==false)
+            {
+                alert('Email không hợp lệ (ví dụ: example@gmail.com)');
+                errors=true;
+                return false;
+            }
+            if(errors==false)
+            {
+                alert('Chúng tôi đã gửi thư về email của bạn');
+            }
+            return true;
+        }
+    </script>
 </body>

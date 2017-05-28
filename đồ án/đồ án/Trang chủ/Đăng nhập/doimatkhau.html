@@ -834,7 +834,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 login_site">
                 <div id="demo" class="content">
 
-                    <form accept-charset="UTF-8" action="#" id="customer_login" method="post">
+                    <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
                         <h4 class="fw_600 txt_u hidden-sm-down">Đổi mật khẩu</h4>                                 
                         <ul class="form-list">
                             <li>
@@ -843,16 +843,16 @@
                             </li>
                             <li>
                                 <label for="pass">Mật khẩu mới <span class="required">*</span></label>
-                                <input type="password" class="input-text" value="" title="id" name="pass" id="pass" required="">
+                                <input type="password" class="input-text" value="" title="id" name="pass" id="pass" required="" minlength="6">
                             </li>
                             <li>
                                 <label for="passconfirm">Nhập lại mật khẩu mới <span class="required"></span></label>
-                                <input type="password" class="input-text" value="" title="passconfirm" name="passconfirm" id="passconfirm" required="" >
+                                <input type="password" class="input-text" value="" title="passconfirm" name="passconfirm" id="passconfirm" required="" minlength="6">
                             </li>
                         </ul>
                         <div class="buttons-set">
-                            <button id="reset" type="submit" class="button login login_sign"><span> Đồng ý</span></button>         &nbsp&nbsp&nbsp&nbsp     
-                            <button id="trolai" type="button" class="button login login_sign"><span>Trở lại</span></button>
+                            <input id="reset" type="submit" class="button login login_sign" value="Đồng ý" style="font-weight: bold;"></input>         &nbsp&nbsp&nbsp&nbsp     
+                            <button id="trolai" type="button" class="button login login_sign" ><span>Trở lại</span></button>
                         </div>
                     </form>
                 </div>
@@ -925,4 +925,23 @@
         </div>
     </footer>
     <script type="text/javascript" src="../../assests/jquery-3.1.1.min.js"></script>
+
+
+<script type="text/javascript">
+    function valid()
+    {
+        var errors=false;
+        if(document.customer_login.pass.value!=document.customer_login.passconfirm.value)
+        {
+            alert('Mật khẩu nhập lại không chính xác');
+            errors=true;
+            return false;   
+        }
+        if(errors==false)
+        {
+            alert('Đổi mật khẩu thành công');
+        }
+        return true;
+    }
+</script>
 </body>
