@@ -198,7 +198,6 @@ input.price
 {
     padding-left: 0;
     margin-bottom: 20px;
-    list-style-image: url('../Images/bullet_green1.png');
     position: relative;
     display: block;
     padding: 20px 15px;
@@ -235,4 +234,7 @@ input.price
 .product-name a
 {
     font-size: 30px;
+}
+li{
+    list-style: none;
 }
