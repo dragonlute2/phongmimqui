@@ -4250,7 +4250,7 @@ Swatches Styles
 #sort-by label{float:left;font-size:14px;margin-right:6px;margin-bottom:0}
 #sort-by ul{margin:0;padding:0;list-style:none;display:inline;float:right}
 #sort-by a:link,#sort-by a:visited{color:#333;text-decoration:none}
-#sort-by > ul > li{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-position:right center;background-image:url(//cdn.shopify.com/s/files/1/1276/7701/t/16/assets/ico-select.png?2232996444626678851)!important;background-repeat:no-repeat;background-position:right 10px center;padding-right:28px;text-indent:.01px;cursor:pointer;line-height:30px}
+#sort-by > ul > li{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-position:right center;background-image:url("../Images/icon-selected.png")!important;background-repeat:no-repeat;background-position:right 10px center;padding-right:28px;text-indent:.01px;cursor:pointer;line-height:30px}
 #sort-by li{background:none repeat scroll 0 0 #fff;cursor:pointer;margin:0 auto;outline:medium none;padding:0 20px;position:relative;width:240px;float:left;color:#333;border:1px solid #ebebeb;font-size:14px}
 #sort-by li > a{display:inline-block;width:100%;line-height:36px}
 #sort-by li li{width:100%;margin-top:0;border-top:none;border-right:none;border-left:none}
