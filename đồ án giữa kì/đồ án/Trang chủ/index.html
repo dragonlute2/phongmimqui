@@ -23,6 +23,7 @@
 
 </head>
 <body id="san-dau-gia-online-HOME" class="cms-index-index cms-home-page">
+    <div id="output"></div>
     <header>
         <section class="header-banner hidden-md-down">
             <a href="index.html" title="Trang chủ">
@@ -2079,6 +2080,11 @@
     <script type="text/javascript" src="../public/JS/common.js"></script>
     <script type="text/javascript" src="../public/JS/js_custome.js"></script>
     <script type="text/javascript" src="../public/JS/owl.carousel.min.js"></script>
+    <script>
+        (function (global) {
+            document.getElementById("output").value = global.localStorage.getItem("myID");
+        }(window));
+    </script>
 
 
 </body>
