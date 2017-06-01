@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0dbe88-fac3-4944-b415-758950e42a64" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/cacsanphamdaugiakhaccuanguoiban.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamban.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia - Copy.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,21 +20,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="sanphamdangdaugia - Copy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia - Copy.html">
+      <file leaf-file-name="donxinphep.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/donxinphep.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="805" column="44" lean-forward="false" selection-start-line="805" selection-start-column="44" selection-end-line="805" selection-end-column="44" />
+            <state relative-caret-position="357">
+              <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanphamyeuthich.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thongtincanhan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="815" column="70" lean-forward="true" selection-start-line="815" selection-start-column="13" selection-end-line="815" selection-end-column="70" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamyeuthich.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="816" column="37" lean-forward="false" selection-start-line="816" selection-start-column="37" selection-end-line="816" selection-end-column="37" />
+            <state relative-caret-position="405">
+              <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -39,29 +58,65 @@
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#tr#7;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#td#0;n#tr#7;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#tr#9;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#td#0;n#tr#9;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#48446#48453#1" expanded="true" />
-                <element signature="e#48844#48851#1" expanded="true" />
+                <element signature="e#48780#48787#1" expanded="true" />
+                <element signature="e#49178#49185#1" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanphamyeuthich.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/đồ án/public/CSS/sanphamyeuthich.css">
+      <file leaf-file-name="sanphamduocdaugia.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamduocdaugia.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="594">
+              <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamdaugiathang.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdaugiathang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamdangdaugia.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamconguoimua.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamconguoimua.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="814" column="14" lean-forward="true" selection-start-line="814" selection-start-column="14" selection-end-line="814" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resetmatkhau.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Đăng nhập/resetmatkhau.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="792" column="0" lean-forward="false" selection-start-line="792" selection-start-column="0" selection-end-line="818" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -78,20 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filter-container__selected-filter</find>
-      <find>filter-container input[type=checkbox</find>
-      <find>#sort-by &gt; ul &gt; li</find>
-      <find>product-s</find>
-      <find>ul</find>
-      <find>giới thiệu</find>
-      <find>Giới</find>
-      <find>Đăng</find>
-      <find>Hướng</find>
-      <find>Điện thoại di</find>
-      <find>Hướng dẫn</find>
-      <find>dragon</find>
-      <find>hướng</find>
-      <find>hướng dẫn</find>
       <find>Hương</find>
       <find>thông</find>
       <find>home</find>
@@ -107,7 +148,21 @@
       <find>Thông tin cá nhân</find>
       <find>mô tả sản</find>
       <find>sản phẩm bán</find>
+      <find>sản phẩm đang đấu giá</find>
       <find>sản phẩm đang</find>
+      <find>xem chi tiết</find>
+      <find>Trang chủ</find>
+      <find>sản phẩm yêu thích</find>
+      <find>trang chủ</find>
+      <find>sản phẩm yêu</find>
+      <find>tài khoản</find>
+      <find>thông tin cá nhân</find>
+      <find>thông tin cá</find>
+      <find>thông tin cá</find>
+      <find>không</find>
+      <find>khôi phcu</find>
+      <find>Tài khoản</find>
+      <find>bán</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;i class=&quot;glyphicon-menu-right glyphicon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</replace>
@@ -139,15 +194,20 @@
         <option value="$PROJECT_DIR$/đồ án/public/CSS/home.css" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Đăng nhập/dangnhap.html" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan - Copy.html" />
-        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan.html" />
         <option value="$PROJECT_DIR$/đồ án/public/CSS/thongtincanhan.css" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Nhóm sản phẩm/nhom_san_pham.html" />
-        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich - Copy.html" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamban.html" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamban - Copy.html" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia - Copy.html" />
         <option value="$PROJECT_DIR$/đồ án/public/CSS/sanphamyeuthich.css" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich - Copy.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/donxinphep.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan.html" />
         <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamduocdaugia.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdaugiathang.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia.html" />
+        <option value="$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamconguoimua.html" />
       </list>
     </option>
   </component>
@@ -285,32 +345,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Nhóm sản phẩm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="đồ án giữa kì" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="đồ án giữa kì" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="đồ án" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trang chủ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nhóm sản phẩm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sản phẩm chi tiết" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,12 +582,12 @@
       <workItem from="1496226649558" duration="5823000" />
       <workItem from="1496248773873" duration="17000" />
       <workItem from="1496251229592" duration="1714000" />
-      <workItem from="1496313672553" duration="8782000" />
+      <workItem from="1496313672553" duration="13181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165008000" />
+    <option name="totallyTimeSpent" value="169407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -602,138 +636,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="756" column="32" lean-forward="false" selection-start-line="756" selection-start-column="32" selection-end-line="756" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/CSS/myStyle.css" />
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Nhóm sản phẩm/Sản phẩm chi tiết/Dien-thoai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding>
-            <element signature="e#1984#1990#0" expanded="false" />
-            <element signature="e#1990#1996#0" expanded="false" />
-            <element signature="e#1997#2003#0" expanded="false" />
-            <element signature="e#2003#2009#0" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#47865#47871#0" expanded="false" />
-            <element signature="e#50728#50734#0" expanded="false" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#51037#51043#0" expanded="false" />
-            <element signature="e#51051#51057#0" expanded="false" />
-            <element signature="e#51081#51087#0" expanded="false" />
-            <element signature="n#style#0;n#p#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#51594#51600#0" expanded="false" />
-            <element signature="e#51627#51633#0" expanded="false" />
-            <element signature="e#51684#51690#0" expanded="false" />
-            <element signature="e#51707#51713#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15876">
-          <caret line="756" column="32" lean-forward="false" selection-start-line="756" selection-start-column="32" selection-end-line="756" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Nhóm sản phẩm/Sản phẩm chi tiết/Dien-thoai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19929">
-          <caret line="949" column="0" lean-forward="false" selection-start-line="948" selection-start-column="0" selection-end-line="949" selection-end-column="0" />
-          <folding>
-            <element signature="e#1984#1990#0" expanded="false" />
-            <element signature="e#1990#1996#0" expanded="false" />
-            <element signature="e#1997#2003#0" expanded="false" />
-            <element signature="e#2003#2009#0" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#47865#47871#0" expanded="false" />
-            <element signature="e#50728#50734#0" expanded="false" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#51037#51043#0" expanded="false" />
-            <element signature="e#51051#51057#0" expanded="false" />
-            <element signature="e#51081#51087#0" expanded="false" />
-            <element signature="n#style#0;n#p#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#51594#51600#0" expanded="false" />
-            <element signature="e#51627#51633#0" expanded="false" />
-            <element signature="e#51684#51690#0" expanded="false" />
-            <element signature="e#51707#51713#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Nhóm sản phẩm/JS/owl.carousel.min.js" />
     <entry file="file://$PROJECT_DIR$/đồ án/CSS/myStyle.css" />
     <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Nhóm sản phẩm/JS/owl_product_details.js" />
     <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/index.html">
@@ -757,8 +659,8 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#47865#47871#0" expanded="false" />
             <element signature="e#50728#50734#0" expanded="false" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -823,8 +725,8 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#47865#47871#0" expanded="false" />
             <element signature="e#50728#50734#0" expanded="false" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -977,57 +879,10 @@
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#8;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#9;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich - Copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="805" column="34" lean-forward="false" selection-start-line="805" selection-start-column="34" selection-end-line="805" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,8 +891,8 @@
         <state relative-caret-position="615">
           <caret line="808" column="59" lean-forward="true" selection-start-line="805" selection-start-column="22" selection-end-line="808" selection-end-column="59" />
           <folding>
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -1057,19 +912,6 @@
         <state relative-caret-position="42">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="85" />
-          <folding>
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,10 +967,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich - Copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="825" column="43" lean-forward="false" selection-start-line="825" selection-start-column="43" selection-end-line="825" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Đăng nhập/resetmatkhau.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="792" column="0" lean-forward="false" selection-start-line="792" selection-start-column="0" selection-end-line="818" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/donxinphep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/thongtincanhan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="815" column="70" lean-forward="true" selection-start-line="815" selection-start-column="13" selection-end-line="815" selection-end-column="70" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamyeuthich.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="816" column="37" lean-forward="false" selection-start-line="816" selection-start-column="37" selection-end-line="816" selection-end-column="37" />
+        <state relative-caret-position="405">
+          <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1136,20 +1016,48 @@
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#tr#7;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#td#0;n#tr#7;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#tr#9;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#td#0;n#tr#9;n#tbody#0;n#table#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#48446#48453#1" expanded="true" />
-            <element signature="e#48844#48851#1" expanded="true" />
+            <element signature="e#48780#48787#1" expanded="true" />
+            <element signature="e#49178#49185#1" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamduocdaugia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdaugiathang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamdangdaugia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="816" column="68" lean-forward="false" selection-start-line="816" selection-start-column="68" selection-end-line="816" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/đồ án/Trang chủ/Tài khoản/sanphamconguoimua.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="814" column="14" lean-forward="true" selection-start-line="814" selection-start-column="14" selection-end-line="814" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
