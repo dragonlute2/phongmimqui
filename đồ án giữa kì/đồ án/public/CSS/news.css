@@ -3,8 +3,9 @@
     padding:0px;
     font-family:"lucida grande",tahoma,verdana,arial,sans-serif; 
     font-size:14px; 
-    line-height:18px;    
+   
 }
+
 
 .clear {clear:both;}
 a {text-decoration:none;}
@@ -15,6 +16,7 @@ a:hover {text-decoration:underline;}
 #container {
     width:980px;
     margin:0px auto;
+    line-height: 18px;
 }
 
 
