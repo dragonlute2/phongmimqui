@@ -44,3 +44,13 @@ li.active
 {
     color: #ffffff;
 }
+
+
+.table>tbody>tr>td{
+    text-align: left;
+}
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #ff9d06
+}
