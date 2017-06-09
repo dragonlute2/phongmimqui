@@ -94,6 +94,25 @@ li{
     background-color: #c9203c;
     border-color: #c9203c;
 }
+@media all {
+    .col-lg-20, col-md-20, col-xs-20
+    {
+        width: 20%;
+        display: inline-block;
+        float: left;
+    }
+}
+ .tab-content .col-lg-20, col-md-20,col-xs-20 .box-product
+{
+    margin: 26px 0px 0px 0px !important;
+}
+.col-lg-20, col-md-20, col-xs-20
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 
 

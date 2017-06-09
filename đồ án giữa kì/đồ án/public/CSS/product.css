@@ -80,7 +80,7 @@ input.price
     border: #000000 1px solid;
 }
 
-.product-seller p, .start-time-row, .end-time-row
+.product-seller  p, .start-time-row, .end-time-row, .danhgia p, .daugiacaonhat p
 {
     line-height: 20px;
     font-family: 'Roboto';
@@ -88,7 +88,7 @@ input.price
     margin-top: 0px;
     color: #363636;
 }
-.product-seller a
+.product-seller a, .danhgia a, .daugiacaonhat a
 {
     color: #d2092d;
     text-decoration: none;
@@ -129,20 +129,20 @@ input.price
 }
 .table, .data-table thead th, thead
 {
-    border: aliceblue 1px solid;
+    border: #e8680e 1px solid;
     margin-bottom: 10px;
 }
 .table-hover>tbody>tr:hover
 {
-    background-color: aliceblue;
+    background-color: #FFFFB1;
 }
 .data-table thead th, thead
 {
-    background-color: #6ad481;
+    background-color: #e8680e;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
 {
-    border-top: aliceblue 1px solid;
+    border-top: #e8680e 1px solid;
 }
 
 #auction-stats
@@ -237,4 +237,57 @@ input.price
 }
 li{
     list-style: none;
+}
+.table>thead>tr>th
+{
+    border-bottom: none;
+}
+.product_infomation .product_title h1
+{
+    margin-bottom: 0px;
+}
+input[type=checkbox]+ label span
+{
+    display: inline-block;
+    font-size: 20px;
+}
+input[type=checkbox]
+{
+    display: none;
+}
+input[type=checkbox]:checked+ label span
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: yellow;
+}
+.checkbox label, .radio label
+{
+    padding-left: 0px;
+}
+.daugiacaonhat
+{
+    margin-top: 15px;
+}
+h2
+{
+    font-size: 27px;
+}
+.giamuangay
+{
+    margin-left: 24%;
+    margin-top: 6%;
+    display: inline-flex;
+}
+.item-price-buy
+{
+    font-family: Arial;
+    font-size: 24px!important;
+    line-height: 20px;
+    margin: 0px;
+    color: #dc3333;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
 }

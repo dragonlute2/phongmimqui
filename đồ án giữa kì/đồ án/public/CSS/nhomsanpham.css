@@ -132,3 +132,25 @@ p{
 {
     float:none;
 }
+.btn_save a:focus
+{
+    color: #f3CB4F;
+    text-decoration: none;
+
+}
+input[type=checkbox]+ label span
+{
+display: inline-block;
+font-size: 20px;
+}
+input[type=checkbox]
+{
+    display: none;
+}
+input[type=checkbox]:checked+ label span
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: yellow;
+}
