@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-06-10 21:12:51
+Date: 2017-06-10 21:20:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -231,10 +231,8 @@ CREATE TABLE `sanpham` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sanphamconguoimua`;
 CREATE TABLE `sanphamconguoimua` (
-  `idSANPHAMCONGUOIMUA` int(11) NOT NULL AUTO_INCREMENT,
   `USER_idUSER` int(11) NOT NULL,
-  `idsanpham` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idSANPHAMCONGUOIMUA`,`USER_idUSER`),
+  `idsanpham` int(11) NOT NULL,
   KEY `fk_SANPHAMCONGUOIMUA_USER1_idx` (`USER_idUSER`),
   CONSTRAINT `fk_SANPHAMCONGUOIMUA_USER1` FOREIGN KEY (`USER_idUSER`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -248,10 +246,8 @@ CREATE TABLE `sanphamconguoimua` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sanphamyeuthich`;
 CREATE TABLE `sanphamyeuthich` (
-  `idSANPHAMYEUTHICH` int(11) NOT NULL AUTO_INCREMENT,
   `USER_idUSER` int(11) NOT NULL,
-  `idsanpham` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idSANPHAMYEUTHICH`,`USER_idUSER`),
+  `idsanpham` int(11) NOT NULL,
   KEY `fk_SANPHAMYEUTHICH_USER_idx` (`USER_idUSER`),
   CONSTRAINT `fk_SANPHAMYEUTHICH_USER` FOREIGN KEY (`USER_idUSER`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
