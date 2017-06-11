@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>
-     Thông tin cá nhân
+     Sản phẩm có người mua
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="../../public/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
@@ -827,7 +827,7 @@
           </div>
               <li><a data-toggle="pill" href="#dangban"> Đăng bán </a></li>
               <li><a data-toggle="pill" href="#sanphamconhan"> Sản phẩm còn hạn </a></li>
-              <li><a data-toggle="pill" href="#sanphamconguoimua"> Sản phẩm có người mua </a></li>
+              <li class="active"><a data-toggle="pill" href="#sanphamconguoimua"> Sản phẩm có người mua </a></li>
           </ul>
       </div>
 
@@ -843,284 +843,6 @@
 
 <div class="tab-content">
 
-<!-- thay đổi thông tin cá nhân -->
-<div id="thaydoithongtincanhan" class="tab-pane fade in active">
- <div class="col-md-offset-1">
-                <div id="demo" class="content">
-
-                    <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
-                      <h2 class="fw_600 txt_u hidden-sm-down" ><b>Thay đổi thông tin cá nhân</b></h2>   
-
-
-  
-        </div>
-<p>&nbsp;</p>
-
-                        <ul class="form-list">
-
-                            <li>
-                                <label for="id">Nhập mật khẩu xác nhận</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="">
-                            </li>
-
-                            <li>
-                                <label for="id">Họ tên</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="Trương Phan Quí">
-                            </li>
-
-
-                            <li>
-                                <label for="id">Email</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="ninatabala@gmail.com">
-                            </li>
-
-
-
-
-                             <li>
-                                <label for="id">Ngày sinh</label>
-
-
-<div class="row">
-  <div class="col-md-3">
-
-<!-- ngày -->
-    <div class="dob-day">
-            <select class="required-entry" name="day" id="day" aria-required="true">
-                <option value="">Chọn ngày</option>
-                                                        <option value="01">Ngày 01</option>
-                                                        <option value="02">Ngày 02</option>
-                                                        <option value="03">Ngày 03</option>
-                                                        <option value="04">Ngày 04</option>
-                                                        <option value="05">Ngày 05</option>
-                                                        <option value="06">Ngày 06</option>
-                                                        <option value="07">Ngày 07</option>
-                                                        <option value="08">Ngày 08</option>
-                                                        <option value="09">Ngày 09</option>
-                                                        <option value="10" selected="">Ngày 10</option>
-                                                        <option value="11">Ngày 11</option>
-                                                        <option value="12">Ngày 12</option>
-                                                        <option value="13">Ngày 13</option>
-                                                        <option value="14">Ngày 14</option>
-                                                        <option value="15">Ngày 15</option>
-                                                        <option value="16">Ngày 16</option>
-                                                        <option value="17">Ngày 17</option>
-                                                        <option value="18">Ngày 18</option>
-                                                        <option value="19">Ngày 19</option>
-                                                        <option value="20">Ngày 20</option>
-                                                        <option value="21">Ngày 21</option>
-                                                        <option value="22">Ngày 22</option>
-                                                        <option value="23">Ngày 23</option>
-                                                        <option value="24">Ngày 24</option>
-                                                        <option value="25">Ngày 25</option>
-                                                        <option value="26">Ngày 26</option>
-                                                        <option value="27">Ngày 27</option>
-                                                        <option value="28">Ngày 28</option>
-                                                        <option value="29">Ngày 29</option>
-                                                        <option value="30">Ngày 30</option>
-                                                        <option value="31">Ngày 31</option>
-                            </select>
-    </div>
-
-  </div>
-  <div class="col-md-3">
-    <!-- tháng -->
-    <div class="dob-month">
-            <select class="required-entry" name="month" id="month" aria-required="true">
-                <option value="">Chọn tháng</option>
-                                                        <option value="01">Tháng 01</option>
-                                                        <option value="02">Tháng 02</option>
-                                                        <option value="03">Tháng 03</option>
-                                                        <option value="04" selected="">Tháng 04</option>
-                                                        <option value="05">Tháng 05</option>
-                                                        <option value="06">Tháng 06</option>
-                                                        <option value="07">Tháng 07</option>
-                                                        <option value="08">Tháng 08</option>
-                                                        <option value="09">Tháng 09</option>
-                                                        <option value="10">Tháng 10</option>
-                                                        <option value="11">Tháng 11</option>
-                                                        <option value="12">Tháng 12</option>
-                            </select>
-        </div>
-  </div>
-   <div class="col-md-3">
-    <!-- năm -->
-<div class="dob-year">
-                        <select class="required-entry" name="year" id="year" aria-required="true">
-                           <option value="">Chọn năm</option>
-                                    <option value="2017">Năm 2017</option>
-                                    <option value="2016">Năm 2016</option>
-                                    <option value="2015">Năm 2015</option>
-                                    <option value="2014">Năm 2014</option>
-                                    <option value="2013">Năm 2013</option>
-                                    <option value="2012">Năm 2012</option>
-                                    <option value="2011">Năm 2011</option>
-                                    <option value="2010">Năm 2010</option>
-                                    <option value="2009">Năm 2009</option>
-                                    <option value="2008">Năm 2008</option>
-                                    <option value="2007">Năm 2007</option>
-                                    <option value="2006">Năm 2006</option>
-                                    <option value="2005">Năm 2005</option>
-                                    <option value="2004">Năm 2004</option>
-                                    <option value="2003">Năm 2003</option>
-                                    <option value="2002">Năm 2002</option>
-                                    <option value="2001">Năm 2001</option>
-                                    <option value="2000">Năm 2000</option>
-                                    <option value="1999">Năm 1999</option>
-                                    <option value="1998">Năm 1998</option>
-                                    <option value="1997">Năm 1997</option>
-                                    <option value="1996">Năm 1996</option>
-                                    <option value="1995" selected="">Năm 1995</option>
-                                    <option value="1994">Năm 1994</option>
-                                    <option value="1993">Năm 1993</option>
-                                    <option value="1992">Năm 1992</option>
-                                    <option value="1991">Năm 1991</option>
-                                    <option value="1990">Năm 1990</option>
-                                    <option value="1989">Năm 1989</option>
-                                    <option value="1988">Năm 1988</option>
-                                    <option value="1987">Năm 1987</option>
-                                    <option value="1986">Năm 1986</option>
-                                    <option value="1985">Năm 1985</option>
-                                    <option value="1984">Năm 1984</option>
-                                    <option value="1983">Năm 1983</option>
-                                    <option value="1982">Năm 1982</option>
-                                    <option value="1981">Năm 1981</option>
-                                    <option value="1980">Năm 1980</option>
-                                    <option value="1979">Năm 1979</option>
-                                    <option value="1978">Năm 1978</option>
-                                    <option value="1977">Năm 1977</option>
-                                    <option value="1976">Năm 1976</option>
-                                    <option value="1975">Năm 1975</option>
-                                    <option value="1974">Năm 1974</option>
-                                    <option value="1973">Năm 1973</option>
-                                    <option value="1972">Năm 1972</option>
-                                    <option value="1971">Năm 1971</option>
-                                    <option value="1970">Năm 1970</option>
-                                    <option value="1969">Năm 1969</option>
-                                    <option value="1968">Năm 1968</option>
-                                    <option value="1967">Năm 1967</option>
-                                    <option value="1966">Năm 1966</option>
-                                    <option value="1965">Năm 1965</option>
-                                    <option value="1964">Năm 1964</option>
-                                    <option value="1963">Năm 1963</option>
-                                    <option value="1962">Năm 1962</option>
-                                    <option value="1961">Năm 1961</option>
-                                    <option value="1960">Năm 1960</option>
-                                    <option value="1959">Năm 1959</option>
-                                    <option value="1958">Năm 1958</option>
-                                    <option value="1957">Năm 1957</option>
-                            </select>
-        </div>
-  </div>
-</div>
-
-                               
-
-
-
-
-
-
-
-
-
-
-
-
-       
-        
-
-                            </li>
-
-                             <li>
-                                <label for="id">Giới tính</label>
-
- <div class="dob-day">
-            <select class="required-entry" name="day" id="day" aria-required="true">
-                
-                                                        <option value="01" selected="">Nam</option>
-                                                        <option value="02">Nữ</option>
->
-                            </select>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-                            </li>
-                            <li>
-
-                                <div class="row">
-                                  <div class="col-md-3">
-                                      <label for="id">Số điện thoại di động</label>
-                                      <br>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="01227890490">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <label for="id">Số điện thoại khác</label>
-                                    <br>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="08 186811866">
-                                  </div>
-                                </div>
-
-                              
-
-
-
-
-                            </li>
-                             <li>
-                                <label for="id">Địa chỉ liên hệ</label>
-                                <form>
-    <div class="form-group">
-      <textarea class="form-control" rows="5" id="comment">TP HCM</textarea>
-    </div>
-</form>
-
-
-
-
-<br>
-
-
-
-
-
-
-
-
-
-
-                            </li>
-
-                           
-                        </ul>
-                        <div class="buttons-set">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input id="reset" type="submit" class="button login login_sign" value="Lưu" style="font-weight: bold;"></input>  
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-                            <button id="trolai" type="button" class="button login login_sign" ><span>Hủy</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>   
-        </div>
-
-</section>
-
-    </div>
-
-</div>
-
-
-
     <div id="thongtincanhan" class="tab-pane fade">
     <!-- thông tin cá nhân -->
 <div class="row">
@@ -1132,7 +854,7 @@
                   <h3 class="panel-title">Tài khoản </h3>
                 </div>
                 <div class="col-md-2" style="font-size:15px; top:1px; text-align:right; color: #ffffff">
-                  <a href="#" title="Sửa thông tin tài khoản">
+                  <a href="thaydoithongtincanhan.html" title="Sửa thông tin tài khoản">
                     <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
                   </a>
                 </div>
@@ -1413,7 +1135,7 @@
                     <th> Số lượt ra giá hiện tại </th>
                     <th> Thời gian còn lại</th>
                 </tr>
-                 <!--sản phẩm 1-->
+                <!--sản phẩm 1-->
                 <tr>
                     <td class="mota" style="text-align: center">
                         <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
@@ -1660,7 +1382,7 @@
                     <th> Số lượng đấu giá</th>
                     <th> Thời gian còn lại</th>
                 </tr>
-              <!--sản phẩm 1-->
+               <!--sản phẩm 1-->
                 <tr>
                     <td class="mota" style="text-align: center">
                         <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
@@ -2852,7 +2574,7 @@ Mô tả đánh giá
 
 
             <!-- sản phẩm đã có người mua -->
-    <div id="sanphamconguoimua" class="tab-pane fade">
+    <div id="sanphamconguoimua" class="tab-pane fade in active">
       
        <div class="block-title block">
             <h5>
