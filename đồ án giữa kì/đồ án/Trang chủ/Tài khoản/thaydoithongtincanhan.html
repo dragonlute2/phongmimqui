@@ -15,11 +15,13 @@
   <link rel="stylesheet" type="text/css" href="../../public/CSS/jgrowl.css">
   <link rel="stylesheet" type="text/css" href="../../public/CSS/style.css">
 
-  <link rel="stylesheet" type="text/css" href="../../public/CSS/home.css"/>
-
-  <link rel="stylesheet" type="text/css" href="../../public/CSS/thongtincanhan.css"/>
-  <link rel="stylesheet" type="text/css" href="../../public/CSS/thaydoithongtincanhan.css"/>
-
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/home.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/thongtincanhan.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/nhomsanpham.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/sanphamyeuthich.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/danhgianhanxetcomment.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/danhgia.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/CSS/thaydoithongtincanhan.css"/>
 
 </head>
 <body>
@@ -758,13 +760,18 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu ">
-                <li><a href="thongtincanhan.html"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
-                <li><a href="sanphamyeuthich.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
-                <li><a href="sanphamban.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm bán</a></li>
-                <li role="presentation" class="divider"></li>
-                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Đấu giá của tôi</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Chi tiết đánh giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Đổi mật khẩu</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đang đấu giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đấu giá thắng</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm được đấu giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm có người mua</a></li>
 
-              </ul>
+                            </ul>
             </div>
           </div>
 
@@ -796,28 +803,33 @@
               </h5>
           </div>
           <ul class="nav nav-pills nav-stacked">
-              <li><a href="thongtincanhan.html">Thông tin cá nhân</a></li>
-              <li><a href="#">Chi tiết đánh giá</a></li>
-          </ul>
+              
+
+              <li><a data-toggle="pill" href="#thongtincanhan"> Thông tin cá nhân </a></li>
+
+              
+              <li ><a data-toggle="pill" href="#chitietdanhgia"> Chi tiết đánh giá </a></li>
+         
           <div class="block-title block" style="margin-top: 20px">
               <h5>
                   <span>Mua</span>
               </h5>
           </div>
-          <ul class="nav nav-pills nav-stacked">
-              <li><a href="sanphamyeuthich.html">Sản phẩm yêu thích</a></li>
-              <li><a href="sanphamdangdaugia.html">Sản phẩm đang đấu giá</a></li>
-              <li><a href="sanphamdaugiathang.html">Sản phẩm đấu giá thắng</a></li>
-          </ul>
+          
+              <li><a data-toggle="pill" href="#sanphamyeuthich"> Sản phẩm yêu thích </a></li>
+              <li><a data-toggle="pill" href="#sanphamdaugia"> Sản phẩm đấu giá </a></li>
+              <li><a data-toggle="pill" href="#sanphamdaugiathang"> Sản phẩm đấu giá thắng </a></li>
+              
+         
           <div class="block-title block" style="margin-top: 20px">
               <h5>
                   <span>Bán</span>
               </h5>
           </div>
-          <ul class="nav nav-pills nav-stacked">
-              <li><a href="../Đăng bán/dangban.html">Đăng bán</a></li>
-              <li><a href="sanphamduocdaugia.html">Sản phẩm được đấu giá</a></li>
-              <li><a href="sanphamconguoimua.html">Sản phẩm có người mua</a></li>
+              <li><a data-toggle="pill" href="#dangban"> Đăng bán </a></li>
+              <li><a data-toggle="pill" href="#sanphamconhan"> Sản phẩm còn hạn </a></li>
+              <li><a data-toggle="pill" href="#sanphamconguoimua"> Sản phẩm có người mua </a></li>
+             
           </ul>
       </div>
 
@@ -825,25 +837,33 @@
 
 
     <div class="col-md-9 col-lg-9">
-     
-<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 login_area form_area">
-        <div class="row">
 
 
-            <div class="col-md-offset-1">
-                <div id="demo" class="content">
 
-                    <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
-                      <h2 class="fw_600 txt_u hidden-sm-down" ><b>Thay đổi thông tin cá nhân</b></h2>   
 
+
+
+<div class="tab-content">
+
+
+<div id="thaydoithongtincanhan" class="tab-pane fade in active">
+
+   <div class="row">
+
+
+      <div class="col-md-offset-1">
+
+        <div id="demo" class="content">
+          <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
+            <h2 class="fw_600 txt_u hidden-sm-down" ><b>Thay đổi thông tin cá nhân</b></h2>   
+          </form>
 
   
         </div>
-<p>&nbsp;</p>
+        <p>&nbsp;</p>
 
-                        <ul class="form-list">
-
-                            <li>
+        <ul class="form-list">
+          <li>
                                 <label for="id">Nhập mật khẩu xác nhận</label>
                                 <input type="text" class="input-text" title="id" name="id" id="id" required="">
                             </li>
@@ -858,58 +878,54 @@
                                 <label for="id">Email</label>
                                 <input type="text" class="input-text" title="id" name="id" id="id" required="" value="ninatabala@gmail.com">
                             </li>
-
-
-
-
-                             <li>
+                            <li>
                                 <label for="id">Ngày sinh</label>
+                                
+                                <div class="row">
+                                  <div class="col-md-3">
+           <!-- ngày -->
+          <div class="dob-day">
+                  <select class="required-entry" name="day" id="day" aria-required="true">
+                      <option value="">Chọn ngày</option>
+                                                              <option value="01">Ngày 01</option>
+                                                              <option value="02">Ngày 02</option>
+                                                              <option value="03">Ngày 03</option>
+                                                              <option value="04">Ngày 04</option>
+                                                              <option value="05">Ngày 05</option>
+                                                              <option value="06">Ngày 06</option>
+                                                              <option value="07">Ngày 07</option>
+                                                              <option value="08">Ngày 08</option>
+                                                              <option value="09">Ngày 09</option>
+                                                              <option value="10" selected="">Ngày 10</option>
+                                                              <option value="11">Ngày 11</option>
+                                                              <option value="12">Ngày 12</option>
+                                                              <option value="13">Ngày 13</option>
+                                                              <option value="14">Ngày 14</option>
+                                                              <option value="15">Ngày 15</option>
+                                                              <option value="16">Ngày 16</option>
+                                                              <option value="17">Ngày 17</option>
+                                                              <option value="18">Ngày 18</option>
+                                                              <option value="19">Ngày 19</option>
+                                                              <option value="20">Ngày 20</option>
+                                                              <option value="21">Ngày 21</option>
+                                                              <option value="22">Ngày 22</option>
+                                                              <option value="23">Ngày 23</option>
+                                                              <option value="24">Ngày 24</option>
+                                                              <option value="25">Ngày 25</option>
+                                                              <option value="26">Ngày 26</option>
+                                                              <option value="27">Ngày 27</option>
+                                                              <option value="28">Ngày 28</option>
+                                                              <option value="29">Ngày 29</option>
+                                                              <option value="30">Ngày 30</option>
+                                                              <option value="31">Ngày 31</option>
+                                  </select>
+          </div>
 
 
-<div class="row">
-  <div class="col-md-3">
+                                  </div>
 
-<!-- ngày -->
-    <div class="dob-day">
-            <select class="required-entry" name="day" id="day" aria-required="true">
-                <option value="">Chọn ngày</option>
-                                                        <option value="01">Ngày 01</option>
-                                                        <option value="02">Ngày 02</option>
-                                                        <option value="03">Ngày 03</option>
-                                                        <option value="04">Ngày 04</option>
-                                                        <option value="05">Ngày 05</option>
-                                                        <option value="06">Ngày 06</option>
-                                                        <option value="07">Ngày 07</option>
-                                                        <option value="08">Ngày 08</option>
-                                                        <option value="09">Ngày 09</option>
-                                                        <option value="10" selected="">Ngày 10</option>
-                                                        <option value="11">Ngày 11</option>
-                                                        <option value="12">Ngày 12</option>
-                                                        <option value="13">Ngày 13</option>
-                                                        <option value="14">Ngày 14</option>
-                                                        <option value="15">Ngày 15</option>
-                                                        <option value="16">Ngày 16</option>
-                                                        <option value="17">Ngày 17</option>
-                                                        <option value="18">Ngày 18</option>
-                                                        <option value="19">Ngày 19</option>
-                                                        <option value="20">Ngày 20</option>
-                                                        <option value="21">Ngày 21</option>
-                                                        <option value="22">Ngày 22</option>
-                                                        <option value="23">Ngày 23</option>
-                                                        <option value="24">Ngày 24</option>
-                                                        <option value="25">Ngày 25</option>
-                                                        <option value="26">Ngày 26</option>
-                                                        <option value="27">Ngày 27</option>
-                                                        <option value="28">Ngày 28</option>
-                                                        <option value="29">Ngày 29</option>
-                                                        <option value="30">Ngày 30</option>
-                                                        <option value="31">Ngày 31</option>
-                            </select>
-    </div>
-
-  </div>
-  <div class="col-md-3">
-    <!-- tháng -->
+<div class="col-md-3">
+ <!-- tháng -->
     <div class="dob-month">
             <select class="required-entry" name="month" id="month" aria-required="true">
                 <option value="">Chọn tháng</option>
@@ -927,9 +943,10 @@
                                                         <option value="12">Tháng 12</option>
                             </select>
         </div>
-  </div>
-   <div class="col-md-3">
-    <!-- năm -->
+</div>
+
+<div class="col-md-3">
+   <!-- năm -->
 <div class="dob-year">
                         <select class="required-entry" name="year" id="year" aria-required="true">
                            <option value="">Chọn năm</option>
@@ -996,51 +1013,26 @@
                                     <option value="1957">Năm 1957</option>
                             </select>
         </div>
-  </div>
-</div>
-
-                               
 
 
 
+                                </div>
 
-
-
-
-
-
-
-
-
-       
-        
+                                </div>
 
                             </li>
-
                              <li>
                                 <label for="id">Giới tính</label>
 
- <div class="dob-day">
-            <select class="required-entry" name="day" id="day" aria-required="true">
-                
-                                                        <option value="01" selected="">Nam</option>
-                                                        <option value="02">Nữ</option>
->
-                            </select>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+                                  <div class="dob-day">
+                                  <select class="required-entry" name="day" id="day" aria-required="true">
+                                      <option value="01" selected="">Nam</option>
+                                      <option value="02">Nữ</option>
+                                  </select>
+                              </div>
                             </li>
-                            <li>
+
+                             <li>
 
                                 <div class="row">
                                   <div class="col-md-3">
@@ -1054,20 +1046,14 @@
                                 <input type="text" class="input-text" title="id" name="id" id="id" required="" value="08 186811866">
                                   </div>
                                 </div>
-
-                              
-
-
-
-
                             </li>
-                             <li>
-                                <label for="id">Địa chỉ liên hệ</label>
-                                <form>
-    <div class="form-group">
-      <textarea class="form-control" rows="5" id="comment">TP HCM</textarea>
-    </div>
-</form>
+                            <li>
+                              <label for="id">Địa chỉ liên hệ</label>
+                              <form>
+                                <div class="form-group">
+                                  <textarea class="form-control" rows="5" id="comment">TP HCM</textarea>
+                                </div>
+                              </form>
 
 
 
@@ -1084,38 +1070,1970 @@
 
 
                             </li>
-
-                           
-                        </ul>
-                        <div class="buttons-set">
+        </ul>
+ <div class="buttons-set">
                             <input id="reset" type="submit" class="button login login_sign" value="Lưu" style="font-weight: bold;"></input>  
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
                             <button id="trolai" type="button" class="button login login_sign" ><span>Hủy</span></button>
                         </div>
-                    </form>
-                </div>
-            </div>   
         </div>
 
-</section>
+
+
+  </div>
+
+
+</div>
+
+
+    <div id="thongtincanhan" class="tab-pane fade">
+    <!-- thông tin cá nhân -->
+<div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-10">
+                  <h3 class="panel-title">Tài khoản </h3>
+                </div>
+                <div class="col-md-2" style="font-size:15px; top:1px; text-align:right; color: #ffffff">
+                  <a href="thaydoithongtincanhan.html" title="Sửa thông tin tài khoản">
+                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+        <div class="panel-body">
+          <div class="row">
+          <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+
+
+          <div class=" col-md-9 col-lg-9 ">
+
+                <table class="table table-user-information">
+
+                <tbody>
+
+                  <tr class="osi">
+                  <td>Họ tên</td>
+                  <td>Trương Phan Quí</td>
+                  </tr>
+
+                  <tr>
+                  <td>Ngày sinh</td>
+                  <td>10/04/1995</td>
+                  </tr>
+
+
+                   <tr>
+                     <tr>
+                  <td>Giới tính</td>
+                  <td>Nam</td>
+                  </tr>
+                  <tr>
+                  <td>Địa chỉ liên hệ</td>
+                  <td>TP HỒ CHÍ MÍNH</td>
+                  </tr>
+
+                  <tr>
+                  <td>Email</td>
+                  <td><font color= #72AFEB>ninatabala@gmail.com</font></td>
+                  </tr>
+
+                  <td>Số điện thoại liên hệ</td>
+                  <td>08 354982 (Số cố định)<br>01227890490 (Mobile)
+
+
+                  </td>
+
+                  </tr>
+
+
+
+
+
+                  <tr>
+                  <td>Điểm tin cậy</td>
+                  <td>75 điểm</td>
+                  </tr>
+
+
+                  <tr>
+                  <td>Đánh giá</td>
+                  <td>Tốt: 15<br>Không tốt: 5</td>
+                  </tr>
+
+
+
+                  <tr>
+                      <td>Quyền bán</td>
+                      <td>
+                          <div class="row">
+                              <div class="col-md-8">
+                                Không
+                              </div>
+                              <div class="col-md-4">
+                                  <a href="donxinphep.html" ><font color= #72AFEB>Xin phép</font></a>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+
+
+
+
+                </tbody>
+
+                </table>
+
+
+
+              </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chi tiết đánh giá sản phẩm -->
+    <div id="chitietdanhgia" class="tab-pane fade">
+    <div class="inner">
+     <ul class="breadcrumbs">
+
+        <div class="row">
+
+            <div class="col-md-4">
+             <li class="nhanxet">Người mua </li>
+            </div>
+            <div class="col-md-4">
+             <li class="nhanxet">Thông tin giao dịch</li>
+            </div>
+            <div class="col-md-4">
+             <li class="nhanxet">Đánh giá và phản hồi</li>
+            </div>      
+        </div>
+     </ul>   
+    </div>
+
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+
+<!-- đánh giá 1 -->
+ <div class="row">
+
+            <div class="col-md-4">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+            </div>
+
+            <div class="col-md-4">
+            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            </div>
+
+            <div class="col-md-4">
+                Tốt
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             afe df e gg "
+            </div> 
+            
+
+  </div>
+
+
+<hr>
+
+<!-- đánh giá 2 -->
+ <div class="row">
+
+            <div class="col-md-4">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+            </div>
+
+            <div class="col-md-4">
+            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            </div>
+
+            <div class="col-md-4">
+                Tốt
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             afe df e gg "
+            </div> 
+            
+
+  </div>
+
+
+<hr>
+
+
+<!-- đánh giá 3 -->
+ <div class="row">
+
+            <div class="col-md-4">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+            </div>
+
+            <div class="col-md-4">
+            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            </div>
+
+            <div class="col-md-4">
+                Tốt
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             afe df e gg "
+            </div> 
+            
+
+  </div>
+
+
+<hr>
+
+
+<!-- đánh giá 4 -->
+ <div class="row">
+
+            <div class="col-md-4">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+            </div>
+
+            <div class="col-md-4">
+            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            </div>
+
+            <div class="col-md-4">
+                Tốt
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             afe df e gg "
+            </div> 
+            
+
+  </div>
+
+
+  <hr>
+
+
+
+      <!-- đánh giá 5 -->
+      <div class="row">
+
+            <div class="col-md-4">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+            </div>
+
+            <div class="col-md-4">
+            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            </div>
+
+            <div class="col-md-4">
+                Tốt
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+             afe df e gg "
+            </div> 
+            
+
+      </div>
+
+
+  <hr>
+    
+</div>
+
+
+ <!-- sản phẩm yêu thích -->
+    <div id="sanphamyeuthich" class="tab-pane fade">
+      
+       <div class="block-title block">
+            <h5>
+                <span>Sản phẩm yêu thích</span>
+            </h5>
+        </div>
+        <div class="col-lg-12 col-md-12 collection_container list-items">
+            <table width="100%">
+                <tbody>
+                <tr >
+                    <th colspan="2">Mô tả sản phẩm</th>
+                    <th> Giá hiện tại </th>
+                    <th> Giá mua ngay </th>
+                    <th> Số lượt ra giá hiện tại </th>
+                    <th> Thời gian còn lại</th>
+                </tr>
+                 <!--sản phẩm 1-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                      <p>&nbsp;</p>
+                      Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td>  
+                            15.000.000đ     
+                    </td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+
+                        <div class="checkbox">
+                          <input class="checked" id="check1" type="checkbox" name="check" value="check1" checked>
+                          <label for="check1"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 2-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                         <div class="checkbox">
+                          <input class="checked" id="check2" type="checkbox" name="check" value="check2" checked>
+                          <label for="check2"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 3-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                          <div class="checkbox">
+                          <input class="checked" id="check3" type="checkbox" name="check" value="check3" checked>
+                          <label for="check3"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 4-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                         <div class="checkbox">
+                          <input class="checked" id="check4" type="checkbox" name="check" value="check4" checked>
+                          <label for="check4"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 5-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                          <div class="checkbox">
+                          <input class="checked" id="check5" type="checkbox" name="check" value="check5" checked>
+                          <label for="check5"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 col-md-12 menu">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+  <!-- sản phẩm đang đấu giá -->
+    <div id="sanphamdaugia" class="tab-pane fade">
+      
+        <div class="block-title block">
+            <h5>
+                <span>Sản phẩm đang đấu giá</span>
+            </h5>
+        </div>
+        <div class="col-lg-12 col-md-12 collection_container list-items">
+            <table width="100%">
+                <tbody>
+                <tr >
+                    <th colspan="2">Mô tả sản phẩm</th>
+                    <th> Giá cao nhất </th>
+                    <th> Giá quyết định</th>
+                    <th> Số lượng đấu giá</th>
+                    <th> Thời gian còn lại</th>
+                </tr>
+              <!--sản phẩm 1-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                         <div class="checkbox">
+                          <input class="checked" id="check6" type="checkbox" name="check" value="check6">
+                          <label for="check6"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 2-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <div class="checkbox">
+                          <input class="checked" id="check7" type="checkbox" name="check" value="check7">
+                          <label for="check7"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 3-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <div class="checkbox">
+                          <input class="checked" id="check8" type="checkbox" name="check" value="check8">
+                          <label for="check8"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 4-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <div class="checkbox">
+                          <input class="checked" id="check9" type="checkbox" name="check" value="check9">
+                          <label for="check9"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 5-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                         <div class="checkbox">
+                          <input class="checked" id="check10" type="checkbox" name="check" value="check10">
+                          <label for="check10"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                        </div>
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 col-md-12 menu">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    
+    <!-- sản phẩm đấu giá thắng -->
+    <div id="sanphamdaugiathang" class="tab-pane fade">
+      
+        <div class="block-title block">
+            <h5>
+                <span>Sản phẩm đấu giá thắng</span>
+            </h5>
+        </div>
+        <div class="col-lg-12 col-md-12 collection_container list-items">
+            <table width="100%">
+                <tbody>
+                <tr >
+                    <th colspan="2">Mô tả sản phẩm</th>
+                    <th> Giá mua </th>
+                    <th> Người bán</th>
+                    <th> Số lượt đấu giá</th>
+                    <th>  </th>
+                </tr>
+                <!--sản phẩm 1-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                       <td>  
+                            15.000.000đ
+                            <p>&nbsp;</p>
+                            Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td> 20 </td>
+                    <td> 
+
+
+                        <p class="btn_see">
+                            <a href="#successModal" data-toggle="modal">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Đánh giá </a>
+                        </p>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                    <h2><i class="glyphicon glyphicon-comment"></i> Đánh giá </h2>
+                </div>
+
+                <div class="modal-body">
+
+
+
+
+                    <div class="col-md-12 radio-choices">
+                        <div class="col-md-7">
+                           
+<b>Xin vui lòng chia sẻ đánh giá của bạn về người bán</b>
+<br>
+<br>
+Nhận xét về người bán này
+<br>
+<br>
+
+
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Tốt </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Xấu </label>
+<br><br>  
+Mô tả đánh giá
+<br>
+<textarea width=171px height=455px class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 449px; height: 187px;"></textarea>
+<div class="ratRev_form_row__desc">
+                          <h5>  Nhận xét của bạn sẽ được đăng lên với chế độ ẩn danh                        </h5></div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-5">
+                           
+
+                            <b>Để viết 1 đánh giá chất lượng</b>
+                            <br>
+                            <br>
+                            <b>Bạn nên:</b>
+                            <br>
+                            - Chỉ đánh giá về sản phẩm và đặc tính 
+                            <br>
+                            của nó.
+                            <br>
+                            - Viết đánh giá dựa trên kinh nghiệm
+                            <br>
+                            của bản thân.
+                            <br>
+                            - Cho biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.
+                            <br>
+                            <br>
+                            <b>Bạn không nên:</b>
+ <br>
+                            - Chia sẻ những thông tin không liên
+                            <br>
+                            quan đến sản phẩm.
+<br>
+                            - Chia sẻ thông tin không xác thực, dễ gây
+                            <br>
+                             hiểu lầm và mang tính chất lừa đảo.
+
+ <br>
+                            - Chửi thề, đe dọa, hay sử dụng những từ ngữ 
+                           <br>
+                            không có văn hóa, phân biệt chủng tộc.
+<br>
+
+                            - Chia sẻ bất kỳ thông tin cá nhân nào.
+<br>
+                            - Sử dụng trái phép những thông tin liên quan
+                           <br>
+                            đến bản quyền và thương hiệu.
+<br><br>
+                        </div>
+
+                    </div><!-- ends col-12 -->
+                </div><div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary pull-right" data-next="modal">Gửi nhận xét</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 2-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                       <td>  
+                            15.000.000đ
+                            <p>&nbsp;</p>
+                            Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td> 20 </td>
+                    <td> 
+
+                        <p class="btn_see">
+                            <a href="#successModal" data-toggle="modal">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Đánh giá </a>
+                        </p>
+                            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                    <h2><i class="glyphicon glyphicon-comment"></i> Đánh giá </h2>
+                </div>
+
+                <div class="modal-body">
+
+
+
+
+                    <div class="col-md-12 radio-choices">
+                        <div class="col-md-7">
+                           
+<b>Xin vui lòng chia sẻ đánh giá của bạn về người bán</b>
+<br>
+<br>
+Nhận xét về người bán này
+<br>
+<br>
+
+
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Tốt </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Xấu </label>
+<br><br>  
+Mô tả đánh giá
+<br>
+<textarea width=171px height=455px class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 449px; height: 187px;"></textarea>
+<div class="ratRev_form_row__desc">
+                          <h5>  Nhận xét của bạn sẽ được đăng lên với chế độ ẩn danh                        </h5></div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-5">
+                           
+
+                            <b>Để viết 1 đánh giá chất lượng</b>
+                            <br>
+                            <br>
+                            <b>Bạn nên:</b>
+                            <br>
+                            - Chỉ đánh giá về sản phẩm và đặc tính 
+                            <br>
+                            của nó.
+                            <br>
+                            - Viết đánh giá dựa trên kinh nghiệm
+                            <br>
+                            của bản thân.
+                            <br>
+                            - Cho biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.
+                            <br>
+                            <br>
+                            <b>Bạn không nên:</b>
+ <br>
+                            - Chia sẻ những thông tin không liên
+                            <br>
+                            quan đến sản phẩm.
+<br>
+                            - Chia sẻ thông tin không xác thực, dễ gây
+                            <br>
+                             hiểu lầm và mang tính chất lừa đảo.
+
+ <br>
+                            - Chửi thề, đe dọa, hay sử dụng những từ ngữ 
+                           <br>
+                            không có văn hóa, phân biệt chủng tộc.
+<br>
+
+                            - Chia sẻ bất kỳ thông tin cá nhân nào.
+<br>
+                            - Sử dụng trái phép những thông tin liên quan
+                           <br>
+                            đến bản quyền và thương hiệu.
+<br><br>
+                        </div>
+
+                    </div><!-- ends col-12 -->
+                </div><div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary pull-right" data-next="modal">Gửi nhận xét</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+               <!--sản phẩm 3-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                       <td>  
+                            15.000.000đ
+                            <p>&nbsp;</p>
+                            Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td> 20 </td>
+                    <td> 
+
+                        <p class="btn_see">
+                            <a href="#successModal" data-toggle="modal">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Đánh giá </a>
+                        </p>
+                            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                    <h2><i class="glyphicon glyphicon-comment"></i> Đánh giá </h2>
+                </div>
+
+                <div class="modal-body">
+
+
+
+
+                    <div class="col-md-12 radio-choices">
+                        <div class="col-md-7">
+                           
+<b>Xin vui lòng chia sẻ đánh giá của bạn về người bán</b>
+<br>
+<br>
+Nhận xét về người bán này
+<br>
+<br>
+
+
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Tốt </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Xấu </label>
+<br><br>  
+Mô tả đánh giá
+<br>
+<textarea width=171px height=455px class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 449px; height: 187px;"></textarea>
+<div class="ratRev_form_row__desc">
+                          <h5>  Nhận xét của bạn sẽ được đăng lên với chế độ ẩn danh                        </h5></div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-5">
+                           
+
+                            <b>Để viết 1 đánh giá chất lượng</b>
+                            <br>
+                            <br>
+                            <b>Bạn nên:</b>
+                            <br>
+                            - Chỉ đánh giá về sản phẩm và đặc tính 
+                            <br>
+                            của nó.
+                            <br>
+                            - Viết đánh giá dựa trên kinh nghiệm
+                            <br>
+                            của bản thân.
+                            <br>
+                            - Cho biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.
+                            <br>
+                            <br>
+                            <b>Bạn không nên:</b>
+ <br>
+                            - Chia sẻ những thông tin không liên
+                            <br>
+                            quan đến sản phẩm.
+<br>
+                            - Chia sẻ thông tin không xác thực, dễ gây
+                            <br>
+                             hiểu lầm và mang tính chất lừa đảo.
+
+ <br>
+                            - Chửi thề, đe dọa, hay sử dụng những từ ngữ 
+                           <br>
+                            không có văn hóa, phân biệt chủng tộc.
+<br>
+
+                            - Chia sẻ bất kỳ thông tin cá nhân nào.
+<br>
+                            - Sử dụng trái phép những thông tin liên quan
+                           <br>
+                            đến bản quyền và thương hiệu.
+<br><br>
+                        </div>
+
+                    </div><!-- ends col-12 -->
+                </div><div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary pull-right" data-next="modal">Gửi nhận xét</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 4-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                       <td>  
+                            15.000.000đ
+                            <p>&nbsp;</p>
+                            Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td> 20 </td>
+                    <td> 
+
+                        <p class="btn_see">
+                            <a href="#successModal" data-toggle="modal">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Đánh giá </a>
+                        </p>
+                            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                    <h2><i class="glyphicon glyphicon-comment"></i> Đánh giá </h2>
+                </div>
+
+                <div class="modal-body">
+
+
+
+
+                    <div class="col-md-12 radio-choices">
+                        <div class="col-md-7">
+                           
+<b>Xin vui lòng chia sẻ đánh giá của bạn về người bán</b>
+<br>
+<br>
+Nhận xét về người bán này
+<br>
+<br>
+
+
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Tốt </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Xấu </label>
+<br><br>  
+Mô tả đánh giá
+<br>
+<textarea width=171px height=455px class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 449px; height: 187px;"></textarea>
+<div class="ratRev_form_row__desc">
+                          <h5>  Nhận xét của bạn sẽ được đăng lên với chế độ ẩn danh                        </h5></div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-5">
+                           
+
+                            <b>Để viết 1 đánh giá chất lượng</b>
+                            <br>
+                            <br>
+                            <b>Bạn nên:</b>
+                            <br>
+                            - Chỉ đánh giá về sản phẩm và đặc tính 
+                            <br>
+                            của nó.
+                            <br>
+                            - Viết đánh giá dựa trên kinh nghiệm
+                            <br>
+                            của bản thân.
+                            <br>
+                            - Cho biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.
+                            <br>
+                            <br>
+                            <b>Bạn không nên:</b>
+ <br>
+                            - Chia sẻ những thông tin không liên
+                            <br>
+                            quan đến sản phẩm.
+<br>
+                            - Chia sẻ thông tin không xác thực, dễ gây
+                            <br>
+                             hiểu lầm và mang tính chất lừa đảo.
+
+ <br>
+                            - Chửi thề, đe dọa, hay sử dụng những từ ngữ 
+                           <br>
+                            không có văn hóa, phân biệt chủng tộc.
+<br>
+
+                            - Chia sẻ bất kỳ thông tin cá nhân nào.
+<br>
+                            - Sử dụng trái phép những thông tin liên quan
+                           <br>
+                            đến bản quyền và thương hiệu.
+<br><br>
+                        </div>
+
+                    </div><!-- ends col-12 -->
+                </div><div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary pull-right" data-next="modal">Gửi nhận xét</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 5-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                       <td>  
+                            15.000.000đ
+                            <p>&nbsp;</p>
+                            Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td> 20 </td>
+                    <td> 
+
+                        <p class="btn_see">
+                            <a href="#successModal" data-toggle="modal">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Đánh giá </a>
+                        </p>
+                            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header modal-header-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                    <h2><i class="glyphicon glyphicon-comment"></i> Đánh giá </h2>
+                </div>
+
+                <div class="modal-body">
+
+
+
+
+                    <div class="col-md-12 radio-choices">
+                        <div class="col-md-7">
+                           
+<b>Xin vui lòng chia sẻ đánh giá của bạn về người bán</b>
+<br>
+<br>
+Nhận xét về người bán này
+<br>
+<br>
+
+
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Tốt </label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio" style="margin-top: -2px;"> Xấu </label>
+<br><br>  
+Mô tả đánh giá
+<br>
+<textarea width=171px height=455px class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 449px; height: 187px;"></textarea>
+<div class="ratRev_form_row__desc">
+                          <h5>  Nhận xét của bạn sẽ được đăng lên với chế độ ẩn danh                        </h5></div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-5">
+                           
+
+                            <b>Để viết 1 đánh giá chất lượng</b>
+                            <br>
+                            <br>
+                            <b>Bạn nên:</b>
+                            <br>
+                            - Chỉ đánh giá về sản phẩm và đặc tính 
+                            <br>
+                            của nó.
+                            <br>
+                            - Viết đánh giá dựa trên kinh nghiệm
+                            <br>
+                            của bản thân.
+                            <br>
+                            - Cho biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.
+                            <br>
+                            <br>
+                            <b>Bạn không nên:</b>
+ <br>
+                            - Chia sẻ những thông tin không liên
+                            <br>
+                            quan đến sản phẩm.
+<br>
+                            - Chia sẻ thông tin không xác thực, dễ gây
+                            <br>
+                             hiểu lầm và mang tính chất lừa đảo.
+
+ <br>
+                            - Chửi thề, đe dọa, hay sử dụng những từ ngữ 
+                           <br>
+                            không có văn hóa, phân biệt chủng tộc.
+<br>
+
+                            - Chia sẻ bất kỳ thông tin cá nhân nào.
+<br>
+                            - Sử dụng trái phép những thông tin liên quan
+                           <br>
+                            đến bản quyền và thương hiệu.
+<br><br>
+                        </div>
+
+                    </div><!-- ends col-12 -->
+                </div><div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary pull-right" data-next="modal">Gửi nhận xét</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 col-md-12 menu">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+        <!-- sản phẩm còn hạn-->
+     <div id="sanphamconhan" class="tab-pane fade">
+      
+       <div class="block-title block">
+            <h5>
+                <span>Sản phẩm còn hạn</span>
+            </h5>
+        </div>
+        <div class="col-lg-12 col-md-12 collection_container list-items">
+            <table width="100%">
+                <tbody>
+                <tr >
+                    <th colspan="2">Mô tả sản phẩm</th>
+                    <th> Giá hiện tại </th>
+                    <th> Giá mua ngay </th>
+                    <th> Số lượt ra giá hiện tại </th>
+                    <th> Thời gian còn lại</th>
+                </tr>
+                <!--sản phẩm 1-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                      <p>&nbsp;</p>
+                      Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
+                    </td>
+                    <td>  
+                            15.000.000đ     
+                    </td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 2-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 3-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 4-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 5-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 12.000.000đ</td>
+                    <td> <span> - </span></td>
+                    <td> 20 </td>
+                    <td> 5 ngày <br/> 2:30:20
+                        <p class="btn_see">
+                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
+                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                Xem chi tiết</a>
+                        </p>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 col-md-12 menu">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+            <!-- sản phẩm đã có người mua -->
+    <div id="sanphamconguoimua" class="tab-pane fade">
+      
+       <div class="block-title block">
+            <h5>
+                <span>Sản phẩm có người mua</span>
+            </h5>
+        </div>
+        <div class="col-lg-12 col-md-12 collection_container list-items">
+            <table width="100%">
+                <tbody>
+                <tr >
+                    <th colspan="2">Mô tả sản phẩm</th>
+                    <th> Giá bán </th>
+                    <th> Người mua</th>
+                </tr>
+                <!--sản phẩm 1-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                     
+                    </td>
+                    <td>  
+                      <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>   
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 2-->
+                                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                     
+                    </td>
+                    <td>  
+                      <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>   
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 3-->
+                               <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                     
+                    </td>
+                    <td>  
+                      <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>   
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 4-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                     
+                    </td>
+                    <td>  
+                      <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>   
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+                <!--sản phẩm 5-->
+                <tr>
+                    <td class="mota" style="text-align: center">
+                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
+                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
+                        </a>
+                    </td>
+                    <td class="mota">
+                        <div class="item_loop_list_title fs15">
+                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
+                        </div>
+                        <div class="product-seller">
+                            <p> Người bán:
+                                <a href="#">tranvanphong1004@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="product-sub">
+                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
+                        </div>
+                    </td>
+                    <td> 
+                      12.000.000đ
+                     
+                    </td>
+                    <td>  
+                      <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>   
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="6" class="border-under">
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 col-md-12 menu">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="dangban" class="tab-pane fade">
+
+
 
     </div>
 
 
 
+</div>
 
-
-
-
-
-
-
-
-
-
-
+</div>
 
   </div>  <!-- của container -->
+
+
   <footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="footer">
     <div class="container">
