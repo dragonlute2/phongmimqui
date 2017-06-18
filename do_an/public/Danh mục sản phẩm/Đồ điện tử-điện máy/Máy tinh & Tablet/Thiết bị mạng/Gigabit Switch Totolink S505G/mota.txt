@@ -1,0 +1,2 @@
+5 ports 10/100/1000Mbps, Auto negotiation (MDI/MDIX)
+Giá:645.000.000 VND

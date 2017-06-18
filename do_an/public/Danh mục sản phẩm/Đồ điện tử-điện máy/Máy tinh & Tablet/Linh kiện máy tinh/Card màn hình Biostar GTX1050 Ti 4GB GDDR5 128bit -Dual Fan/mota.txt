@@ -1,0 +1,10 @@
+ NVIDIA GeForce GTX1050Ti GPU
+- 4GB GDDR5, 128bit, dual fan design
+- NVIDIA super 768 CUDA processing
+- DVI/display port/HDMI output support
+- PCI Express 3.0 x16 bus interface
+- Support NVIDIA PuroVideo HD Technology
+- Complete DirectX 12 support
+- Support NVIDIA PhyX and CUDA Technology
+
+Gia:4.150.000 VND

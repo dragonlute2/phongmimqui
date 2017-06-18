@@ -1,0 +1,42 @@
+﻿Mainboard GIGABYTE™ H61M
+. Chipset Intel® H61
+. DDR3 1333/1066/800 MHz
+Gia1.039.000 VND
+
+-DS2 V 5.0
+CPU hỗ trợ
+Support for Intel® Core™ i7 processors/Intel® Core™ i5 processors/ Intel® Core™ i3 processors/Intel® Pentium® processors/Intel® Celeron® processors in the LGA1155 package
+Chipset
+Intel® H61
+Bộ nhớ trong
+2 x DDR3 1333/1066/800 MHz, Un
+-buffered Memory up to 16GB
+Duad Channel Memory Architecture
+VGA onboard
+Integrated Graphics Processor
+- Intel® HD Graphics support
+Multi
+-VGA output
+Âm thanh
+Realtek ALC887 audio codec
+High Definition Audio
+2/4/5.1/7.1
+-channel
+Mạng
+Intel®, 1 x Gigabit LAN Controller(s)
+Khe mở rộng
+1 x PCI Express x16 slot, running at x16
+(The PCI Express x16 slot conforms to PCI Express 3.0 standard.)
+* Whether PCI Express 3.0 is supported depends on CPU and graphics card compatibility.
+2 x PCI Express x1 slots
+Chuẩn lưu trữ
+4 x SATA 3Gb/s connectors supporting up to 4 SATA 3Gb/s devices
+Cổng giao tiếp trước và sau
+1 x PS/2 keyboard port
+1 x PS/2 mouse port
+1 x D-Sub port
+1 x parallel port
+1 x serial port
+4 x USB 2.0/1.1 ports
+1 x RJ-45 port
+3 x audio jacks (Line In, Line Out, Microphone)

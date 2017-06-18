@@ -1,0 +1,5 @@
+﻿Loại bộ nhớ: DDR4
+Dung lượng: 16GB (2x8GB)
+Tốc độ bus: 3000
+Tản nhiệt: Ripjaws4 Blue
+Giá:3.662.500 VND

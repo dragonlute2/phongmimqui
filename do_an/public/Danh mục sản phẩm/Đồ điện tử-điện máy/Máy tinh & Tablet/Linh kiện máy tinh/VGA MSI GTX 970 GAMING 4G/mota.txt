@@ -1,0 +1,16 @@
+﻿Chipset NVIDIA Geforce® GTX 970
+Chuẩn giao tiếp PCI Express x16 3.0
+Core clock 1279 MHz / 1140 MHz (OC Mode); 1253 MHz / 1114 MHz (Gaming Mode); 1178 MHz / 1051 MHz (Silent Mode)
+Bộ nhớ 4096MB GDDR5
+Băng thông 256-bit
+Memory clock 7010 MHz
+Cổng giao tiếp 1 x Dual-link DVI-I, 1 x Dual-link DVI-D, 1 x HDMI (v1.4a), 1 x DisplayPort (v1.2)
+OpenGL 4.4
+Multi View 4
+Điện áp tiêu thụ 145W
+Power requirement 500W (1 x 8-pin, 1 x 6-pin nguồn phụ)
+Quạt tản nhiệt Tản nhiệt khí với 2 quạt
+Kích thước 277 x 140 x 35 mm
+
+Chipset NVIDIA Geforce® GTX 970Chuẩn giao tiếp PCI Express x16 3.0Core clock 1279 MHz / 1140 MHz (OC Mode); 1253 MHz / 1114 MHz (Gaming Mode); 1178 MHz / 1051 MHz (Silent Mode)Bộ nhớ 4096MB GDDR5Băng thông 256-bitMemory clock 7010 MHzCổng giao tiếp 1 x Dual-link DVI-I, 1 x Dual-link DVI-D, 1 x HDMI (v1.4a), 1 x DisplayPort (v1.2)OpenGL 4.4Multi View 4Điện áp tiêu thụ 145WPower requirement 500W (1 x 8-pin, 1 x 6-pin nguồn phụ)Quạt tản nhiệt Tản nhiệt khí với 2 quạtKích thước 277 x 140 x 35 mm
+Giá:9.060.000 VND

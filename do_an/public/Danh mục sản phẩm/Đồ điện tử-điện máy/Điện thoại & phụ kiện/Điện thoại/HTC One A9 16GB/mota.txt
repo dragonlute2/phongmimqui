@@ -1,0 +1,14 @@
+﻿Màn hình:AMOLED 16 triệu màu, 5.0", 1080 x 1920 pixels
+Camera sau:13 MP, Quay phim FullHD 1080p@30fps
+Camera trước:4 Ultra pixel
+Hệ điều hành:Android 6.0 (Marshmallow)
+CPU:Qualcomm Snapdragon 617, 8 nhân, 1.5 GHz
+Chip đồ hoạ:Adreno 405
+RAM:2 GB
+Bộ nhớ trong:16 GB
+Hỗ trợ thẻ tối đa:2 TB
+Số khe SIM:1 Sim, Nano SIM
+Dung lượng pin:2150 mAh
+Kết nối:Wi-Fi hotspot, Wi-Fi 802.11 a/b/g/n/ac, Dual-band
+
+Giá: 11.390.000 VND

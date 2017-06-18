@@ -1,0 +1,30 @@
+﻿Kích cỡ màn hình: Super LCD5; 5.2" Quad HD 1440 x 2560 pixels (~565 ppi); Corning Gorilla Glass 4
+Bộ nhớ trong: 32 GB
+RAM: 4 GB
+Khe cắm thẻ nhớ: Hỗ trợ thẻ nhớ MicroSD lên đến 2 TB
+Camera chính: 12MP 
+Camera phụ: 5MP
+Hệ điều hành: Android™ 6 với HTC Sense
+Bộ xử lý: Lõi tứ; 64bit; xung nhịp lên đến 2.2GHz
+Chipset: Qualcomm® Snapdragon™ 820; GPU: Adreno 530
+Pin chuẩn: Li-Ion 3000mAh
+1. THIẾT KẾ:
++ Với thiết kế đã trở nên nhàm chán của dòng sản phẩm cao cấp “One-Series” trong suốt 3 năm qua. HTC sẽ thổi một làn gió mới vào thiết kế mẫu sản phẩm chủ lực One M10 sắp được tung ra trong thời gian tới đây.
++ Được biết, máy được thiết kế kính – kim loại thừa hưởng thiết kế dòng sản phẩm One A9 với vóc dáng mảnh mai và các góc cạnh cũng được bo cong mềm mại hơn. Nhằm tạo ra điểm nhấn, các cạnh mặt sau của One M10 đều sẽ được vát bằng cắt kim cương sắc nét.
++ Yếu tố cấp tiến nhất trên 10 chính là mặt sau được vát cong để cầm vừa tay. Thứ bạn không thể thấy trên 10 chính là cặp loa phía trước đặc trưng của HTC. Thay vào đó, 10 có loa tweeter ở và loa woofer đặt ở cạnh đáy thiết bị, mỗi loa lại có bộ khuếch đại riêng. Âm thanh phát ra từ 10 lớn, chất lượng, cạnh tranh được với các máy khác. Ngoài ra, HTC còn phát triển ứng dụng riêng cho phép bạn tùy biến đầu ra đến tai và tai nghe cụ thể.
+2. MÀN HÌNH:
+Màn hình Quad HD 5.2 inch sáng và sắc nét. 10 còn có máy quét vân tay đặt dưới màn hình để mở khóa cũng như xác thực, các nút bấm khác như âm lượng, nút nguồn, cảm ứng điện dung đều hoạt động tốt như bạn mong đợi.
+3. CẤU HÌNH:
++ Về cấu hình, One M10 chắc chắn sẽ được cung cấp những thông số mạnh mẽ nhất hiện tại. Bên trong của HTC 10 quen thuộc với bất kỳ ai đang dùng điện thoại cao cấp: chip Snapdragon 820, RAM 4GB, bộ nhớ 32GB có thể mở rộng qua thẻ nhớ microSD. Đặc biệt, camera mặt sau của máy sẽ được cải tiến cực kỳ mạnh mẽ với độ phân giải 12MP theo công nghệ Ultrapixel. Camera trước cũng hỗ trợ Ultrapixel nhưng độ phân giải kém hơn với 5MP.
++ Ngoài ra, cảm biến nhận diện vân tay, giao diện Sense 8.0 được tối ưu và mượt mà hơn. Nó là thiết bị nhanh và nhạy: các ứng dụng mở nhanh chóng, không có độ trễ đáng kể. HTC tiết lộ đã tối ưu hóa cả phần cứng lẫn phần mềm để cải thiện phản hồi chạm, hiệu suất thực tế của máy chứng tỏ nỗ lực của HTC đã được đền đáp.
+4. PHẦN MỀM:
++ Có lẽ phần ấn tượng nhất của 10 đến từ phần mềm. Khi các model cũ của HTC thường bị than phiền vì các ứng dụng giống nhau, giao diện nặng nề, kỳ lạ, 10 lại chỉ dùng 1 trình duyệt, 1 ứng dụng lịch, 1 ứng dụng nhạc… HTC nỗ lực thiết kế ứng dụng riêng theo ngôn ngữ thiết kế Material Design của Google.
++ HTC tùy biến giao diện nhiều để không thể bị phân biệt với các phiênbản Android khác mà Google đang cài trên Nexus. Nó dễ nhìn, dễ dùng và bạn đang dùng Nexus rồi chuyển sang 10, bạn sẽ không hề bị bỡ ngỡ mà dễ chịu hơn nhiều. Chúng khiến trải nghiệm 10 trở nên thống nhất hơn mọi điện thoại Android khác. Sự tuân thủ triệt để hướng dẫn của Google của HTC làm cho người dùng không có cảm giác đang sử dụng phần mềm do hai nhóm khác nhau phát triển khi luân chuyển giữa các ứng dụng.
++ Nếu muốn tùy chỉnh giao diện, tính năng chủ đề của HTC đã được mở rộng với sticker và phong cách tự do, cho phép bạn đặt các widget và shortcut vào bất kỳ đâu trên màn hình thay vì bị giới hạn trong một lưới.
+6. CAMERA:
++ Camera trên 10 cũng là một tính năng quen thuộc. Máy dùng cảm biến 12MP, ống kính f/1.8, lấy nét tự động laser và chống rung quang học. Đây là camera ấn tượng nhất, hiệu quả nhất mà HTC từng có và cũng chụp được những tấm ảnh sắc nét.
++ Máy ảnh trước trên 10 cũng được nâng cấp rõ rệt bằng ống kính chống rung quang học, lần đầu tiên có mặt trên smartphone. Nó chụp ảnh selfie và quay phim rõ nét rong điều kiện ánh sáng yếu, là ưu điểm trong thời đại nhà nhà người người “tự sướng” như hiện nay.
+5. PIN:
+Cũng theo HTC, hãng đã làm việc chăm chỉ để kéo dài thời gian sử dụng pin trên 10, không gặp khó khăn gì khi sống qua 1 ngày hết công suất. 10 không có sạc không dây nhưng thỏi pin 3.000mAh có thể sạc rất nhanh qua cổng USB Type-C. HTC khẳng định 10 có thể dùng tối đa 2 ngày nhưng nếu bạn là người dùng điện thoại rất nhiều, thời gian này chắc chắn khó đạt được.
+
+Giá: 13.490.000 VND

@@ -1,0 +1,3 @@
+﻿Giá:5.299.000 VND
+
+Mô tả chi tiết Hãng sản xuất Galax Chủng loại VGA Galax GeForce GTX 1050 Ti 4G EXOC GPU GeForce GTX 1050 Chuẩn giao tiếp Bus Support PCI-E 3.0 Bộ nhớ VGA 4096MB / GDDR5 Băng thông 128-bit GPU Engine Specs: Base Clock (MHz) 1354 Boost Clock (MHz) 1468 Cổng giao tiếp HDCP: Yes HDMI: Yes Standard Display Connectors DP 1.4, HDMI 2.0b, Dual Link-DVI Standard Graphics Card Dimensions: Power Connector Maximum Graphics Card Power (W) 75W Minimum System Power Requirement (W) 300W Quạt tản nhiệt 2 Quạt	
