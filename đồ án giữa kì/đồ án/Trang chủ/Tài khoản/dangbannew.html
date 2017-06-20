@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>
-     Thông tin cá nhân
+     Đăng bán sản phẩm
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="../../public/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
@@ -19,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="../../public/CSS/thongtincanhan.css"/>
     <link rel="stylesheet" type="text/css" href="../../public/CSS/nhomsanpham.css"/>
     <link rel="stylesheet" type="text/css" href="../../public/CSS/sanphamyeuthich.css"/>
-    <link rel="stylesheet" type="text/css" href="../../public/CSS/danhgianhanxetcomment.css"/>
     <link rel="stylesheet" type="text/css" href="../../public/CSS/danhgia.css"/>
     <link rel="stylesheet" type="text/css" href="../../public/CSS/thaydoithongtincanhan.css"/>
 
@@ -760,16 +759,17 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu ">
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Chi tiết đánh giá</a></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Đổi mật khẩu</a></li>
+                                 <li><a href="thongtincanhan-active.html"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
+                                <li><a href="chitietdanhgia-active.html"><span class="fa fa-angle-right"> </span> &nbsp Chi tiết đánh giá</a></li>
+                                <li><a href="../Đăng nhập/doimatkhau.html"><span class="fa fa-angle-right"> </span> &nbsp Đổi mật khẩu</a></li>
                                 <li role="presentation" class="divider"></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đang đấu giá</a></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đấu giá thắng</a></li>
+                                <li><a href="sanphamdaugia-active.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đang đấu giá</a></li>
+                                <li><a href="sanphamyeuthich-active.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
+                                <li><a href="sanphamdaugiathang-active.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đấu giá thắng</a></li>
                                 <li role="presentation" class="divider"></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm được đấu giá</a></li>
-                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm có người mua</a></li>
+                                <li><a href="sanphamconhan-active.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm còn hạn</a></li>
+                                <li><a href="sanphamconguoimua-active.html"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm có người mua</a></li>
+
 
                             </ul>
             </div>
@@ -826,10 +826,9 @@
                   <span>Bán</span>
               </h5>
           </div>
-              <li><a data-toggle="pill" href="dangbannew.html"> Đăng bán </a></li>
-              <li><a data-toggle="pill" href="sanphamconhan.html"> Sản phẩm còn hạn </a></li>
+              <li class="active"><a data-toggle="pill" href="dangbannew.html"> Đăng bán </a></li>
+              <li><a data-toggle="pill" href="sanphamconhannew.html"> Sản phẩm còn hạn </a></li>
               <li><a data-toggle="pill" href="sanphamconguoimuanew.html"> Sản phẩm có người mua </a></li>
-             
           </ul>
       </div>
 
@@ -843,54 +842,90 @@
 
 
 
-<div class="tab-content">
+
+<!-- đăng bán -->
+<div id="dangban" class="tab-pane fade in active">
+    
 
 
-<div id="thaydoithongtincanhan" class="tab-pane fade in active">
+<div class="row">
 
-   <div class="row">
-
-
-      <div class="col-md-offset-1">
-
+ <div class="col-md-offset-1">
         <div id="demo" class="content">
+
           <form accept-charset="UTF-8" action="#" id="customer_login" name="customer_login" method="post" onsubmit="return valid();">
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-            <h2 class="fw_600 txt_u hidden-sm-down" ><b>Thay đổi thông tin cá nhân</b></h2>   
+            <h2 class="fw_600 txt_u hidden-sm-down" ><b>Đăng bán sản phẩm</b></h2>   
           </form>
+
+
 
   
         </div>
         <p>&nbsp;</p>
 
-        <ul class="form-list">
-          <li>
-                                <label for="id">Nhập mật khẩu xác nhận</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="">
-                            </li>
 
-                            <li>
-                                <label for="id">Họ tên</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="Trương Phan Quí">
-                            </li>
+<h3>Chọn loại sản phẩm<span class="required">*</span></h3>
+    <div class="row">
+        <div class="form-group form-group-multiple-selectsp col-md-8" style="width: 74.5%">
+                <select class="form-control" name="values[]">
+                    <option value="">Select one</option>
+                    <option value="1">Thời trang</option>
+                    <option value="2">Đồng hồ-Trang sức</option>
+                    <option value="3">Đồ điện tử</option>
+                    <option value="4">Sức khỏe và làm đẹp</option>
+                    <option value="5">Máy tính và DTDĐ</option>
+                    <option value="6">Nhà cửa và đời sống</option>
+                    <option value="7">Đồ thể thao</option>
+                    <option value="8">Giải trí và sở thích</option>
+                    <option value="9">Đồ thể thao</option>
+                    <option value="10">Đồ cổ và đồ sưu tập</option>
+                </select>
+      </div>
+    </div>
+
+    <h3>Tên sản phẩm<span class="required">*</span></h3>
+        <div class="form-group form-group-optionsp" >
+          <input type="text" name="optionp[]" class="form-control" placeholder="Nhập tên sản phẩm" style="width: 577" >
+      
+    </div>
 
 
-                            <li>
-                                <label for="id">Email</label>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="ninatabala@gmail.com">
-                            </li>
-                            <li>
-                                <label for="id">Ngày sinh</label>
-                                
-                                <div class="row">
-                                  <div class="col-md-3">
-           <!-- ngày -->
-          <div class="dob-day">
+
+<h3>Giá khởi điểm<span class="required">*</span></h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-5">
+          <input type="text" name="optionp[]" class="form-control" placeholder="Nhập giá">
+      </div>
+
+      <div class="col-xs-2">
+           <h3>VND</h3>
+        </div>
+    </div>
+
+
+<h3>Giá mua ngay<span class="required">*</span></h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-5">
+          <input type="text" name="optionp[]" class="form-control" placeholder="Nhập giá">
+      </div>
+
+      <div class="col-xs-2">
+           <h3>VND</h3>
+        </div>
+    </div>
+
+
+
+ <h3>Thời gian đăng<span class="required">*</span></h3>
+    <div class="row">
+      <div class="col-md-3">
+ <div class="dob-day">
                   <select class="required-entry" name="day" id="day" aria-required="true">
-                      <option value="">Chọn ngày</option>
+                      <option value="" selected="">Chọn ngày</option>
                                                               <option value="01">Ngày 01</option>
                                                               <option value="02">Ngày 02</option>
                                                               <option value="03">Ngày 03</option>
@@ -900,7 +935,7 @@
                                                               <option value="07">Ngày 07</option>
                                                               <option value="08">Ngày 08</option>
                                                               <option value="09">Ngày 09</option>
-                                                              <option value="10" selected="">Ngày 10</option>
+                                                              <option value="10">Ngày 10</option>
                                                               <option value="11">Ngày 11</option>
                                                               <option value="12">Ngày 12</option>
                                                               <option value="13">Ngày 13</option>
@@ -925,18 +960,17 @@
                                   </select>
           </div>
 
+      </div>
 
-                                  </div>
-
-<div class="col-md-3">
- <!-- tháng -->
+      <div class="col-md-3">
+<!-- tháng -->
     <div class="dob-month">
             <select class="required-entry" name="month" id="month" aria-required="true">
-                <option value="">Chọn tháng</option>
+                <option value="" selected="">Chọn tháng</option>
                                                         <option value="01">Tháng 01</option>
                                                         <option value="02">Tháng 02</option>
                                                         <option value="03">Tháng 03</option>
-                                                        <option value="04" selected="">Tháng 04</option>
+                                                        <option value="04" >Tháng 04</option>
                                                         <option value="05">Tháng 05</option>
                                                         <option value="06">Tháng 06</option>
                                                         <option value="07">Tháng 07</option>
@@ -947,13 +981,13 @@
                                                         <option value="12">Tháng 12</option>
                             </select>
         </div>
-</div>
+      </div>
 
 <div class="col-md-3">
    <!-- năm -->
 <div class="dob-year">
                         <select class="required-entry" name="year" id="year" aria-required="true">
-                           <option value="">Chọn năm</option>
+                           <option value="" selected="">Chọn năm</option>
                                     <option value="2017">Năm 2017</option>
                                     <option value="2016">Năm 2016</option>
                                     <option value="2015">Năm 2015</option>
@@ -976,7 +1010,7 @@
                                     <option value="1998">Năm 1998</option>
                                     <option value="1997">Năm 1997</option>
                                     <option value="1996">Năm 1996</option>
-                                    <option value="1995" selected="">Năm 1995</option>
+                                    <option value="1995">Năm 1995</option>
                                     <option value="1994">Năm 1994</option>
                                     <option value="1993">Năm 1993</option>
                                     <option value="1992">Năm 1992</option>
@@ -1022,69 +1056,54 @@
 
                                 </div>
 
-                                </div>
-
-                            </li>
-                             <li>
-                                <label for="id">Giới tính</label>
-
-                                  <div class="dob-day">
-                                  <select class="required-entry" name="day" id="day" aria-required="true">
-                                      <option value="01" selected="">Nam</option>
-                                      <option value="02">Nữ</option>
-                                  </select>
-                              </div>
-                            </li>
-
-                             <li>
-
-                                <div class="row">
-                                  <div class="col-md-3">
-                                      <label for="id">Số điện thoại di động</label>
-                                      <br>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="01227890490">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <label for="id">Số điện thoại khác</label>
-                                    <br>
-                                <input type="text" class="input-text" title="id" name="id" id="id" required="" value="08 186811866">
-                                  </div>
-                                </div>
-                            </li>
-                            <li>
-                              <label for="id">Địa chỉ liên hệ</label>
-                              <form>
-                                <div class="form-group">
-                                  <textarea class="form-control" rows="5" id="comment">TP HCM</textarea>
-                                </div>
-                              </form>
 
 
+    </div>
 
 
-<br>
-
-
-
-
-
-
-
-
-
-
-                            </li>
-        </ul>
- <div class="buttons-set">
-                            <input id="reset" type="submit" class="button login login_sign" value="Lưu" style="font-weight: bold;"></input>  
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-                            <button id="trolai" type="button" class="button login login_sign" ><span>Hủy</span></button>
-                        </div>
+ <h3>Mô tả chi tiết sản phẩm<span class="required">*</span></h3>
+    <div class="row">
+        <div class="form-group form-group-optionsp col-md-10">
+        <div class="input-group input-group-optionp col-md-8">
+          <!-- <input type="text" name="optionp[]" class="form-control" placeholder="Mô tả"> -->
+        
+          <textarea width="171px" height="455px" class="required ui-inputText" placeholder="Nhập mô tả tại đây" name="RatingForm[comment]" id="RatingForm_comment" style="width: 583px; height: 216px;"></textarea>
         </div>
 
+      </div>
+    </div>
 
 
+
+
+<div class="row">
+  <div class="col-md-4" style="width: 44.333333%">
+    <div class="imageupload panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left"><font style="color: black">Upload Image</font></h3>
+                    <div class="btn-group pull-right">
+                       <button type="button" class="btn btn-default active">From computer</button> 
+                    </div>
+                </div>
+                <div class="file-tab panel-body">
+                    <label class="btn btn-default btn-file">
+                        <span>Browse</span>
+                        <!-- The file is stored here. -->
+                        <input type="file" name="image-file">
+                    </label>
+                    <!-- <button type="button" class="btn btn-default">Remove</button> -->
+                </div>
+               
   </div>
+  </div>
+
+</div>
+
+
+
+ </div>
+
+
 
 
 </div>
@@ -1095,6 +1114,79 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+ <div class="buttons-set">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+
+
+                       
+
+                                <button id="send2" value="Đăng ký" type="submit" class="button login login_sign"><span>Đăng bán</span></button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <button id="trolai" value="Trợ lại" type="button" class="button login login_sign"><span>&nbsp;&nbsp;&nbsp;Hủy &nbsp;&nbsp;&nbsp;</span></button>        
+                            </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  
+
+  
+  
 
 
 
