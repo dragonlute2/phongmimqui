@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-06-10 21:20:53
+Date: 2017-06-20 15:42:50
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,14 +41,14 @@ CREATE TABLE `chitietdaugia` (
 -- ----------------------------
 DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment` (
-  `idCOMMENT` int(11) NOT NULL AUTO_INCREMENT,
   `idnguoicomment` int(11) NOT NULL,
   `noidungcomment` varchar(300) DEFAULT NULL,
   `idnguoiduocomment` int(11) NOT NULL,
   `diemdanhgia` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idCOMMENT`,`idnguoicomment`),
   KEY `fk_COMMENT_USER1_idx` (`idnguoicomment`) USING BTREE,
-  CONSTRAINT `fk_COMMENT_USER1` FOREIGN KEY (`idnguoicomment`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_COMMENT_USER2` (`idnguoiduocomment`),
+  CONSTRAINT `fk_COMMENT_USER1` FOREIGN KEY (`idnguoicomment`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_COMMENT_USER2` FOREIGN KEY (`idnguoiduocomment`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -193,6 +193,23 @@ INSERT INTO `loaisanpham3` VALUES ('230025', 'Máy lọc nước', '22006');
 INSERT INTO `loaisanpham3` VALUES ('230026', 'Thiết bị gia nhiệt nước', '22006');
 
 -- ----------------------------
+-- Table structure for nguoichan
+-- ----------------------------
+DROP TABLE IF EXISTS `nguoichan`;
+CREATE TABLE `nguoichan` (
+  `idNguoichan` int(11) DEFAULT NULL,
+  `idSanpham` int(11) DEFAULT NULL,
+  KEY `fk_CHANNGUOI_USER` (`idNguoichan`),
+  KEY `fk_CHANNGUOI_SANPHAM` (`idSanpham`),
+  CONSTRAINT `fk_CHANNGUOI_SANPHAM` FOREIGN KEY (`idSanpham`) REFERENCES `sanpham` (`idSANPHAM`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_CHANNGUOI_USER` FOREIGN KEY (`idNguoichan`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of nguoichan
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for sanpham
 -- ----------------------------
 DROP TABLE IF EXISTS `sanpham`;
@@ -210,14 +227,12 @@ CREATE TABLE `sanpham` (
   `thoigiankethuc` datetime DEFAULT NULL,
   `idnguoithang` int(11) NOT NULL,
   `buocgia` float DEFAULT NULL,
-  `idnguoichan` int(11) NOT NULL,
-  PRIMARY KEY (`idSANPHAM`,`LOAISANPHAM3_idLOAISP3`,`idnguoiban`,`idnguoithang`,`idnguoichan`),
+  PRIMARY KEY (`idSANPHAM`,`LOAISANPHAM3_idLOAISP3`,`idnguoiban`,`idnguoithang`),
   KEY `fk_SANPHAM_USER1_idx` (`idnguoiban`) USING BTREE,
   KEY `fk_SANPHAM_USER2_idx` (`idnguoithang`) USING BTREE,
-  KEY `fk_NguoiChan` (`idnguoichan`),
   KEY `fk_SanphamLoai3` (`LOAISANPHAM3_idLOAISP3`),
+  KEY `idSANPHAM` (`idSANPHAM`),
   CONSTRAINT `fk_SanphamLoai3` FOREIGN KEY (`LOAISANPHAM3_idLOAISP3`) REFERENCES `loaisanpham3` (`idLOAISP3`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_NguoiChan` FOREIGN KEY (`idnguoichan`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_SANPHAM_USER1` FOREIGN KEY (`idnguoiban`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_SANPHAM_USER2` FOREIGN KEY (`idnguoithang`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -234,6 +249,8 @@ CREATE TABLE `sanphamconguoimua` (
   `USER_idUSER` int(11) NOT NULL,
   `idsanpham` int(11) NOT NULL,
   KEY `fk_SANPHAMCONGUOIMUA_USER1_idx` (`USER_idUSER`),
+  KEY `fk_SANPHAMCONGUOIMUA_SANPHAM` (`idsanpham`),
+  CONSTRAINT `fk_SANPHAMCONGUOIMUA_SANPHAM` FOREIGN KEY (`idsanpham`) REFERENCES `sanpham` (`idSANPHAM`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_SANPHAMCONGUOIMUA_USER1` FOREIGN KEY (`USER_idUSER`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -249,6 +266,8 @@ CREATE TABLE `sanphamyeuthich` (
   `USER_idUSER` int(11) NOT NULL,
   `idsanpham` int(11) NOT NULL,
   KEY `fk_SANPHAMYEUTHICH_USER_idx` (`USER_idUSER`),
+  KEY `fk_SANPHAMYEUTHICH_SANPHAM` (`idsanpham`),
+  CONSTRAINT `fk_SANPHAMYEUTHICH_SANPHAM` FOREIGN KEY (`idsanpham`) REFERENCES `sanpham` (`idSANPHAM`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_SANPHAMYEUTHICH_USER` FOREIGN KEY (`USER_idUSER`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

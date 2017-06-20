@@ -917,10 +917,10 @@
         </div>
     <div class="container">
             <div class="row">
-                <h3 class="fw_600 txt_u" style="font-weight: bold;margin-left: 20px;font-size:18px;font-family: Arial">QUẢN LÝ DANH SÁCH YÊU Cầu </h3>
+                <h3 class="fw_600 txt_u" style="font-weight: bold;margin-left: 20px;font-size:18px;font-family: Arial">QUẢN LÝ DANH SÁCH YÊU CẦU </h3>
             </div>
             <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                   <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -936,42 +936,50 @@
                         <td>herodragon120</td>
                         <td>Trần Thu Trinh</td>
                         <td>05/06/2017 12:35:40 AM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed" style="color: blue">Xem chi tiết</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>phonglutecutevodoi</td>
                         <td>Trần Phong Kute</td>
                         <td>05/06/2017 10:30:40 AM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed" style="color: blue">Xem chi tiết</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>nhocxinh2701</td>
                         <td>Nguyen Minh</td>
                         <td>01/06/2017 13:23:54 PM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed" style="color: blue">Xem chi tiết</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>bigterboykute</td>
                         <td>Quý Trương</td>
                         <td>31/05/2017 18:13:23 PM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapseOne" class="collapsed" style="color: blue" id="chitiet">Xem chi tiết</a>
+                    </td>
+
+      <td><button type="button" class="btn btn-danger">Duyệt</button> </td>
+     <td><button type="button" class="btn btn-danger">Từ chối</button></td> 
+                    
+                        
+                    </tr>
+                    <tr id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>xxzkutexxz</td>
                         <td>Lê Ngân</td>
                         <td>23/05/2017 09:43:07 AM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: blue">Xem chi tiết</a></td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>kighagh</td>
                         <td>Nguyên Ài</td>
                         <td>21/05/2017 08:23:54 AM </td>
-                        <td><a href="chitietyeucau.html" style="color: blue">Xem chi tiết </a></td>
+                        <td><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: blue">Xem chi tiết</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -1067,6 +1075,17 @@
             });
 
         </script>
+    <script type="text/javascript">
+        $('#collapse3').on('show.bs.collapse',function(){
+            var span='<td colspan="5"> asdad</td>'
+            $('#collapse3').html(span);
+            $('#chitiet').html('Ẩn chi tiết');
+        })
+        $('#collapse3').on('hide.bs.collapse',function(){
+            $('#collapse3').html('');
+            $('#chitiet').html('Xem chi tiết');
+        })
+    </script>
 
     </body>
     </html>
