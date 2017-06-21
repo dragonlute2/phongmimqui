@@ -9,9 +9,10 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link rel="stylesheet" type="text/css" href="../../public/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
  <link rel="stylesheet" type="text/css" href="../../public/assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
-
  <link rel="stylesheet" type="text/css" href="../../public/CSS/style.css">
+ <link rel="stylesheet" type="text/css" href="../../public/CSS/bootstrap-datepicker3.css">
  <link rel="stylesheet" type="text/css" href="../../public/CSS/home.css"/>
+
  
 </head>
 <body>
@@ -933,6 +934,12 @@
                                     <label for="firstname">Họ và tên<span class="required">*</span></label>
                                     <input type="text" value="" class="input-text" title="Họ tên" name="firstname" id="firstname" required="" requiredmsg="Nhập Họ tên">
                                 </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="Gioitinh">Giới tính<span class="required">*</span></label>
+                                    <select class="form-control" name="gioitinh">
+                                       <option value="1">Nam</option>
+                                       <option value="2">Nữ</option>                                    </select>
+                                </div>
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="pass">Mật khẩu<span class="required hidden-sm-down">*</span></label>
@@ -944,8 +951,15 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="cmnd">Email<span class="required">*</span></label>
-                                    <input type="text" value="" class="input-text" title="Email" name="email" id="email" required="" requiredmsg="Nhập số CMND">
+                                    <input type="text" value="" id="email" class="input-text" title="Nhập Email" name="email" required="" requiredmsg=""> 
                                 </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
+                                    <label for="ngyasinh">Ngày sinh<span></span></label>
+                                    <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy"> <input class="form-control" readonly="" type="text" id="datepicker"> <span id="datepicker" class="input-group-addon" style="cursor: pointer;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                                    </div>
+                                </div>
+
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile">
                                     <label for="mobile">Số điện thoại<span class="required"></span></label>
                                     <input type="text" value="" class="input-text" title="Sồ Điện thoại" name="sdt" id="sdt" required="" requiredmsg="Nhập số điện thoại">
@@ -1029,6 +1043,7 @@
     
     <script type="text/javascript" src="../../public/assests/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="../../public/assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../public/JS/bootstrap-datepicker.min.js"></script>
      <script>
         $(document).ready(function() {
             $('#showmenu').click(function() {
@@ -1044,34 +1059,14 @@
 
     </script>
 
-    <script>
-    function valid()
-    {
-        var errors=false;
-        var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
-        if(document.customer_register.password.value!=document.customer_register.password_confirmation.value)
-        {
-            alert('Mật khẩu nhập lại không chính xác');
-            errors=true;
-            return false;   
-        }
-        if(reg_mail.test(document.customer_register.email.value)==false){
-            alert('Email không hợp lệ (ví dụ: example@gmail.com)');
-            errors=true;
-            return false;
-        }
-        if(isNaN(document.customer_register.sdt.value)==true)
-        {
-            alert('Số điện thoại phải là số');
-            errors=true;
-            return false;
-        }
-        if(errors==false)
-        {
-            alert('Đăng ký thành công');
-        }
-        return true;
-    }
+    <script type="text/javascript">
+$(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+
     </script>
 </body>
 </html>
