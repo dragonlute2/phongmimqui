@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-06-21 14:30:28
+Date: 2017-06-21 14:33:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -299,6 +299,7 @@ CREATE TABLE `nguoichan` (
 DROP TABLE IF EXISTS `sanpham`;
 CREATE TABLE `sanpham` (
   `idSANPHAM` int(11) NOT NULL AUTO_INCREMENT,
+  `LOAISANPHAM2_idLOAISP2` int(11) DEFAULT NULL,
   `LOAISANPHAM3_idLOAISP3` int(11) NOT NULL,
   `tensanpham` varchar(50) DEFAULT NULL,
   `motasanphamngangon` varchar(100) DEFAULT NULL,
@@ -311,7 +312,6 @@ CREATE TABLE `sanpham` (
   `thoigiankethuc` datetime DEFAULT NULL,
   `idnguoithang` int(11) NOT NULL,
   `buocgia` float DEFAULT NULL,
-  `LOAISANPHAM2_idLOAISP2` int(11) DEFAULT NULL,
   PRIMARY KEY (`idSANPHAM`,`LOAISANPHAM3_idLOAISP3`,`idnguoiban`,`idnguoithang`),
   KEY `fk_SANPHAM_USER1_idx` (`idnguoiban`) USING BTREE,
   KEY `fk_SANPHAM_USER2_idx` (`idnguoithang`) USING BTREE,
