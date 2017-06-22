@@ -5,11 +5,8 @@ var express = require('express'),
     morgan = require('morgan'),
     path = require('path'),
     wnumb = require('wnumb'),
-    handleLayout = require('./middle-wares/handleLayout'),
     handle404 = require('./middle-wares/handle-404'),
-    homeController = require('./controllers/homeController'),
-    categoryController = require('./controllers/categoryController'),
-    productController = require('./controllers/productController');
+    index= require('./controllers/indexController');
 
 var app = express();
 
@@ -17,9 +14,6 @@ app.use(morgan('dev'));
 
 app.engine('hbs', handlebars({
     extname: 'hbs',
-    defaultLayout: 'main',
-    layoutsDir: 'views/_layouts/',
-    partialsDir: 'views/_partials/',
     helpers: {
         section: handlebars_sections(),
         number_format: function (n) {
@@ -41,11 +35,8 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.use(handleLayout);
-app.use('/', homeController);
-app.use('/category', categoryController);
-app.use('/product', productController);
+app.use('/', index);
 
-app.use(handle404);
-
-app.listen(3000);
+app.listen(4000,function () {
+    console.log('Ahii');
+});

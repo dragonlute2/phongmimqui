@@ -1,7 +1,7 @@
 {
-  "name": "d12",
+  "name": "DACK",
   "version": "1.0.0",
-  "description": "ptudw-th14 learn node",
+  "description": "DACK",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"

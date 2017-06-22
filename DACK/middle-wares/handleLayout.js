@@ -1,12 +1,12 @@
 var q = require('q'),
-    categoryRepo = require('../models/categoryRepo');
+    index = require('../models/indexRepo');
 
 module.exports = function(req, res, next) {
     q.all([
-    	categoryRepo.loadAll()
+    	index.loadbac1()
 	]).spread(function(cRows) {
 		res.locals.layoutVM = {
-			categories: cRows,
+			bac1: cRows,
 			// suppliers: []
 		};
     	next();
