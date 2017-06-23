@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-06-23 10:52:55
+Date: 2017-06-23 13:17:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,12 +20,10 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `chitietdaugia`;
 CREATE TABLE `chitietdaugia` (
-  `idCHITIETDAUGIA` int(11) NOT NULL AUTO_INCREMENT,
-  `idsanphamdaugia` int(11) NOT NULL,
-  `idnguoidaugia` int(11) NOT NULL,
+  `idsanphamdaugia` int(11) DEFAULT NULL,
+  `idnguoidaugia` int(11) DEFAULT NULL,
   `sotien` float DEFAULT NULL,
   `thoigiandaugia` datetime DEFAULT NULL,
-  PRIMARY KEY (`idCHITIETDAUGIA`,`idsanphamdaugia`),
   KEY `fk_CHITIETDAUGIA_USER1_idx` (`idnguoidaugia`) USING BTREE,
   KEY `fk_CHITIETDAUGIA_SANPHAM1_idx` (`idsanphamdaugia`) USING BTREE,
   CONSTRAINT `fk_CHITIETDAUGIA_SANPHAM1` FOREIGN KEY (`idsanphamdaugia`) REFERENCES `sanpham` (`idSANPHAM`) ON DELETE NO ACTION ON UPDATE NO ACTION,
