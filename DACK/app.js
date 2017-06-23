@@ -6,6 +6,7 @@ var express = require('express'),
     path = require('path'),
     wnumb = require('wnumb'),
     handle404 = require('./middle-wares/handle-404'),
+    handleLayout=require('./middle-wares/handleLayout'),
     index= require('./controllers/indexController'),
     quanlinguoidung=require('./controllers/danhsachnguoidungController'),
     yeucau=require('./controllers/yeucauController'),
@@ -40,7 +41,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
+app.use(handleLayout);
 app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);

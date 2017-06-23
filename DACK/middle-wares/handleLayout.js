@@ -3,12 +3,13 @@ var q = require('q'),
 
 module.exports = function(req, res, next) {
     q.all([
-    	index.loadbac1()
-	]).spread(function(cRows) {
-		res.locals.layoutVM = {
-			bac1: cRows,
-			// suppliers: []
-		};
+    	index.loadbac1(),index.loadbac2(),index.loadbac3()
+	]).spread(function(cRows1,cRows2,cRows3) {
+		res.locals.layoutDM = {
+			bac1: cRows1,
+			bac2:cRows2,
+			bac3:cRows3
+		}
     	next();
     });
 }

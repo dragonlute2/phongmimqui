@@ -21,9 +21,6 @@ r.get('/', function(req, res) {
             bac1: pRow1,
             bac2:pRow2,
             bac3:pRow3
-
-
-
         }
         res.render('index', vm);
         console.log(vm);
