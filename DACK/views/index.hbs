@@ -20,7 +20,6 @@
 
 
 
-
 </head>
 <body id="san-dau-gia-online-HOME" class="cms-index-index cms-home-page">
 <div id="output"></div>
@@ -115,34 +114,37 @@
                         <ul class="site-nav vertical-nav ">
 
                             {{#each bac1}}
-                            <li class="nav-item icon" data-submenu-id="">
-                                <a href="#" alt="" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
+                            <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">
+                                <a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
 
-                                    <span>{{tensanpham}}</span>
+                                    <span class="bac1" id="{{idLOAISANPHAM1}}">{{tensanpham}}</span>
 
                                 </a>
-                                <div class="submenu hidden-md-down" id="thoi-trang">
+                                <div class="submenu hidden-md-down">
                                     <ul class="menu-list-cate2">
-                                        <div class="row row-noGutter">
+                                        <div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">
 
                                             {{#each ../bac2}}
-                                            <div class="col-md-4 text-xs-left">
-                                                <ul class="text-left">
+                                                    <div class="col-md-4 text-xs-left text-left menu-home hidden">
+                                                        <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
 
-                                                    <span><a href="#">{{tensanpham}}</a></span>
-                                                    {{#each ../../bac3}}
-                                                    <li><a href="#">{{tensanpham}}</a></li>
-                                                    {{/each}}
 
-                                                    <li>
-                                                        <a href="#">Xem tất cả
-                                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                                        </a>
-                                                    </li>
+                                                            <span><a href="#">{{tensanpham}}</a></span>
+                                                            {{#each ../../bac3}}
+                                                                <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
 
-                                                </ul>
-                                            </div>
+                                                            {{/each}}
+                                                            <li>
+                                                                <a href="#">Xem tất cả
+                                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                                </a>
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
                                             {{/each}}
+
                                         </div>
                                     </ul>
                                 </div>
@@ -228,7 +230,7 @@
                     <div class="item" id="slide2">
                         <a href="#"  alt="Bộ đồ dùng nhà bếp đẹp 2016">
 
-                            <img src="../public/Images/slide2.jpg">
+                            <img src="../Images/slide2.jpg">
                         </a>
                     </div>
                     <!-- Slide 3-->
@@ -1742,9 +1744,21 @@
 
 
 
+            <div id="abc">
+            {{#each bac2}}
+                <div>
+                    <div class="a item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
+                        <p>item {{idLOAISANPHAM2}}</p>
+                    </div>
+                    <div>related item stuff</div>
+                </div>
+            {{/each}}
 
+
+            </div>
 
         </div>
+
     </div>
     <div class="ft-bottom">
         <div class="container ft">
@@ -1773,6 +1787,72 @@
     (function (global) {
         document.getElementById("output").value = global.localStorage.getItem("myID");
     }(window));
+</script>
+<script>
+
+</script>
+<script>
+//    var IDs = [];
+//    $(".row-noGutter").each(function(){
+//        if( this.id == "2" || this.id == "3" || this.id == "4"  || this.id == "5" || this.id == "6" || this.id == "7" || this.id == "8" || this.id == "9"  || this.id == "10") {
+//            var toHide = $(".item10, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9");
+//            toHide.parent().hide();
+//            alert(this.id);
+//        }
+//        else
+//        {
+//            if(this.id == "5" || this.id == "6" || this.id == "7" || this.id == "8" || this.id == "9"  || this.id == "10")
+//            {
+//                var toHide = $(".item10, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9");
+//                toHide.parent().hide();
+//                alert(this.id);
+//            }
+//            var toHide1 = $(".item10, .item2, .item1, .item3, .item5, .item6, .item7, .item8, .item9");
+//            toHide1.parent().hide();
+//        }
+//
+//        IDs.push(this.id); });
+//        for(var i = 0; i < IDs.length; i++)
+//        {
+//            //alert(IDs[i]);
+//        }
+//    for(var i = 0; i < IDs.length - 10; i++)
+//    {
+//
+//        if(($(".menu-list-cate2").find(".row-noGutter").each("id") == '3'))
+//        {
+//
+//
+//        }
+//        else
+//        {
+//            alert($(".row-noGutter").attr('id'));
+//            var toHide1 = $(".item10, .item2, .item1, .item3, .item5, .item6, .item7, .item8, .item9");
+//            toHide1.parent().hide();
+//        }
+//    }
+
+</script>
+<script>
+    $('ul', '.row-noGutter' ).each(function() {
+        if($(this).attr('class') === $(this).parents(".row-noGutter").attr('id') )
+        {
+            $(this).parents(".menu-home").removeClass("hidden");
+        }
+    });
+    $('.col-md-4.text-xs-left.text-left.menu-home.hidden').remove();
+
+
+
+    $('a', 'ul').each(function(){
+        if($(this).attr('class') === $(this).parents("ul").attr('id') )
+        {
+            $(this).parents("li").removeClass("hidden");
+        }
+    })
+    $('li .hidden').remove();
+
+
 </script>
 
 

@@ -23,6 +23,7 @@ r.get('/', function(req, res) {
             bac3:pRow3
 
 
+
         }
         res.render('index', vm);
         console.log(vm);

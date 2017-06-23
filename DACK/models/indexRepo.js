@@ -12,13 +12,14 @@ exports.loadbac1 = function() {
 }
 exports.loadbac2 = function() {
     var d = q.defer();
-    var sql = 'select * from loaisanpham2 where LOAISANPHAM1_idLOAISANPHAM1=1';
+
+    var sql ='select * from loaisanpham2';
     d.resolve(db.load(sql));
     return d.promise;
 }
 exports.loadbac3 = function() {
     var d = q.defer();
-    var sql = 'select * from loaisanpham3 where LOAISANPHAM2_idLOAISANPHAM2=2';
+    var sql = 'select * from loaisanpham3';
     d.resolve(db.load(sql));
     return d.promise;
 }
