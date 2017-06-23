@@ -37,6 +37,6 @@ app.use(bodyParser.urlencoded({
 
 app.use('/', index);
 
-app.listen(4000,function () {
+app.listen(3000,function () {
     console.log('Ahii');
 });
