@@ -113,6 +113,10 @@ li{
     padding-right: 15px;
     padding-left: 15px;
 }
+.collapse.in
+{
+    display: table-cell;
+}
 
 
 

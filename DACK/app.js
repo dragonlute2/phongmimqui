@@ -6,7 +6,10 @@ var express = require('express'),
     path = require('path'),
     wnumb = require('wnumb'),
     handle404 = require('./middle-wares/handle-404'),
-    index= require('./controllers/indexController');
+    index= require('./controllers/indexController'),
+    quanlinguoidung=require('./controllers/danhsachnguoidungController'),
+    yeucau=require('./controllers/yeucauController'),
+    danhsachdanhmuc=require('./controllers/quanlydanhmucController');
 
 var app = express();
 
@@ -14,15 +17,18 @@ app.use(morgan('dev'));
 
 app.engine('hbs', handlebars({
     extname: 'hbs',
-    helpers: {
-        section: handlebars_sections(),
-        number_format: function (n) {
-            var nf = wnumb({
-                thousand: ','
-            });
-            return nf.to(n);
-        }
-    }
+    defaultLayout: 'main',
+    layoutsDir: 'views/_layouts/',
+    partialsDir: 'views/_partials/',
+     helpers: {
+         section: handlebars_sections(),
+         number_format: function (n) {
+             var nf = wnumb({
+                 thousand: ','
+             });
+             return nf.to(n);
+         }
+     }
 }));
 app.set('view engine', 'hbs');
 
@@ -36,6 +42,9 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/', index);
+app.use('/quanliuser',quanlinguoidung);
+app.use('/quanliyeucau',yeucau);
+app.use('/quanlidanhmuc',danhsachdanhmuc);
 
 app.listen(3000,function () {
     console.log('Ahii');
