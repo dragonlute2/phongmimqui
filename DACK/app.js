@@ -45,7 +45,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(handleLayout);
-app.use('/', index);
+
 app.post('/taikhoan/dangky',function(req,res){
     // g-recaptcha-response is the key that browser will generate upon form submit.
     // if its blank or null means user has not selected the captcha, so return the error.
@@ -66,6 +66,7 @@ app.post('/taikhoan/dangky',function(req,res){
         res.json({"responseCode" : 0,"responseDesc" : "Sucess"});
     });
 });
+app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
@@ -73,6 +74,6 @@ app.use('/huongdan',huongdan);
 app.use('/taikhoan/dangky',dangky);
 app.use(handle404);
 
-app.listen(3000,function () {
+app.listen(4000,function () {
     console.log('Ahii');
 });

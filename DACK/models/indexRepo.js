@@ -4,6 +4,7 @@
 var mustache = require('mustache'),
     q = require('q'),
     db = require('../fn/db');
+
 exports.loadbac1 = function() {
     var d = q.defer();
     var sql = 'select * from loaisanpham1';
@@ -25,7 +26,7 @@ exports.loadbac3 = function() {
 }
 exports.loadTop5SanPhamDauGia = function () {
     var d = q.defer();
-    var sql = 'select idsanphamdaugia, sotien, sanpham.*, count(*) from chitietdaugia, sanpham WHERE idsanphamdaugia = sanpham.idSANPHAM, sanpham.conhan = 1 GROUP BY idsanphamdaugia ORDER BY COUNT(*) DESC LIMIT 1';
+    var sql = 'select idsanphamdaugia, sotien, sanpham.*, count(*) from chitietdaugia, sanpham WHERE idsanphamdaugia = sanpham.idSANPHAM AND sanpham.conhan = 1 GROUP BY idsanphamdaugia ORDER BY COUNT(*) DESC LIMIT 5';
     d.resolve(db.load(sql));
     return d.promise;
 }
