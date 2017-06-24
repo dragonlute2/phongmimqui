@@ -414,6 +414,7 @@ section.section.section-cate {
 	right: 0px;
 	z-index: 3;
 	overflow:hidden;
+	width: 100%;
 }
 .banner-slider .slideshow {
 	height:450px;
