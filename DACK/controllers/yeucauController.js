@@ -12,6 +12,7 @@ r.get('/', function(req, res) {
                 layoutVM: true,
                 yeucau: rows
             };
+            console.log(vm);
             res.render('Quản trị/danhsachyeucau', vm);
         }).fail(function(err) {
         console.log(err);
