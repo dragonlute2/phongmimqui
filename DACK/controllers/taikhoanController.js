@@ -7,6 +7,7 @@
 var express = require('express'),
     taikhoan = require('../models/taikhoanRepo'),
     q = require('q');
+var restrict=require('../middle-wares/_layoutRou');
 var crypto = require('crypto');
 var moment = require('moment');
 var taikhoanr = express.Router()
@@ -91,7 +92,6 @@ taikhoanr.post('/dangnhap', function(req, res) {
         username: req.body.username,
         pass: ePWD
     };
-console.log(entity);
     taikhoan.login(entity)
         .then(function(user) {
             if (user === null) {
@@ -111,6 +111,12 @@ console.log(entity);
                 res.redirect(url);
             }
         });
+});
+taikhoanr.post('/thoat', restrict, function(req, res) {
+    req.session.isLogged = false;
+    req.session.user = null;
+    //req.session.cart = null;
+    res.redirect(req.referer);
 });
 module.exports = taikhoanr;
 
