@@ -29,6 +29,7 @@
 }
 .time-rows
 {
+    margin-left: -18px;
     margin-top: 15px;
     text-align: center;
     font-size: 15px;
@@ -37,7 +38,7 @@
 .submit_btn
 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
 
 }
 input.price
@@ -117,6 +118,11 @@ li{
 {
     display: table-cell;
 }
-
+.time
+{
+    margin-top: 19px;
+    margin-right: -2px;
+    color: red;
+}
 
 

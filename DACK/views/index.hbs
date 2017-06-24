@@ -306,181 +306,45 @@
         <div id="myTabContent" class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="giacaonhat" aria-labelledby="giacaonhat-tab">
                 <div class="row child_tab">
-                    <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="/Images/8.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
+                    {{#each top5sanphamgiacao}}
+                        <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index  ">
+                            <div class="product-box product_box_tab" id="thoigian{{idSANPHAM}}">
+                                <h3 class="product-name">
+                                    <a href="#" title="{{tensanpham}}"> {{tensanpham}}</a>
+                                </h3>
+                                <div class="product-thumbnail">
+                                    <a href="#" title="{{tensanpham}}">
+                                        <img src="/Images/8.jpg" alt="{{tensanpham}} ">
+                                    </a>
                                 </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
+                                <div class="item-content">
+                                    <div class="item-price">
+                                        {{gia}}
+                                    </div>
+                                    <div class="rows-bids">
+                                        Bids:
+                                        <span class="bids">{{soluotdaugia}}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
+
+                                <div class="time-rows">
+                                    <img src="/Images/glass.png">
+                                    <div class="time thoigian{{idSANPHAM}}" value="{{thoigiankethuc}}">
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
+                                <div class="submit_btn">
+
+                                    <br>
+                                    <a title="Click để đặt giá" href="#" style="margin-left:-12px">
+                                        <img src="/Images/btn-chitiet.png" border="0">
+                                    </a>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/8.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/8.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/8.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/8.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
+                    {{/each}}
 
 
 
@@ -491,183 +355,42 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="datgianhieu" aria-labelledby="datgianhieu-tab">
                 <div class="row child_tab">
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
+                    {{#each top5sanphamdaugia}}
+                        <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
+                            <div class="product-box product_box_tab">
+                                <h3 class="product-name">
+                                    <a href="#" title="{{tensanpham}}"> {{tensanpham}}</a>
+                                </h3>
+                                <div class="product-thumbnail">
+                                    <a href="#" title="{{tensanpham}}">
+                                        <img src="/Images/7.jpg" alt="{{tensanpham}}">
+                                    </a>
                                 </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
+                                <div class="item-content">
+                                    <div class="item-price">
+                                        {{gia}}
+                                    </div>
+                                    <div class="rows-bids">
+                                        Bids:
+                                        <span class="bids">{{'count(*)'}}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
+                                <div class="time-rows">
+                                    <div class="time">
+                                        <img src="/Images/glass.png">  2:30:30
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
+                                <div class="submit_btn">
+                                    <br>
+                                    <a title="Click để đặt giá" href="#" style="margin-left:-12px">
+                                        <img src="/Images/btn-chitiet.png" border="0">
+                                    </a>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
+                    {{/each}}
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="ganketthuc" aria-labelledby="ganketthuc-tab">
@@ -700,7 +423,7 @@
                                 <input readonly="true" class="price" type="text" value="50.000">
                                 <br>
                                 <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
+                                    <img src="/Images/btn-chitiet.png" border="0">
                                 </a>
 
                             </div>
@@ -1807,10 +1530,44 @@
         {
             $(this).parents("li").removeClass("hidden");
         }
-    })
+    });
     $('li .hidden').remove();
+</script>
+<script>
+    $('.time','.product-box.product_box_tab').each(function(){
+        var m = $(this).attr('class').slice(5, $(this).attr('class').length);
+        if(m === $(this).parents('.product-box.product_box_tab').attr('id'))
+        {
+            var timeFinish = $(this).attr('value');
+            alert(timeFinish);
 
+            var calcNewYear = setInterval(function(){
 
+                date_future = new Date(timeFinish);
+                date_now = new Date();
+                seconds = Math.floor((date_future - (date_now))/1000);
+                minutes = Math.floor(seconds/60);
+                hours = Math.floor(minutes/60);
+                days = Math.floor(hours/24);
+                hours = hours-(days*24);
+                minutes = minutes-(days*24*60)-(hours*60);
+                seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60)
+                if(days < 0)
+                {
+
+                }
+
+                $('.'+m).text((days) + " ngày, " + checkTime(hours) + ":" + checkTime(minutes) + ":" + checkTime(seconds));
+            },1000);
+        }
+        function checkTime(i)
+        {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    });
 </script>
 
 
