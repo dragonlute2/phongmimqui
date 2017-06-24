@@ -11,7 +11,12 @@ module.exports = function(req, res, next) {
     if (req.session.isLogged === undefined) {
         req.session.isLogged = false;
     }
-
+    if (req.session.isLogged === true) {
+        next();
+    } else {
+        var url = '/taikhoan/dangnhap?retUrl=' + req.originalUrl;
+        res.redirect(url);
+    }
     Q.all([
         ac.loadall()
     ]).spread(function(catList) {
