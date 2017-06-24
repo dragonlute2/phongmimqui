@@ -1,14 +1,17 @@
 var q = require('q'),
     index = require('../models/indexRepo');
+var ac=require('../models/taikhoanRepo');
 
 module.exports = function(req, res, next) {
     q.all([
-    	index.loadbac1(),index.loadbac2(),index.loadbac3()
+    	index.loadbac1(),index.loadbac2(),index.loadbac3(),ac.loadall()
 	]).spread(function(cRows1,cRows2,cRows3) {
-		res.locals.layoutDM = {
+		res.locals.layoutModels = {
 			bac1: cRows1,
 			bac2:cRows2,
-			bac3:cRows3
+			bac3:cRows3,
+            isLogged: req.session.isLogged,
+            curUser: req.session.user
 		}
     	next();
     });

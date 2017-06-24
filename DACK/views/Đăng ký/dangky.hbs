@@ -100,13 +100,16 @@
                                     <input type="text" class="input-text" id="txtdc" name="dc" placeholder="Địa chỉ">
                                 </div>
                             </ul>
-                            <div class="g-recaptcha" data-sitekey="6LcvtSYUAAAAAJdVqfvmUsDAcx794QLpkOLev9JE"></div>
+                            <div>
+                                <div class="g-recaptcha" data-sitekey="6LcvtSYUAAAAAJdVqfvmUsDAcx794QLpkOLev9JE"></div>
+                            </div>
                              <div class="buttons-set">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input id="dangky" value="Đăng ký" type="submit" class="button login login_sign" style="font-weight: bold;"></input>
                             &nbsp;
                             <button id="trolai" value="Trở lại" type="button" class="button login login_sign" ><span> Trở lại </span></button>        
                             </div>
+
                     </form>
                 </div>
             </div>
@@ -119,6 +122,8 @@
     <script type="text/javascript" src="/assests/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/JS/bootstrap-datepicker.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
      <script>
         $(document).ready(function() {
@@ -211,22 +216,6 @@ $(function () {
 
                 label.remove();
             },
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('#dangky').submit(function() {
-                $(this).ajaxSubmit({
-                    error: function(xhr) {
-                        status('Error: ' + xhr.status);
-                    },
-                    success: function(response) {
-                        console.log(response);
-                    }
-                });
-                //Very important line, it disable the page refresh.
-                return false;
-            });
         });
     </script>
 </body>
