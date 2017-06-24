@@ -12,7 +12,7 @@ r.get('/', function(req, res) {
         .spread(function(pRow1, pRow2, pRow3, pRow4, pRow5)
     {
         var vm = {
-            layout:false,
+            layoutModels: res.locals.layoutModels,
             bac1: pRow1,
             bac2:pRow2,
             bac3:pRow3,

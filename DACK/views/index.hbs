@@ -6,8 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
-
-
     <link rel="stylesheet" type="text/css" href="/CSS/popup_cart_desktop.css">
     <link rel="stylesheet" type="text/css" href="/CSS/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="/CSS/owl.theme.min.css">
@@ -17,200 +15,16 @@
 
     <link rel="stylesheet" type="text/css" href="/CSS/home.css"/>
 
-
-
+    <style type="text/css">
+        .abc
+        {
+            display:block;
+        }
+    </style>
 
 </head>
 <body id="san-dau-gia-online-HOME" class="cms-index-index cms-home-page">
 <div id="output"></div>
-<header>
-    <section class="header-banner hidden-md-down">
-        <a href="index.html" title="Trang chủ">
-            <div class="banner_top">
-                <img src="/Images/banner_top.png"/>
-            </div>
-        </a>
-    </section>
-    <div class="header-container">
-        <div class="container container_main">
-            <div class="row">
-                <div class="col-lg-3 col-md-8 col-sm-6 col-xs-6">
-                    <div class="logo">
-                        <a href="index.html" title="Golden mart">
-                            <img src="/Images/logo.png" alt="Trang chủ">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="support_search hidden-md-down">
-
-                        <h5>Tư vấn bán hàng : </h5><span> 0934 55 55 80 - 0934 35 35</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-
-
-                        <h5>Hotline : </h5><span> 0934.66.77.90</span>
-
-                    </div>
-                    <div class="search_form">
-                        <form action="https://golden-mart.bizwebvietnam.net/search" method="get" class="search-form" role="search">
-                            <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="query" value="">
-                            <span class="search-before"></span><input type="submit" value="Tìm kiếm" class="btnsearch">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
-                    <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
-                        <div>
-                            <img class="mg_bt_10" src="/Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
-                        </div>
-                        <div>
-							<span>
-
-								<a class="cl_old" href="Đăng%20nhập/dangnhap.html" title="Đăng nhập">Đăng nhập</a>
-								/
-								<a class="cl_old"></a><a href="/taikhoan/dangky" title="Đăng kí" id="customer_logout_link">Đăng ký</a>
-
-							</span>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
-                        <div>
-                            <img class="mg_bt_10" src="/Images/cart.png" alt="Hướng dẫn" height="30" width="30">
-                        </div>
-
-                        <div>
-							<span>
-								<a class="cl_old" href="/huongdan" title="Hướng dẫn">Hướng dẫn</a>
-
-							</span>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-</header>
-
-<nav class="hidden-md-down">
-    <div class="container">
-        <div class="row nav_menu">
-            <div class="col-lg-3 col-md-4 hidden-sm-down nav-inner">
-                <div class="col-lg-12 col-md-12 nav-drop">
-                    <div class="title-menu-bar">
-                        <div class="" style="margin-top: 15px">
-                            <a id="showmenu"> <span class="glyphicon glyphicon-align-justify"></span> Danh mục sản phẩm </a>
-                        </div>
-                    </div>
-
-                    <div id="menucontent" class="col-lg-12 col-md-12 index_nav_display cate-sidebar" role="menu" style="margin-top: -4px">
-                        <ul class="site-nav vertical-nav ">
-
-                            {{#each bac1}}
-                            <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">
-                                <a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
-
-                                    <span class="bac1" id="{{idLOAISANPHAM1}}">{{tensanpham}}</span>
-
-                                </a>
-                                <div class="submenu hidden-md-down">
-                                    <ul class="menu-list-cate2">
-                                        <div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">
-
-                                            {{#each ../bac2}}
-                                                    <div class="col-md-4 text-xs-left text-left menu-home hidden">
-                                                        <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
-
-
-                                                            <span><a href="#">{{tensanpham}}</a></span>
-                                                            {{#each ../../bac3}}
-                                                                <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
-
-                                                            {{/each}}
-                                                            <li>
-                                                                <a href="#">Xem tất cả
-                                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-
-
-                                                        </ul>
-                                                    </div>
-                                            {{/each}}
-
-                                        </div>
-                                    </ul>
-                                </div>
-                            </li>
-                                {{/each}}
-
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-lg-3 hidden-md-down main-nav">
-                <ul id="nav">
-
-                    <li class=" parrent " style="margin-left: -40px"><a href="#">Giới thiệu</a></li>
-
-                    <li class=" parrent "><a href="#">Liên hệ</a></li>
-
-                    <li class=" last parrent "><a href="#">Tuyển dụng</a></li>
-
-
-
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 hidden-sm-down social  hidden-xs ">
-                <div class="social-icon"><a href="#" title="Theo dõi Golden mart trên Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
-
-
-                <div class="social-icon"><a href="#" title="Theo dõi Golden mart trên Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
-
-
-                <div class="social-icon"><a href="#" title="Theo dõi Golden mart trên Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-
-
-                <div class="social-icon"><a href="#" title="Theo dõi Golden mart trên Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-
-            </div>
-            <div class="col-lg-3 col-md-8 hidden-sm-down nav-inner" style="margin-left: -15px; padding-left: 0px">
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle btn-lg" data-toggle="dropdown" style="padding-bottom: 14px">
-                            Thông tin cá nhân
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu ">
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Chi tiết đánh giá</a></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Đổi mật khẩu</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đang đấu giá</a></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đấu giá thắng</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm được đấu giá</a></li>
-                            <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm có người mua</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</nav>
 <section class="section section-cate slideshow_full_width slide1_bgcolor">
     <div class="container">
         <div class="row">
@@ -1418,86 +1232,6 @@
     </div>
 </div>
 <!--Footer-->
-<footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="footer">
-        <div class="container">
-            <section class="footer-up hidden-xs-down">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                        <h5>Thông tin công ty</h5>
-
-                        <li><a href="#">Thông tin công ty</a></li>
-
-                        <li><a href="#">Giới thiệu công ty</a></li>
-
-                        <li><a href="#">Hệ thống các siêu thị</a></li>
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                        <h5>Hỗ trợ khách hàng</h5>
-
-                        <li><a href="#">Liên hệ và góp ý</a></li>
-
-                        <li><a href="#">Hướng dẫn mua hàng online</a></li>
-
-                        <li><a href="#">Hướng dẫn mua hàng trả góp</a></li>
-
-                        <li><a href="#">Quy chế quản lý hoạt động</a></li>
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-                        <h5>Chính sách mua hàng</h5>
-
-                        <li><a href="#">Quy định, chính sách</a></li>
-
-                        <li><a href="#">Chính sách bảo hành - Đổi trả</a></li>
-
-                        <li><a href="#">Chính sách hội viên</a></li>
-
-                        <li><a href="#">Giao hàng và lắp đặt</a></li>
-
-
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-            <div id="abc">
-            {{#each bac2}}
-                <div>
-                    <div class="a item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
-                        <p>item {{idLOAISANPHAM2}}</p>
-                    </div>
-                    <div>related item stuff</div>
-                </div>
-            {{/each}}
-
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="ft-bottom">
-        <div class="container ft">
-            <div class="row">
-                <div class="col-lg-12 col-xs-12 copyright">
-                    <p>© Bản quyền thuộc về <b style="color:#fff;">Team Ngáo</b>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-
 
 
 <script type="text/javascript" src="/assests/jquery-3.1.1.min.js"></script>

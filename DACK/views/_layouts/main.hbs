@@ -42,18 +42,34 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
                         <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
-                            <div>
-                                <img class="mg_bt_10" src="/Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
-                            </div>
-                            <div>
+                            {{#if layoutModels.isLogged}}
+                                <div>
+                                    <img class="mg_bt_10" src="/Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
+                                </div>
+                                <div>
                                     <span>
 
-                                        <a class="cl_old" href="Đăng%20nhập/dangnhap.html" title="Đăng nhập">Đăng nhập</a>
+                                        <a class="cl_old" href="/taikhoan/dangnhap" title="Đăng nhập">Chào {{ layoutModels.curUser.name}}</a>
+                                        /
+                                        <a class="cl_old"></a><a href="/taikhoan/thoat" title="thoát" id="customer_logout_link">Đăng xuất</a>
+
+                                    </span>
+                                </div>
+                            {{else}}
+                                <div>
+                                    <img class="mg_bt_10" src="/Images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30">
+                                </div>
+                                <div>
+                                    <span>
+
+                                        <a class="cl_old" href="/taikhoan/dangnhap" title="Đăng nhập">Đăng nhập</a>
                                         /
                                         <a class="cl_old"></a><a href="/taikhoan/dangky" title="Đăng kí" id="customer_logout_link">Đăng ký</a>
 
                                     </span>
-                            </div>
+                                </div>
+                            {{/if}}
+
                         </div>
 
                         <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart hidden-md-down">
@@ -92,10 +108,10 @@
                             </div>
                         </div>
 
-                        <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page" role="menu" style="display: none; margin-top: -4px">
+                        <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page abc" role="menu" style=" margin-top: -4px">
                             <ul class="site-nav vertical-nav ">
 
-                                {{#each layoutDM.bac1}}
+                                {{#each layoutModels.bac1}}
                                     <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">
                                         <a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
 
@@ -106,13 +122,13 @@
                                             <ul class="menu-list-cate2">
                                                 <div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">
 
-                                                    {{#each ../layoutDM.bac2}}
+                                                    {{#each ../layoutModels.bac2}}
                                                         <div class="col-md-4 text-xs-left text-left menu-home hidden">
                                                             <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
 
 
                                                                 <span><a href="#">{{tensanpham}}</a></span>
-                                                                {{#each ../../layoutDM.bac3}}
+                                                                {{#each ../../layoutModels.bac3}}
                                                                     <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
 
                                                                 {{/each}}
@@ -183,18 +199,24 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="btn-group">
                             <button type="button" class="btn btn-danger dropdown-toggle btn-lg" data-toggle="dropdown" style="padding-bottom: 14px">
-                                Quản lý
+                                Thông tin cá nhân
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu ">
-                                <li><a href="danhsachyeucau.html"><span class="fa fa-angle-right"> </span> &nbsp Duyệt yêu cầu khách hàng</a></li>
-                                <li><a href="quanlynguoidung.html"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách người dùng</a></li>
-                                <li><a href="quanlydanhsachdanhmuc.html"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách danh mục</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Thông tin cá nhân</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Chi tiết đánh giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Đổi mật khẩu</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đang đấu giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm yêu thích</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm đấu giá thắng</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm được đấu giá</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"> </span> &nbsp Sản phẩm có người mua</a></li>
+
                             </ul>
                         </div>
                     </div>
-
-                </div>
             </div>
         </div>
     </nav>
