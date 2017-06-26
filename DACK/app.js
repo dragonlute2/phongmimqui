@@ -12,12 +12,37 @@ var express = require('express'),
     yeucau=require('./controllers/yeucauController'),
     huongdan=require('./controllers/huongdanController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
-    dangky=require('./controllers/dangkyController');
+    taikhoan=require('./controllers/taikhoanController');
+var session = require('express-session');
+// var fileStore = require('session-file-store')(session);
+var MySQLStore = require('express-mysql-session')(session);
 
 
 var app = express();
 
 app.use(morgan('dev'));
+app.use(session({
+    secret: 'Z7X7gXzoKBT8h18jwXBEP4T0kJ8=',
+    resave: false,
+    saveUninitialized: true,
+    // store: new fileStore()
+    store: new MySQLStore({
+        host: '127.0.0.1',
+        port: 3306,
+        user: 'root',
+        password: '',
+        database: 'quanlydaugia',
+        createDatabaseTable: true,
+        schema: {
+            tableName: 'sessions',
+            columnNames: {
+                session_id: 'session_id',
+                expires: 'expires',
+                data: 'data'
+            }
+        }
+    }),
+}));
 
 app.engine('hbs', handlebars({
     extname: 'hbs',
@@ -46,34 +71,14 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(handleLayout);
 
-app.post('/taikhoan/dangky',function(req,res){
-    // g-recaptcha-response is the key that browser will generate upon form submit.
-    // if its blank or null means user has not selected the captcha, so return the error.
-    if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
-        return res.json({"responseCode" : 1,"responseDesc" : "Please select captcha"});
-    }
-    // Put your secret key here.
-    var secretKey = "6LcvtSYUAAAAANYxlkp95Gns6wBKcxgcBc-k0gYJ";
-    // req.connection.remoteAddress will provide IP address of connected user.
-    var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
-    // Hitting GET request to the URL, Google will respond with success or error scenario.
-    request(verificationUrl,function(error,response,body) {
-        body = JSON.parse(body);
-        // Success will be true or false depending upon captcha validation.
-        if(body.success !== undefined && !body.success) {
-            return res.json({"responseCode" : 1,"responseDesc" : "Failed captcha verification"});
-        }
-        res.json({"responseCode" : 0,"responseDesc" : "Sucess"});
-    });
-});
 app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
 app.use('/huongdan',huongdan);
-app.use('/taikhoan/dangky',dangky);
+app.use('/taikhoan',taikhoan);
 app.use(handle404);
 
-app.listen(4000,function () {
+app.listen(3000,function () {
     console.log('Ahii');
 });
