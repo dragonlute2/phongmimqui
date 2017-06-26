@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : mim
-Source Server Version : 50617
-Source Host           : 127.0.0.1:3306
+Source Server         : 127.0.0.1
+Source Server Version : 50714
+Source Host           : localhost:3306
 Source Database       : quanlydaugia
 
 Target Server Type    : MYSQL
-Target Server Version : 50617
+Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-06-26 12:58:48
+Date: 2017-06-26 16:07:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,13 +34,15 @@ CREATE TABLE `chitietdaugia` (
 -- Records of chitietdaugia
 -- ----------------------------
 INSERT INTO `chitietdaugia` VALUES ('1', '2', '2000', '2017-06-14 13:21:43');
-INSERT INTO `chitietdaugia` VALUES ('1', '2', '2000', '2017-06-04 13:23:39');
-INSERT INTO `chitietdaugia` VALUES ('3', '3', '20000', '2017-06-13 13:29:43');
-INSERT INTO `chitietdaugia` VALUES ('4', '1', '2', '2017-06-21 13:50:38');
+INSERT INTO `chitietdaugia` VALUES ('1', '2', '4000', '2017-06-04 13:23:39');
+INSERT INTO `chitietdaugia` VALUES ('3', '3', '12000000', '2017-06-13 13:29:43');
+INSERT INTO `chitietdaugia` VALUES ('4', '1', '18890000', '2017-06-21 13:50:38');
 INSERT INTO `chitietdaugia` VALUES ('4', '3', '2', '2017-06-14 13:51:37');
 INSERT INTO `chitietdaugia` VALUES ('8', '2', '3', '2017-06-02 13:51:56');
 INSERT INTO `chitietdaugia` VALUES ('13', '8', '2', '2017-06-16 13:52:25');
 INSERT INTO `chitietdaugia` VALUES ('15', '2', '1', '2017-06-01 13:52:50');
+INSERT INTO `chitietdaugia` VALUES ('5', '7', '21990000', '2017-06-02 14:37:15');
+INSERT INTO `chitietdaugia` VALUES ('6', '10', '25990000', '2017-05-28 14:37:38');
 
 -- ----------------------------
 -- Table structure for chitietxinban
@@ -345,10 +347,10 @@ CREATE TABLE `sanpham` (
   KEY `fk_SanphamLoai3` (`LOAISANPHAM3_idLOAISP3`),
   KEY `idSANPHAM` (`idSANPHAM`),
   KEY `fk_SanphamLoai2` (`LOAISANPHAM2_idLOAISP2`),
-  CONSTRAINT `fk_SanphamLoai2` FOREIGN KEY (`LOAISANPHAM2_idLOAISP2`) REFERENCES `loaisanpham2` (`idLOAISANPHAM2`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  CONSTRAINT `fk_SanphamLoai3` FOREIGN KEY (`LOAISANPHAM3_idLOAISP3`) REFERENCES `loaisanpham3` (`idLOAISP3`) ON DELETE NO ACTION ON UPDATE CASCADE,
   CONSTRAINT `fk_SANPHAM_USER1` FOREIGN KEY (`idnguoiban`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  CONSTRAINT `fk_SANPHAM_USER2` FOREIGN KEY (`idnguoithang`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE CASCADE
+  CONSTRAINT `fk_SANPHAM_USER2` FOREIGN KEY (`idnguoithang`) REFERENCES `user` (`idUSER`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `fk_SanphamLoai2` FOREIGN KEY (`LOAISANPHAM2_idLOAISP2`) REFERENCES `loaisanpham2` (`idLOAISANPHAM2`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `fk_SanphamLoai3` FOREIGN KEY (`LOAISANPHAM3_idLOAISP3`) REFERENCES `loaisanpham3` (`idLOAISP3`) ON DELETE NO ACTION ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -436,7 +438,7 @@ CREATE TABLE `sessions` (
 -- ----------------------------
 -- Records of sessions
 -- ----------------------------
-INSERT INTO `sessions` VALUES ('l21PtWBZxMQ2m1EUYnoCZUSYaORNHLMd', '1498456684', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A2D313030302C2265787069726573223A22323031372D30362D32365430353A35383A30342E3135335A222C22687474704F6E6C79223A747275652C2270617468223A222F227D2C226973514C223A66616C73652C2269734C6F67676564223A66616C73652C2275736572223A6E756C6C7D);
+INSERT INTO `sessions` VALUES ('obtsLbXNTLrI4XX-h8rlCvnmFgwP6TIG', '1498553659', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A6E756C6C2C2265787069726573223A6E756C6C2C22687474704F6E6C79223A747275652C2270617468223A222F227D7D);
 INSERT INTO `sessions` VALUES ('wyIBc-dd_rnBBSpIiMp2nDMjxMaus_3_', '1498543092', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A6E756C6C2C2265787069726573223A6E756C6C2C22687474704F6E6C79223A747275652C2270617468223A222F227D7D);
 
 -- ----------------------------
@@ -471,4 +473,3 @@ INSERT INTO `user` VALUES ('7', 'biaafie', 'laien3893', 'Ngô Thanh Vân', 'Nữ
 INSERT INTO `user` VALUES ('8', 'quanafk', '1233542', 'Hoàng Luân', 'Nam', '1992-08-09 15:29:19', '0858377456', 'Huế', 'hoangeo2r2@gmail.com', '2017-06-06 15:31:47', null);
 INSERT INTO `user` VALUES ('9', 'nhinconchim', 'immemto34', 'Phạm Luân', 'Nam', '1998-12-30 15:29:31', '084783723', 'Quảng Nam', 'viporo1293@gmail.com', '2017-06-16 15:31:52', null);
 INSERT INTO `user` VALUES ('10', 'wtfuckyou', '50384jdoeo', 'Tô Ngọc Vân', 'Nữ', '1991-07-31 15:29:43', '090807432', 'Dak Lak', 'ziperrrr@gmail.com', '2017-06-15 15:31:56', null);
-INSERT INTO `user` VALUES ('11', '9', 'e10adc3949ba59abbe56e057f20f883e', 'Pham MiM', 'Nam', '2017-06-26 00:00:00', '1', '2', 'phuctlq113@gmail.com', '0000-00-00 00:00:00', '0');
