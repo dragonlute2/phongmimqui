@@ -10,12 +10,18 @@
 </head>
 
 <body id="" class="cms-index-index cms-home-page">
+<form method="post" action="taikhoan/resetmatkhau" id="formreset">
+    <input type="hidden" name="idUSER" id="txtMatkhauId">
+</form>
+<form method="post" action="taikhoan/xoauser" id="formxoa">
+    <input type="hidden" name="idUSER" id="txtxoaId">
+</form>
 <div class="brd">
     <div class="container">
         <div class="row">
             <div class="inner">
                 <ul class="breadcrumbs">
-                    <li class="home"> <a title="Quay lại trang chủ" href="../index.html">Trang chủ</a></li>               
+                    <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                     <li> <span>Quản lý danh sách người dùng</span></li>
 
@@ -35,7 +41,6 @@
         <table class="table table-bordered table-hover">
             <thead style="background: #6ed430;color: black;">
                 <tr>
-                    <th>ID</th>
                     <th>Tên tài khoản</th>
                     <th>Họ và tên</th>
                     <th>Email</th>
@@ -47,17 +52,16 @@
             <tbody>
             {{#each nguoidung}}
                 <tr>
-                    <td>{{idUSER}}</td>
                     <td>{{tendangnhap}}</td>
                     <td>{{hoten}}</td>
                     <td>{{email}}</td>
                     <td>{{sodienthoai}}</td>
                     <td>{{diachi}}</td>
                     <td>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-                    <button class="btn btn-info"><span class="glyphicon glyphicon-refresh" title="Khôi phục mật khẩu"></span></button>
-                    &nbsp 
-                    <button class="btn btn-info"><span class="glyphicon glyphicon-remove" title="Xóa tài khoản người dùng"></span></button>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="javascript:;" class="btn btn-info khoiphucmatkhau" data-id="{{idUSER}}" title="Khôi phục mật khẩu"><span class="glyphicon glyphicon-refresh"></span></a>
+                    &nbsp
+                        <a href="javascript:;" class="btn btn-info xoanguoidung" data-id="{{idUSER}}" title="Xóa người dùng"><span class="glyphicon glyphicon-remove"></span></a>
                     </td>
                 </tr>
             {{/each}}
@@ -87,6 +91,20 @@
         });
 
     </script>
+<script type="text/javascript">
+    $('.khoiphucmatkhau').on('click', function() {
+        var id = $(this).data('id');
+        $('#txtMatkhauId').val(id);
+        $('#formreset').submit();
+    });
+</script>
+<script type="text/javascript">
+    $('.xoanguoidung').on('click', function() {
+        var id = $(this).data('id');
+        $('#txtxoaId').val(id);
+        $('#formxoa').submit();
+    });
+</script>
 
 </body>
 </html>

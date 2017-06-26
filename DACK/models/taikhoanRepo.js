@@ -56,3 +56,15 @@ exports.login = function(entity) {
     });
     return deferred.promise;
 }
+exports.khoiphucmatkhau=function (entity) {
+    var d = q.defer();
+    var sql=mustache.render('update user set matkhau="{{pass}}" where idUSER="{{idUSER}}"', entity);
+    d.resolve(db.update(sql));
+    return d.promise;
+}
+exports.xoanguoidung=function (entity) {
+    var d = q.defer();
+    var sql=mustache.render('delete from user where idUSER="{{idUSER}}"', entity);
+    d.resolve(db.delete(sql));
+    return d.promise;
+}

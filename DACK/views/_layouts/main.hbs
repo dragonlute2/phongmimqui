@@ -51,7 +51,7 @@
                                     <span>
 
                                         <a class="cl_old" href="/taikhoan/dangnhap" title="Đăng nhập">Chào {{ layoutModels.curUser.name}}</a>
-                                        /
+                                       <div></div>
                                         <a class="cl_old"></a><a href="javascript:;" title="thoát" id="logoutLink">Đăng xuất</a>
 
                                     </span>
@@ -112,43 +112,43 @@
                     <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page abc" role="menu" style=" margin-top: -4px">
                         <ul class="site-nav vertical-nav ">
 
-                            {{#each layoutModels.bac1}}
-                                <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">
-                                    <a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
+                            <!--{{#each layoutModels.bac1}}-->
+                                <!--<li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">-->
+                                    <!--<a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">-->
 
-                                        <span class="bac1" id="{{idLOAISANPHAM1}}">{{tensanpham}}</span>
+                                        <!--<span class="bac1" id="{{idLOAISANPHAM1}}">{{tensanpham}}</span>-->
 
-                                    </a>
-                                    <div class="submenu hidden-md-down">
-                                        <ul class="menu-list-cate2">
-                                            <div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">
+                                    <!--</a>-->
+                                    <!--<div class="submenu hidden-md-down">-->
+                                        <!--<ul class="menu-list-cate2">-->
+                                            <!--<div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">-->
 
-                                                {{#each ../layoutModels.bac2}}
-                                                    <div class="col-md-4 text-xs-left text-left menu-home hidden">
-                                                        <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
-
-
-                                                            <span><a href="#">{{tensanpham}}</a></span>
-                                                            {{#each ../../layoutModels.bac3}}
-                                                                <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
-
-                                                            {{/each}}
-                                                            <li>
-                                                                <a href="#">Xem tất cả
-                                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
+                                                <!--{{#each ../layoutModels.bac2}}-->
+                                                    <!--<div class="col-md-4 text-xs-left text-left menu-home hidden">-->
+                                                        <!--<ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">-->
 
 
-                                                        </ul>
-                                                    </div>
-                                                {{/each}}
+                                                            <!--<span><a href="#">{{tensanpham}}</a></span>-->
+                                                            <!--{{#each ../../layoutModels.bac3}}-->
+                                                                <!--<li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>-->
 
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </li>
-                            {{/each}}
+                                                            <!--{{/each}}-->
+                                                            <!--<li>-->
+                                                                <!--<a href="#">Xem tất cả-->
+                                                                    <!--<i class="fa fa-angle-double-right" aria-hidden="true"></i>-->
+                                                                <!--</a>-->
+                                                            <!--</li>-->
+
+
+                                                        <!--</ul>-->
+                                                    <!--</div>-->
+                                                <!--{{/each}}-->
+
+                                            <!--</div>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            <!--{{/each}}-->
 
                         </ul>
                     </div>
@@ -206,9 +206,9 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu ">
-                                    <li><a href="danhsachyeucau.html"><span class="fa fa-angle-right"> </span> &nbsp Duyệt yêu cầu khách hàng</a></li>
-                                    <li><a href="quanlynguoidung.html"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách người dùng</a></li>
-                                    <li><a href="quanlydanhsachdanhmuc.html"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách danh mục</a></li>
+                                    <li><a href="/quanliyeucau"><span class="fa fa-angle-right"> </span> &nbsp Duyệt yêu cầu khách hàng</a></li>
+                                    <li><a href="/quanliuser"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách người dùng</a></li>
+                                    <li><a href="/quanlidanhmuc"><span class="fa fa-angle-right"> </span> &nbsp Quản trị danh sách danh mục</a></li>
                                 </ul>
                             </div>
                         </div>

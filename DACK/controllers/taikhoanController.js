@@ -67,7 +67,8 @@ taikhoanr.post('/dangky',function(req, res){
                         showError: true,
                         errorMsg: 'Đăng ký thành công.'
                     }
-                    res.render('Đăng ký/dangky',b);
+                    //res.render('Đăng nhập/dangnhap',b);
+                    res.redirect('/taikhoan/dangnhap');
                 });
 
             }
@@ -106,7 +107,7 @@ taikhoanr.post('/dangnhap', function(req, res) {
                 if (req.query.retUrl) {
                     url = req.query.retUrl;
                 }
-                res.redirect(url);
+                res.redirect('/');
             }
         });
 });
@@ -114,8 +115,30 @@ taikhoanr.post('/thoat', restrict, function(req, res) {
     req.session.isLogged = false;
     req.session.user = null;
     req.session.cookie.expires = new Date(Date.now() - 1000);
-    res.redirect(req.headers.referer);
+   // res.redirect(req.headers.referer);
+    res.redirect('/');
     //req.session.cart = null;
+});
+taikhoanr.post('/resetmatkhau', function(req, res) {
+    var passkhoiphuc = crypto.createHash('md5').update('123456').digest('hex');
+    var entity=
+        {
+            pass:passkhoiphuc,
+            idUSER:req.body.idUSER
+        }
+    taikhoan.khoiphucmatkhau(entity).then(function(affectedRows) {
+        res.redirect('/quanliuser');
+    })
+});
+taikhoanr.post('/xoauser', function(req, res) {
+    var entity=
+        {
+            idUSER:req.body.idUSER
+        }
+        console.log(entity);
+    taikhoan.xoanguoidung(entity).then(function(affectedRows) {
+        res.redirect('/quanliuser');
+    })
 });
 module.exports = taikhoanr;
 

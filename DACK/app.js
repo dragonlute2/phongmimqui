@@ -48,7 +48,6 @@ app.engine('hbs', handlebars({
     extname: 'hbs',
     defaultLayout: 'main',
     layoutsDir: 'views/_layouts/',
-    partialsDir: 'views/_partials/',
      helpers: {
          section: handlebars_sections(),
          number_format: function (n) {
