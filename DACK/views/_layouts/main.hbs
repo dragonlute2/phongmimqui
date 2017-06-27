@@ -53,7 +53,6 @@
                                         <form id="frmLogout" method="post" action="/taikhoan/thoat"></form>
                                         <a class="cl_old"></a><a href="javascript:;" title="thoát" id="thoat">Đăng xuất</a>
 
-
                                     </span>
                                 </div>
                             {{else}}
@@ -127,6 +126,21 @@
                                                         <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
 
 
+                                {{#each layoutModels.bac1}}
+                                    <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">
+                                        <a href="#" alt="{{tensanpham}}" style="background: url(../public/Images/diengiadung.png) 7px center no-repeat; display: block; ">
+
+                                            <span class="bac1" id="{{idLOAISANPHAM1}}">{{tensanpham}}</span>
+
+                                        </a>
+                                        <div class="submenu hidden-md-down">
+                                            <ul class="menu-list-cate2">
+                                                <div class="row row-noGutter" id="item{{idLOAISANPHAM1}}">
+
+                                                    {{#each ../layoutModels.bac2}}
+                                                        <div class="col-md-4 text-xs-left text-left menu-home hidden">
+                                                            <ul class="item{{LOAISANPHAM1_idLOAISANPHAM1}}" id="item{{idLOAISANPHAM2}}">
+
                                                             <span><a href="#">{{tensanpham}}</a></span>
                                                             {{#each ../../layoutModels.bac3}}
                                                                 <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
@@ -138,6 +152,16 @@
                                                                 </a>
                                                             </li>
 
+                                                                <span><a href="#">{{tensanpham}}</a></span>
+                                                                {{#each ../../layoutModels.bac3}}
+                                                                    <li class="hidden"><a class="item{{LOAISANPHAM2_idLOAISANPHAM2}}" href="#">{{tensanpham}}</a></li>
+
+                                                                {{/each}}
+                                                                <li>
+                                                                    <a href="#">Xem tất cả
+                                                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </li>
 
                                                         </ul>
                                                     </div>
@@ -148,6 +172,16 @@
                                     </div>
                                 </li>
                             {{/each}}
+                                                            </ul>
+                                                        </div>
+                                                    {{/each}}
+
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                {{/each}}
+
                             </ul>
                         </div>
                         <script>
@@ -240,7 +274,9 @@
                     {{/if}}
                 {{else}}
                 {{/if}}
-            </div>
+
+                </div>
+
         </div>
     </nav>
     {{{body}}}

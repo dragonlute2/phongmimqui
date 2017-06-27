@@ -43,7 +43,6 @@ app.use(session({
         }
     }),
 }));
-
 app.engine('hbs', handlebars({
     extname: 'hbs',
     defaultLayout: 'main',
@@ -70,11 +69,13 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(handleLayout);
 
+
 app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
 app.use('/huongdan',huongdan);
+app.use('/taikhoan',taikhoan);
 app.use('/taikhoan',taikhoan);
 app.use(handle404);
 
