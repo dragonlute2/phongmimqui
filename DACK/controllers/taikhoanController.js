@@ -1,13 +1,8 @@
-/**
- * Created by MiM on 24/06/2017.
- */
-/**
- * Created by MiM on 23/06/2017.
- */
+
 var express = require('express'),
     taikhoan = require('../models/taikhoanRepo'),
+    restrict=require('../middle-wares/retricts'),
     q = require('q');
-var restrict=require('../middle-wares/_layoutRou');
 var crypto = require('crypto');
 var moment = require('moment');
 var taikhoanr = express.Router()
@@ -34,7 +29,8 @@ taikhoanr.post('/dangky',function(req, res){
         gioitinh: req.body.gioitinh,
         sdt: req.body.sdt,
         diachi: req.body.dc,
-        ngay: 0
+        ngay: 0,
+        chucvu: 0
     };
     q.all([taikhoan.loadten(entity), taikhoan.loadmail(entity)])
         .spread(function(pRow1, pRow2)
@@ -71,19 +67,13 @@ taikhoanr.post('/dangky',function(req, res){
                         showError: true,
                         errorMsg: 'Đăng ký thành công.'
                     }
-                    res.render('Đăng ký/dangky',b);
+                    //res.render('Đăng nhập/dangnhap',b);
+                    res.redirect('/taikhoan/dangnhap');
                 });
 
             }
         })
 
-    // dangkycontroll.dangky(entity).then(function(insertId) {
-    //     res.render('Đăng ký/dangky', {
-    //         layoutdangky: true,
-    //         showError: true,
-    //         errorMsg: 'Đăng ký thành công.'
-    //     });
-    // });
 });
 taikhoanr.post('/dangnhap', function(req, res) {
 
@@ -92,6 +82,7 @@ taikhoanr.post('/dangnhap', function(req, res) {
         username: req.body.username,
         pass: ePWD
     };
+    console.log(entity);
     taikhoan.login(entity)
         .then(function(user) {
             if (user === null) {
@@ -101,22 +92,53 @@ taikhoanr.post('/dangnhap', function(req, res) {
                     errorMsg: 'Thông tin đăng nhập không đúng.'
                 });
             } else {
+                if(user.chucvu===1)
+                {
+                    req.session.isQL=true;
+                }
+                if(user.chucvu===0)
+                {
+                    req.session.isQL=false;
+                }
+                console.log(user);
                 req.session.isLogged = true;
                 req.session.user = user;
-
                 var url = '/';
                 if (req.query.retUrl) {
                     url = req.query.retUrl;
                 }
-                res.redirect(url);
+                res.redirect('/');
             }
         });
 });
 taikhoanr.post('/thoat', restrict, function(req, res) {
     req.session.isLogged = false;
     req.session.user = null;
+    req.session.cookie.expires = new Date(Date.now() - 1000);
+   // res.redirect(req.headers.referer);
+    res.redirect('/');
     //req.session.cart = null;
-    res.redirect(req.referer);
+});
+taikhoanr.post('/resetmatkhau', function(req, res) {
+    var passkhoiphuc = crypto.createHash('md5').update('123456').digest('hex');
+    var entity=
+        {
+            pass:passkhoiphuc,
+            idUSER:req.body.idUSER
+        }
+    taikhoan.khoiphucmatkhau(entity).then(function(affectedRows) {
+        res.redirect('/quanliuser');
+    })
+});
+taikhoanr.post('/xoauser', function(req, res) {
+    var entity=
+        {
+            idUSER:req.body.idUSER
+        }
+        console.log(entity);
+    taikhoan.xoanguoidung(entity).then(function(affectedRows) {
+        res.redirect('/quanliuser');
+    })
 });
 module.exports = taikhoanr;
 

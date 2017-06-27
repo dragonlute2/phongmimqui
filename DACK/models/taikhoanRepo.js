@@ -7,7 +7,7 @@ var mustache = require('mustache'),
 
 exports.dangky = function(entity) {
     var d = q.defer();
-    var sql = mustache.render('INSERT INTO user (tendangnhap,matkhau,hoten,gioitinh,ngaysinh,sodienthoai,diachi,email,ngaybatdauban) VALUES("{{username}}","{{pass}}","{{hoten}}","{{gioitinh}}","{{datepicker}}","{{sdt}}","{{diachi}}","{{email}}","{{ngay}}")',entity);
+    var sql = mustache.render('INSERT INTO user (tendangnhap,matkhau,hoten,gioitinh,ngaysinh,sodienthoai,diachi,email,ngaybatdauban,chucvu) VALUES("{{username}}","{{pass}}","{{hoten}}","{{gioitinh}}","{{datepicker}}","{{sdt}}","{{diachi}}","{{email}}","{{ngay}}","{{chucvu}}")',entity);
     d.resolve(db.insert(sql));
     return d.promise;
 }
@@ -46,7 +46,8 @@ exports.login = function(entity) {
                 username: rows[0].tendangnhap,
                 name: rows[0].hoten,
                 email: rows[0].email,
-                ngaysinh: rows[0].ngaysinh
+                ngaysinh: rows[0].ngaysinh,
+                chucvu: rows[0].chucvu
             }
             deferred.resolve(user);
         } else {
@@ -54,4 +55,16 @@ exports.login = function(entity) {
         }
     });
     return deferred.promise;
+}
+exports.khoiphucmatkhau=function (entity) {
+    var d = q.defer();
+    var sql=mustache.render('update user set matkhau="{{pass}}" where idUSER="{{idUSER}}"', entity);
+    d.resolve(db.update(sql));
+    return d.promise;
+}
+exports.xoanguoidung=function (entity) {
+    var d = q.defer();
+    var sql=mustache.render('delete from user where idUSER="{{idUSER}}"', entity);
+    d.resolve(db.delete(sql));
+    return d.promise;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/CSS/home.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/danhgianhanxetcomment.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/danhgia.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body id="" class="cms-index-index cms-home-page">
@@ -18,7 +19,7 @@
         <div class="row">
             <div class="inner">
                 <ul class="breadcrumbs">
-                    <li class="home"> <a title="Quay lại trang chủ" href="../index.html">Trang chủ</a></li>
+                    <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                     <li> <span>Quản lý danh mục sản phẩm</span></li>
 
@@ -97,7 +98,7 @@
                                     <ul class="form-list">
                                         <li>
                                             <label for="id">Chọn danh sách danh mục cấp 1</label>
-                                            <select class="form-control" name="values[]">
+                                            <select class="form-control" id="bac1">
                                             {{#each bac1}}
                                                 <option value="{{idLOAISANPHAM1}}">{{tensanpham}}</option>
                                             {{/each}}
@@ -105,9 +106,9 @@
                                         </li>
                                         <li>
                                             <label for="id">Chọn danh sách danh mục cấp 2</label>
-                                            <select class="form-control" name="values[]">
+                                            <select class="form-control" name="values[]" id="bac2">
                                                 {{#each bac2}}
-                                                <option value="{{idLOAISANPHAM2}}">{{tensanpham}}</option>
+                                                <option value="{{idLOAISANPHAM2}}" id="{{LOAISANPHAM1_idLOAISANPHAM1}}" >{{tensanpham}}</option>
                                                 {{/each}}
                                             </select>
                                         </li>
@@ -138,6 +139,7 @@
 <script type="text/javascript" src="/JS/owl.carousel.min.js"></script>
 <script type="text/javascript" src="/assests/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 <script>
     $(document).ready(function() {
         $('#showmenu').click(function() {
@@ -149,6 +151,59 @@
         $("#menucontentother").show();
     }).mouseleave(function() {
         $("#menucontentother").hide();
+    });
+
+</script>
+<script>
+
+    var boolean = false;
+
+    var c ={};
+    $('#bac2 option').each(function () {
+        var a = [];
+        var a1 = +this.value;
+        var a2 = $(this).text()
+        var b = {};
+        b[a1] = a2;
+        a.push(b)
+        c = b;
+    });
+
+    $('#bac1').change(function(){
+
+        var fastInternet = document.getElementById('bac2');
+
+        if(boolean == true)
+        {
+
+            for(var i = 0; i < 10; i++)
+            {
+                $('#bac2').append($('<option>', {
+                    value: i,
+                    text: "Option "+i
+                }));
+            }
+            boolean = false;
+
+        }
+
+        if(boolean == false)
+        {
+            var value = $(this).val();
+            for ( var i = 0; i < fastInternet.options.length; i++)
+            {
+                var value1 = fastInternet.options[i].id;
+
+                if(value1 != value){
+                    fastInternet.remove(i);
+                    i--;
+                }
+            }
+            boolean = true;
+            alert(boolean);
+            console.log(b);
+        }
+
     });
 
 </script>

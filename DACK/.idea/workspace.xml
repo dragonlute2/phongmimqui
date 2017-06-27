@@ -2,14 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2b9e1d4-7f46-4f40-81c8-bf67f67bc310" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/timkiemController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/middle-wares/retricts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/timkiemRepo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Tìm kiếm/timkiemnew.hbs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/middle-wares/_layoutRou.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/_partials/navbar.hbs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/indexController.js" afterPath="$PROJECT_DIR$/controllers/indexController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/taikhoanController.js" afterPath="$PROJECT_DIR$/controllers/taikhoanController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/yeucauController.js" afterPath="$PROJECT_DIR$/controllers/yeucauController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fn/db.js" afterPath="$PROJECT_DIR$/fn/db.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/middle-wares/handleLayout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/indexRepo.js" afterPath="$PROJECT_DIR$/models/indexRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/home.css" afterPath="$PROJECT_DIR$/public/CSS/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/taikhoanRepo.js" afterPath="$PROJECT_DIR$/models/taikhoanRepo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/yeucauRepo.js" afterPath="$PROJECT_DIR$/models/yeucauRepo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/handlebars" afterPath="$PROJECT_DIR$/node_modules/.bin/handlebars" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/mime" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/bannick.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/bannick.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/dangkydaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/dangkydaugia.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/daugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/daugia.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/kygui.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/kygui.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/quydinhtaodaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/quydinhtaodaugia.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/topicdaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/topicdaugia.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/huongdan.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/huongdan.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/danhsachyeucau.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/danhsachyeucau.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/quanlydanhsachdanhmuc.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/quanlydanhsachdanhmuc.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/quanlynguoidung.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/quanlynguoidung.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../csdl/quanlydaugia.sql" afterPath="$PROJECT_DIR$/../csdl/quanlydaugia.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +50,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
@@ -57,8 +83,27 @@
         <entry file="file://$PROJECT_DIR$/fn/db.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <marker date="1498532086137" expanded="true" signature="169:581" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="240:335" ph="{&quot;host&quot;: _HOST...}" />
+                <marker date="1498532086137" expanded="true" signature="422:531" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="614:1065" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="689:784" ph="{&quot;host&quot;: _HOST...}" />
+                <marker date="1498532086137" expanded="true" signature="864:1015" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="885:953" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="959:1009" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1098:1524" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1173:1268" ph="{&quot;host&quot;: _HOST...}" />
+                <marker date="1498532086137" expanded="true" signature="1348:1474" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1369:1409" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1415:1468" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1557:1984" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1632:1727" ph="{&quot;host&quot;: _HOST...}" />
+                <marker date="1498532086137" expanded="true" signature="1807:1934" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1828:1868" ph="{...}" />
+                <marker date="1498532086137" expanded="true" signature="1874:1928" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,20 +111,32 @@
       <file leaf-file-name="main.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_layouts/main.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="209" column="44" lean-forward="false" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
+            <state relative-caret-position="1470">
+              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
+                <element signature="e#1155#1161#0#HTML" expanded="true" />
+                <element signature="e#1161#1167#0#HTML" expanded="true" />
+                <element signature="e#1168#1174#0#HTML" expanded="true" />
+                <element signature="e#1174#1180#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/indexController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="483">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -141,10 +198,10 @@
         <option value="$PROJECT_DIR$/middle-wares/handleLayout.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/CSS/home.css" />
-        <option value="$PROJECT_DIR$/views/_layouts/main.hbs" />
-        <option value="$PROJECT_DIR$/controllers/indexController.js" />
         <option value="$PROJECT_DIR$/models/indexRepo.js" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
+        <option value="$PROJECT_DIR$/controllers/indexController.js" />
+        <option value="$PROJECT_DIR$/views/_layouts/main.hbs" />
       </list>
     </option>
   </component>
@@ -224,24 +281,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Quản trị" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DACK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DACK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,12 +528,12 @@
       <workItem from="1498300037965" duration="1590000" />
       <workItem from="1498304568068" duration="1307000" />
       <workItem from="1498308432342" duration="1144000" />
-      <workItem from="1498459340353" duration="18447000" />
+      <workItem from="1498459340353" duration="18814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98080000" />
+    <option name="totallyTimeSpent" value="98447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -829,8 +868,27 @@
     <entry file="file://$PROJECT_DIR$/fn/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1498532086137" expanded="true" signature="169:581" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="240:335" ph="{&quot;host&quot;: _HOST...}" />
+            <marker date="1498532086137" expanded="true" signature="422:531" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="614:1065" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="689:784" ph="{&quot;host&quot;: _HOST...}" />
+            <marker date="1498532086137" expanded="true" signature="864:1015" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="885:953" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="959:1009" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1098:1524" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1173:1268" ph="{&quot;host&quot;: _HOST...}" />
+            <marker date="1498532086137" expanded="true" signature="1348:1474" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1369:1409" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1415:1468" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1557:1984" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1632:1727" ph="{&quot;host&quot;: _HOST...}" />
+            <marker date="1498532086137" expanded="true" signature="1807:1934" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1828:1868" ph="{...}" />
+            <marker date="1498532086137" expanded="true" signature="1874:1928" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,26 +898,6 @@
           <caret line="54" column="125" lean-forward="false" selection-start-line="54" selection-start-column="116" selection-end-line="54" selection-end-column="125" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layouts/main.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="209" column="44" lean-forward="false" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -877,6 +915,38 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layouts/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#1155#1161#0#HTML" expanded="true" />
+            <element signature="e#1161#1167#0#HTML" expanded="true" />
+            <element signature="e#1168#1174#0#HTML" expanded="true" />
+            <element signature="e#1174#1180#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>

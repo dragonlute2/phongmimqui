@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
-Source Server Version : 80000
+Source Server         : 127.0.0.1
+Source Server Version : 50714
 Source Host           : localhost:3306
-Source Database       : quanlysitedaugia
+Source Database       : quanlydaugia
 
 Target Server Type    : MYSQL
-Target Server Version : 80000
+Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-06-24 19:44:55
+Date: 2017-06-26 16:07:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,13 +34,15 @@ CREATE TABLE `chitietdaugia` (
 -- Records of chitietdaugia
 -- ----------------------------
 INSERT INTO `chitietdaugia` VALUES ('1', '2', '2000', '2017-06-14 13:21:43');
-INSERT INTO `chitietdaugia` VALUES ('1', '2', '2000', '2017-06-04 13:23:39');
-INSERT INTO `chitietdaugia` VALUES ('3', '3', '20000', '2017-06-13 13:29:43');
-INSERT INTO `chitietdaugia` VALUES ('4', '1', '2', '2017-06-21 13:50:38');
+INSERT INTO `chitietdaugia` VALUES ('1', '2', '4000', '2017-06-04 13:23:39');
+INSERT INTO `chitietdaugia` VALUES ('3', '3', '12000000', '2017-06-13 13:29:43');
+INSERT INTO `chitietdaugia` VALUES ('4', '1', '18890000', '2017-06-21 13:50:38');
 INSERT INTO `chitietdaugia` VALUES ('4', '3', '2', '2017-06-14 13:51:37');
 INSERT INTO `chitietdaugia` VALUES ('8', '2', '3', '2017-06-02 13:51:56');
 INSERT INTO `chitietdaugia` VALUES ('13', '8', '2', '2017-06-16 13:52:25');
 INSERT INTO `chitietdaugia` VALUES ('15', '2', '1', '2017-06-01 13:52:50');
+INSERT INTO `chitietdaugia` VALUES ('5', '7', '21990000', '2017-06-02 14:37:15');
+INSERT INTO `chitietdaugia` VALUES ('6', '10', '25990000', '2017-05-28 14:37:38');
 
 -- ----------------------------
 -- Table structure for chitietxinban
@@ -423,13 +425,30 @@ CREATE TABLE `sanphamyeuthich` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for sessions
+-- ----------------------------
+DROP TABLE IF EXISTS `sessions`;
+CREATE TABLE `sessions` (
+  `session_id` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `expires` int(11) unsigned NOT NULL,
+  `data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
+  PRIMARY KEY (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of sessions
+-- ----------------------------
+INSERT INTO `sessions` VALUES ('obtsLbXNTLrI4XX-h8rlCvnmFgwP6TIG', '1498553659', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A6E756C6C2C2265787069726573223A6E756C6C2C22687474704F6E6C79223A747275652C2270617468223A222F227D7D);
+INSERT INTO `sessions` VALUES ('wyIBc-dd_rnBBSpIiMp2nDMjxMaus_3_', '1498543092', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A6E756C6C2C2265787069726573223A6E756C6C2C22687474704F6E6C79223A747275652C2270617468223A222F227D7D);
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `idUSER` int(11) NOT NULL AUTO_INCREMENT,
   `tendangnhap` varchar(30) DEFAULT NULL,
-  `matkhau` varchar(30) DEFAULT NULL,
+  `matkhau` varchar(50) DEFAULT NULL,
   `hoten` varchar(100) DEFAULT NULL,
   `gioitinh` varchar(5) DEFAULT NULL,
   `ngaysinh` datetime DEFAULT NULL,
@@ -437,19 +456,20 @@ CREATE TABLE `user` (
   `diachi` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `ngaybatdauban` datetime DEFAULT NULL,
+  `chucvu` int(1) DEFAULT NULL,
   PRIMARY KEY (`idUSER`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'bigterboy', '0908083087', 'Trương Phan Quí', 'Nam', '2017-06-21 15:59:30', '01227890490', 'tp hcm', 'ninatabala@gmail.com', '2017-06-21 15:59:30');
-INSERT INTO `user` VALUES ('2', 'jimber', '123456', 'trần trung hiếu', 'Nữ', '2017-06-12 16:00:30', '123456', 'TP quảng nam', 'jiper@gmail.com', '2017-06-21 15:59:30');
-INSERT INTO `user` VALUES ('3', 'honey', '15615466', 'Nguyễn Quang Hùng', 'Nam', '2017-06-15 16:03:02', '1234516889', 'TP HCM', 'horcor@gmail.com', '2017-06-21 15:59:30');
-INSERT INTO `user` VALUES ('4', 'vippro', '123943891', 'Hoàng Trung Quân', 'Nam', '2003-12-01 13:24:21', '04739475833', 'Quảng Ninh', 'iosAdroid@yahoo.com.vn', '2017-06-14 15:25:19');
-INSERT INTO `user` VALUES ('5', 'honney', '143992737', 'Nguyễn Minh Quân', 'Nam', '1995-11-09 15:25:50', '03849273948', 'Quảng Trị', 'ayeuemILY@gmail.com', '2017-06-12 15:26:51');
-INSERT INTO `user` VALUES ('6', 'hoaneiksi', '1342424390', 'Justin bieber', 'Nam', '2001-11-23 15:28:58', '085734885', 'Tây Ninh', 'hoangquan@gmail.com', '2017-06-03 15:31:39');
-INSERT INTO `user` VALUES ('7', 'biaafie', 'laien3893', 'Ngô Thanh Vân', 'Nữ', '1993-07-30 15:29:08', '094782734', 'Hà Nội', 'trung123@gmail.com', '2017-06-25 15:31:43');
-INSERT INTO `user` VALUES ('8', 'quanafk', '1233542', 'Hoàng Luân', 'Nam', '1992-08-09 15:29:19', '0858377456', 'Huế', 'hoangeo2r2@gmail.com', '2017-06-06 15:31:47');
-INSERT INTO `user` VALUES ('9', 'nhinconchim', 'immemto34', 'Phạm Luân', 'Nam', '1998-12-30 15:29:31', '084783723', 'Quảng Nam', 'viporo1293@gmail.com', '2017-06-16 15:31:52');
-INSERT INTO `user` VALUES ('10', 'wtfuckyou', '50384jdoeo', 'Tô Ngọc Vân', 'Nữ', '1991-07-31 15:29:43', '090807432', 'Dak Lak', 'ziperrrr@gmail.com', '2017-06-15 15:31:56');
+INSERT INTO `user` VALUES ('1', 'bigterboy', '0908083087', 'Trương Phan Quí', 'Nam', '2017-06-21 15:59:30', '01227890490', 'tp hcm', 'ninatabala@gmail.com', '2017-06-21 15:59:30', null);
+INSERT INTO `user` VALUES ('2', 'jimber', '123456', 'trần trung hiếu', 'Nữ', '2017-06-12 16:00:30', '123456', 'TP quảng nam', 'jiper@gmail.com', '2017-06-21 15:59:30', null);
+INSERT INTO `user` VALUES ('3', 'honey', '15615466', 'Nguyễn Quang Hùng', 'Nam', '2017-06-15 16:03:02', '1234516889', 'TP HCM', 'horcor@gmail.com', '2017-06-21 15:59:30', null);
+INSERT INTO `user` VALUES ('4', 'vippro', '123943891', 'Hoàng Trung Quân', 'Nam', '2003-12-01 13:24:21', '04739475833', 'Quảng Ninh', 'iosAdroid@yahoo.com.vn', '2017-06-14 15:25:19', null);
+INSERT INTO `user` VALUES ('5', 'honney', '143992737', 'Nguyễn Minh Quân', 'Nam', '1995-11-09 15:25:50', '03849273948', 'Quảng Trị', 'ayeuemILY@gmail.com', '2017-06-12 15:26:51', null);
+INSERT INTO `user` VALUES ('6', 'hoaneiksi', '1342424390', 'Justin bieber', 'Nam', '2001-11-23 15:28:58', '085734885', 'Tây Ninh', 'hoangquan@gmail.com', '2017-06-03 15:31:39', null);
+INSERT INTO `user` VALUES ('7', 'biaafie', 'laien3893', 'Ngô Thanh Vân', 'Nữ', '1993-07-30 15:29:08', '094782734', 'Hà Nội', 'trung123@gmail.com', '2017-06-25 15:31:43', null);
+INSERT INTO `user` VALUES ('8', 'quanafk', '1233542', 'Hoàng Luân', 'Nam', '1992-08-09 15:29:19', '0858377456', 'Huế', 'hoangeo2r2@gmail.com', '2017-06-06 15:31:47', null);
+INSERT INTO `user` VALUES ('9', 'nhinconchim', 'immemto34', 'Phạm Luân', 'Nam', '1998-12-30 15:29:31', '084783723', 'Quảng Nam', 'viporo1293@gmail.com', '2017-06-16 15:31:52', null);
+INSERT INTO `user` VALUES ('10', 'wtfuckyou', '50384jdoeo', 'Tô Ngọc Vân', 'Nữ', '1991-07-31 15:29:43', '090807432', 'Dak Lak', 'ziperrrr@gmail.com', '2017-06-15 15:31:56', null);
