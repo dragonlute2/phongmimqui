@@ -12,7 +12,7 @@ var express = require('express'),
     yeucau=require('./controllers/yeucauController'),
     huongdan=require('./controllers/huongdanController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
-    dangky=require('./controllers/dangkyController');
+    taikhoan=require('./controllers/taikhoanController');
 
 
 var app = express();
@@ -23,7 +23,6 @@ app.engine('hbs', handlebars({
     extname: 'hbs',
     defaultLayout: 'main',
     layoutsDir: 'views/_layouts/',
-    partialsDir: 'views/_partials/',
      helpers: {
          section: handlebars_sections(),
          number_format: function (n) {
@@ -71,9 +70,9 @@ app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
 app.use('/huongdan',huongdan);
-app.use('/taikhoan/dangky',dangky);
+app.use('/taikhoan/dangky',taikhoan);
 app.use(handle404);
 
-app.listen(4000,function () {
+app.listen(3000,function () {
     console.log('Ahii');
 });

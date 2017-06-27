@@ -122,9 +122,9 @@
                 <div class="row child_tab">
                     {{#each top5sanphamgiacao}}
                         <div class="col-lg-20 col-md-20 col-sm-20 box-product box_tab_index  ">
-                            <div class="product-box product_box_tab" id="thoigian{{idSANPHAM}}">
+                            <div class="product-box product_box_tab" id="giacao{{idSANPHAM}}">
                                 <h3 class="product-name">
-                                    <a href="#" title="{{tensanpham}}"> {{tensanpham}}</a>
+                                    <a href="#" title="{{tensanpham}}">{{tensanpham}}</a>
                                 </h3>
                                 <div class="product-thumbnail">
                                     <a href="#" title="{{tensanpham}}">
@@ -143,7 +143,7 @@
 
                                 <div class="time-rows">
                                     <img src="/Images/glass.png">
-                                    <div class="time thoigian{{idSANPHAM}}" value="{{thoigiankethuc}}">
+                                    <div class="time giacao{{idSANPHAM}}" value="{{thoigiankethuc}}">
 
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                 <div class="row child_tab">
                     {{#each top5sanphamdaugia}}
                         <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                            <div class="product-box product_box_tab">
+                            <div class="product-box product_box_tab" id="daugia{{idSANPHAM}}">
                                 <h3 class="product-name">
                                     <a href="#" title="{{tensanpham}}"> {{tensanpham}}</a>
                                 </h3>
@@ -190,8 +190,9 @@
                                     </div>
                                 </div>
                                 <div class="time-rows">
-                                    <div class="time">
-                                        <img src="/Images/glass.png">  2:30:30
+                                    <img src="/Images/glass.png">
+                                    <div class="time daugia{{idSANPHAM}}" value="{{thoigiankethuc}}">
+
                                     </div>
                                 </div>
                                 <div class="submit_btn">
@@ -209,181 +210,45 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="ganketthuc" aria-labelledby="ganketthuc-tab">
                 <div class="row child_tab">
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
+                    {{#each top5sanphamganketthuc}}
+                        <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
+                            <div class="product-box product_box_tab" id="thoigian{{idSANPHAM}}">
+                                <h3 class="product-name">
+                                    <a href="#" title="{{tensanpham}}"> {{tensanpham}}</a>
+                                </h3>
+                                <div class="product-thumbnail">
+                                    <a href="#" title="{{tensanpham}}">
+                                        <img src="/Images/7.jpg" alt="{{tensanpham}}">
+                                    </a>
                                 </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
+                                <div class="item-content">
+                                    <div class="item-price">
+                                        {{gia}}
+                                    </div>
+                                    <div class="rows-bids">
+                                        Bids:
+                                        <span class="bids">{{soluotdaugia}}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
+                                <div class="time-rows">
+                                    <img src="/Images/glass.png">
+                                    <div class="time thoigian{{idSANPHAM}}" value="{{thoigiankethuc}}">
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="/Images/btn-chitiet.png" border="0">
-                                </a>
+                                <div class="submit_btn">
+                                    <br>
+                                    <a title="Click để đặt giá" href="#" style="margin-left:-12px">
+                                        <img src="/Images/btn-chitiet.png" border="0">
+                                    </a>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
+                    {{/each}}
 
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-20 col-md-20 col-sm-20 col-xs-6 box-product box_tab_index">
-                        <div class="product-box product_box_tab">
-                            <h3 class="product-name">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT"> TIVI LED 3D TCL 55H8800 - 55 inc...</a>
-                            </h3>
-                            <div class="product-thumbnail">
-                                <a href="#" title="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT">
-                                    <img src="../public/Images/7.jpg" alt="TIVI LED 3D TCL 55H8800 - 55 inch SIÊU NÉT ">
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                <div class="item-price">
-                                    19.000.000đ
-                                </div>
-                                <div class="rows-bids">
-                                    Bids:
-                                    <span class="bids">4</span>
-                                </div>
-                            </div>
-                            <div class="time-rows">
-                                <div class="time">
-                                    <img src="../public/Images/glass.png">  2:30:30
-                                </div>
-                            </div>
-                            <div class="submit_btn">
-                                <input readonly="true" class="price" type="text" value="50.000">
-                                <br>
-                                <a title="Click để đặt giá" href="#" style="margin-left:-12px">
-                                    <img src="../public/Images/btn-bid.jpg" border="0">
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -395,841 +260,77 @@
 <!--Các nhóm sản phẩm-->
 <div class="content-page">
     <!--Nhóm sản phẩm 1-->
-    <div class="section section_top section-collection">
-        <div class="container collection_pd">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 header-title">
-                    <div class="title-left">
-                        <h2><a href="#">Đồng hồ và trang sức</a></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row nhomsp">
-                <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
-                    <div class="banner-left">
-                        <a href="#"><img src="../public/Images/banner-left1.jpg" alt="#"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
-                    <div class="content-left">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
-                                <ul class="site-nav vertical-nav" style="margin-left: -15px">
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ treo tay
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức cao cấp
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ bỏ túi
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kim cương và đá quí
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức hôn lễ
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức thủ công
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd" style="padding-left:0px">
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
+    {{#each loaiSanPhamQuangCao}}
+        <div class="section section_top section-collection">
+            <div class="container collection_pd">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 header-title">
+                        <div class="title-left">
+                            <h2><a href="#">{{tensanpham}}</a></h2>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <!--Nhóm sản phẩm 2-->
-    <div class="section section_top section-collection">
-        <div class="container collection_pd">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 header-title">
-                    <div class="title-left">
-                        <h2><a href="#">Đồng hồ và trang sức</a></h2>
+                <div class="row nhomsp">
+                    <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
+                        <div class="banner-left">
+                            <a href="#"><img src="/Images/banner-left1.jpg" alt="#"></a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row nhomsp">
-                <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
-                    <div class="banner-left">
-                        <a href="#"><img src="../public/Images/banner-left1.jpg" alt="#"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
-                    <div class="content-left">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
-                                <ul class="site-nav vertical-nav" style="margin-left: -15px">
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ treo tay
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức cao cấp
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ bỏ túi
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kim cương và đá quí
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức hôn lễ
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức thủ công
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
+                        <div class="content-left">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
+                                    <ul class="site-nav vertical-nav" id="quangcao{{idLOAISANPHAM1}}" style="margin-left: -15px">
+                                        {{#each ../bac2}}
+                                            <li class="nav-item icon hidden" >
+                                                <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" class="quangcao{{LOAISANPHAM1_idLOAISANPHAM1}}">
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                    {{tensanpham}}
+                                                </a>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
 
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd" style="padding-left:0px">
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
                                 </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd">
+                                    {{#each ../sanPhamQuangCao}}
+                                        <div class="col-sm-6 col-md-4" id="sanpham{{idSANPHAM}}" style="margin-top: 5px">
+                                            <div class="thumbnail">
+                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="{{tensanpham}}"><img src="Images/hinh.jpg" alt="#"></a>
+                                                <div class="caption" style="text-align: center; margin-top: -15px">
+                                                    <div class="product-name">
+                                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="{{tensanpham}}"> {{tensanpham}} </a>
+                                                    </div>
+                                                    <div class="time-rows" style="font-size: 13px" >
+                                                        <div class="time-rows" style="text-align: left; margin-left: 20px">
+                                                            <img src="/Images/glass.png">
+                                                            <div class="time sanpham{{idSANPHAM}}"  style="float: right; margin-top: 8px; margin-right: 2px" value="{{thoigiankethuc}}">
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-price"  style="text-align: center; font-size: 17px; margin-right: -20px; margin-top: 10px">
+                                                            {{gia}}
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
 
                                             </div>
-
                                         </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
+                                    {{/each}}
 
 
-                                            </div>
 
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
                                 </div>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <!--Nhóm sản phẩm 3-->
-    <div class="section section_top section-collection">
-        <div class="container collection_pd">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 header-title">
-                    <div class="title-left">
-                        <h2><a href="#">Đồng hồ và trang sức</a></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row nhomsp">
-                <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
-                    <div class="banner-left">
-                        <a href="#"><img src="../public/Images/banner-left1.jpg" alt="#"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
-                    <div class="content-left">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
-                                <ul class="site-nav vertical-nav" style="margin-left: -15px">
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ treo tay
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức cao cấp
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ bỏ túi
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kim cương và đá quí
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức hôn lễ
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức thủ công
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd" style="padding-left:0px">
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--Nhóm sản phẩm 4-->
-    <div class="section section_top section-collection">
-        <div class="container collection_pd">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 header-title">
-                    <div class="title-left">
-                        <h2><a href="#">Đồng hồ và trang sức</a></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row nhomsp">
-                <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
-                    <div class="banner-left">
-                        <a href="#"><img src="../public/Images/banner-left1.jpg" alt="#"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
-                    <div class="content-left">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
-                                <ul class="site-nav vertical-nav" style="margin-left: -15px">
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ treo tay
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức cao cấp
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Đồng hồ bỏ túi
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kim cương và đá quí
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức hôn lễ
-                                        </a>
-                                    </li>
-                                    <li class="nav-item icon" data-submenu-id="tablet">
-                                        <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" alt="Tablet">
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Trang sức thủ công
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd" style="padding-left:0px">
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4" style="margin-top: 5px">
-                                    <div class="thumbnail">
-                                        <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="#">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="#">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="#"><img src="../public/Images/hinh.jpg" alt="#"></a>
-                                        <div class="caption" style="text-align: center; margin-top: -15px">
-                                            <div class="product-name">
-                                                <a href="#">  Điện thoại 1 </a>
-                                            </div>
-                                            <div class="time-rows" style="font-size: 13px ;" >
-                                                <div class="time" style="text-align: left; float: left" >
-                                                    <img src="../public/Images/glass2.png" >
-                                                    2:30:30
-                                                </div>
-                                                <div class="item-price"  style="margin-right: 0px">
-                                                    2.000.000đ
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+    {{/each}}
 </div>
 <!--Footer-->
 
@@ -1249,23 +350,13 @@
 
 </script>
 <script>
-    $('ul', '.row-noGutter' ).each(function() {
-        if($(this).attr('class') === $(this).parents(".row-noGutter").attr('id') )
-        {
-            $(this).parents(".menu-home").removeClass("hidden");
-        }
-    });
-    $('.col-md-4.text-xs-left.text-left.menu-home.hidden').remove();
-
-
-
-    $('a', 'ul').each(function(){
-        if($(this).attr('class') === $(this).parents("ul").attr('id') )
+    $('a', '.site-nav.vertical-nav').each(function(){
+        if($(this).attr('class') === $(this).parents(".site-nav.vertical-nav").attr('id') )
         {
             $(this).parents("li").removeClass("hidden");
         }
     });
-    $('li .hidden').remove();
+    $('.nav-item.icon.hidden').remove()
 </script>
 <script>
     $('.time','.product-box.product_box_tab').each(function(){
@@ -1300,6 +391,52 @@
             }
             return i;
         }
+    });
+
+    $('.time','.col-sm-6.col-md-4').each(function(){
+        var m = $(this).attr('class').slice(5, $(this).attr('class').length);
+        if(m === $(this).parents('.col-sm-6.col-md-4').attr('id'))
+        {
+            var timeFinish = $(this).attr('value');
+
+            var calcNewYear = setInterval(function(){
+
+                date_future = new Date(timeFinish);
+                date_now = new Date();
+                seconds = Math.floor((date_future - (date_now))/1000);
+                minutes = Math.floor(seconds/60);
+                hours = Math.floor(minutes/60);
+                days = Math.floor(hours/24);
+                hours = hours-(days*24);
+                minutes = minutes-(days*24*60)-(hours*60);
+                seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60)
+                if(days < 0)
+                {
+
+                }
+
+                $('.'+m).text((days) + " ngày, " + checkTime(hours) + ":" + checkTime(minutes) + ":" + checkTime(seconds));
+            },1000);
+        }
+        function checkTime(i)
+        {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    });
+</script>
+<script>
+    $('.product-name a').each(function()
+    {
+        if($.trim($(this).text()).length > 22)
+        {
+            var x = $.trim($(this).text());
+            x = x.slice(0, 20) + "...";
+            $.trim($(this).text(x));
+        }
+
     });
 </script>
 
