@@ -45,14 +45,63 @@ exports.loadTop5SanPhamGanKetThuc = function () {
 exports.loadLoaiSanPhamQuangCao = function()
 {
     var d = q.defer();
-    var sql = 'select loaisanpham1.*, COUNT(*) from sanpham, loaisanpham1, loaisanpham2 where sanpham.conhan = 1 AND loaisanpham1.idLOAISANPHAM1 = loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 AND loaisanpham2.idLOAISANPHAM2 = sanpham.LOAISANPHAM2_idLOAISP2 GROUP BY loaisanpham2.idLOAISANPHAM2 ORDER BY COUNT(*) DESC LIMIT 5';
+    var sql = 'select loaisanpham1.*, COUNT(*) ' +
+        'from sanpham, loaisanpham1, loaisanpham2 where sanpham.conhan = 1 AND loaisanpham1.idLOAISANPHAM1 = loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 AND loaisanpham2.idLOAISANPHAM2 = sanpham.LOAISANPHAM2_idLOAISP2 GROUP BY loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 ORDER BY COUNT(*) DESC LIMIT 5';
     d.resolve(db.load(sql));
     return d.promise;
 }
 exports.loadSanPhamQuangCao = function()
 {
     var d = q.defer();
-    var sql = 'SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM from sanpham, loaisanpham2, loaisanpham1 where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND sanpham.conhan = 1 ORDER BY thoigiankethuc ASC LIMIT 6';
+    var sql = '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 1 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) '+
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 2 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) '+
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 3 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 4 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 5 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 6 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 7 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 8 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 9 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
+        'UNION ALL ' +
+        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        'from sanpham, loaisanpham2, loaisanpham1 ' +
+        'where sanpham.LOAISANPHAM2_idLOAISP2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 10 AND sanpham.conhan = 1 ' +
+        'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ';
     d.resolve(db.load(sql));
     return d.promise;
 }

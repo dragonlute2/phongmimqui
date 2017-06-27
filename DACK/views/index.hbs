@@ -274,15 +274,14 @@
                 <div class="row nhomsp">
                     <div class="col-lg-3 col-md-4 hidden-md-down" style="padding-right:0px; margin-top: 10px;">
                         <div class="banner-left">
-                            <a href="#"><img src="/Images/banner-left1.jpg" alt="#"></a>
+                            <a href="#"><img src="/Images/banner{{idLOAISANPHAM1}}.jpg" alt="#"></a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 content_left_pd">
                         <div class="content-left">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs-down item-pro-list">
-                                    <ul class="site-nav vertical-nav" id="quangcao{{idLOAISANPHAM1}}" style=" margin-right: -20px">
-                                    <ul class="site-nav vertical-nav" id="quangcao{{idLOAISANPHAM1}}" style="margin-left: -15px">
+                                    <ul class="site-nav vertical-nav" id="quangcao{{idLOAISANPHAM1}}" style="margin-left: -15px; margin-right: -20px">
                                         {{#each ../bac2}}
                                             <li class="nav-item icon hidden" >
                                                 <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" class="quangcao{{LOAISANPHAM1_idLOAISANPHAM1}}">
@@ -294,10 +293,10 @@
                                     </ul>
 
                                 </div>
-                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 wrap-product wrp_xs_pd sanphamquangcao{{idLOAISANPHAM1}}">
                                     {{#each ../sanPhamQuangCao}}
-                                        <div class="col-sm-6 col-md-4" id="sanpham{{idSANPHAM}}" style="margin-top: 5px">
-                                            <div class="thumbnail">
+                                        <div class="col-sm-6 col-md-4 hidden" id="sanphamquangcao{{idLOAISANPHAM1}}" style="margin-top: 5px">
+                                            <div class="thumbnail" id ="sanpham{{idSANPHAM}}">
                                                 <a href="Nhóm%20sản%20phẩm/Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="{{tensanpham}}"><img src="Images/hinh.jpg" alt="#"></a>
                                                 <div class="caption" style="text-align: center; margin-top: -15px">
                                                     <div class="product-name">
@@ -306,7 +305,7 @@
                                                     <div class="time-rows" style="font-size: 13px" >
                                                         <div class="time-rows" style="text-align: left; margin-left: 20px">
                                                             <img src="/Images/glass.png">
-                                                            <div class="time sanpham{{idSANPHAM}}"  style="float: right; margin-top: 8px; margin-right: 2px" value="{{thoigiankethuc}}">
+                                                            <div class="time sanpham{{idSANPHAM}}"  style="float: right; margin-top: 8px; margin-right: -7px" value="{{thoigiankethuc}}">
 
                                                             </div>
                                                         </div>
@@ -358,7 +357,17 @@
             $(this).parents("li").removeClass("hidden");
         }
     });
-    $('.nav-item.icon.hidden').remove()
+    $('.nav-item.icon.hidden').remove();
+
+    $('.col-sm-6.col-md-4', '.col-lg-9.col-md-9.col-sm-9.col-xs-12.wrap-product.wrp_xs_pd').each(function(){
+        var m = $(this).parent('.col-lg-9.col-md-9.col-sm-9.col-xs-12.wrap-product.wrp_xs_pd').attr('class');
+        var x = m.slice(60, m.length);
+        if($(this).attr('id') === x )
+        {
+            $(this).removeClass("hidden");
+        }
+    });
+    $('.col-sm-6.col-md-4.hidden').remove()
 </script>
 <script>
     $('.time','.product-box.product_box_tab').each(function(){
@@ -395,10 +404,13 @@
         }
     });
 
-    $('.time','.col-sm-6.col-md-4').each(function(){
+    $('.time','.thumbnail').each(function(){
         var m = $(this).attr('class').slice(5, $(this).attr('class').length);
-        if(m === $(this).parents('.col-sm-6.col-md-4').attr('id'))
+
+        var n = $(this).parents('.thumbnail').attr('id');
+        if(m === n)
         {
+
             var timeFinish = $(this).attr('value');
 
             var calcNewYear = setInterval(function(){
@@ -417,7 +429,7 @@
 
                 }
 
-                $('.'+m).text((days) + " ngày, " + checkTime(hours) + ":" + checkTime(minutes) + ":" + checkTime(seconds));
+                $('.time.'+m).text((days) + " ngày, " + checkTime(hours) + ":" + checkTime(minutes) + ":" + checkTime(seconds));
             },1000);
         }
         function checkTime(i)
@@ -432,10 +444,10 @@
 <script>
     $('.product-name a').each(function()
     {
-        if($.trim($(this).text()).length > 22)
+        if($.trim($(this).text()).length > 18)
         {
             var x = $.trim($(this).text());
-            x = x.slice(0, 20) + "...";
+            x = x.slice(0, 18) + "...";
             $.trim($(this).text(x));
         }
 
