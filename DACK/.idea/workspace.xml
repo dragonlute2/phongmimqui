@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b9e1d4-7f46-4f40-81c8-bf67f67bc310" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/danhsachnguoidungController.js" afterPath="$PROJECT_DIR$/controllers/danhsachnguoidungController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/indexController.js" afterPath="$PROJECT_DIR$/controllers/indexController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/taikhoanController.js" afterPath="$PROJECT_DIR$/controllers/taikhoanController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/indexRepo.js" afterPath="$PROJECT_DIR$/models/indexRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/taikhoanRepo.js" afterPath="$PROJECT_DIR$/models/taikhoanRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/CSS/home.css" afterPath="$PROJECT_DIR$/public/CSS/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/bannick.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/bannick.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/dangkydaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/dangkydaugia.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/daugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/daugia.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/kygui.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/kygui.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/quydinhtaodaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/quydinhtaodaugia.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/topicdaugia.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/Các trang hướng dẫn/topicdaugia.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Hướng dẫn/huongdan.hbs" afterPath="$PROJECT_DIR$/views/Hướng dẫn/huongdan.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/danhsachyeucau.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/danhsachyeucau.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/quanlydanhsachdanhmuc.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/quanlydanhsachdanhmuc.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Quản trị/quanlynguoidung.hbs" afterPath="$PROJECT_DIR$/views/Quản trị/quanlynguoidung.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Tài khoản/thaydoithongtincanhan.hbs" afterPath="$PROJECT_DIR$/views/Tài khoản/thaydoithongtincanhan.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Tài khoản/thongtincanhannew.hbs" afterPath="$PROJECT_DIR$/views/Tài khoản/thongtincanhannew.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Đăng ký/dangky.hbs" afterPath="$PROJECT_DIR$/views/Đăng ký/dangky.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Đăng nhập/dangnhap.hbs" afterPath="$PROJECT_DIR$/views/Đăng nhập/dangnhap.hbs" />
-    </list>
+    <list default="true" id="c2b9e1d4-7f46-4f40-81c8-bf67f67bc310" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -509,12 +484,12 @@
       <workItem from="1498304568068" duration="1307000" />
       <workItem from="1498308432342" duration="1144000" />
       <workItem from="1498459340353" duration="18814000" />
-      <workItem from="1498532762984" duration="2639000" />
+      <workItem from="1498532762984" duration="2674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101086000" />
+    <option name="totallyTimeSpent" value="101121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +501,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2454955" sideWeight="0.4902439" order="0" side_tool="false" content_ui="combo" />
