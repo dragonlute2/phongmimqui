@@ -4,6 +4,7 @@
 var mustache = require('mustache'),
     q = require('q'),
     db = require('../fn/db');
+var moment = require('moment');
 
 exports.dangky = function(entity) {
     var d = q.defer();
@@ -41,12 +42,16 @@ exports.login = function(entity) {
 
     db.load(sql).then(function(rows) {
         if (rows.length > 0) {
+            ngaysinh1=moment(rows[0].ngaysinh).format('DD/MM/YYYY');
             var user = {
                 id: rows[0].idUSER,
                 username: rows[0].tendangnhap,
                 name: rows[0].hoten,
                 email: rows[0].email,
-                ngaysinh: rows[0].ngaysinh,
+                ngaysinh: ngaysinh1,
+                diachi:rows[0].diachi,
+                gioitinh:rows[0].gioitinh,
+                sdt:rows[0].sodienthoai,
                 chucvu: rows[0].chucvu
             }
             deferred.resolve(user);

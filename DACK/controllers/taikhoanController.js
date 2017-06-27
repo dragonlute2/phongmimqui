@@ -140,5 +140,11 @@ taikhoanr.post('/xoauser', function(req, res) {
         res.redirect('/quanliuser');
     })
 });
+taikhoanr.get('/thongtincanhan', function(req, res) {
+    res.render('Tài khoản/thongtincanhannew');
+});
+taikhoanr.get('/thaydoithongtin', function(req, res) {
+    res.render('Tài khoản/thaydoithongtincanhan');
+});
 module.exports = taikhoanr;
 

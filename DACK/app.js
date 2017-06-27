@@ -12,12 +12,11 @@ var express = require('express'),
     yeucau=require('./controllers/yeucauController'),
     huongdan=require('./controllers/huongdanController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
-    timkiemController=require('./controllers/timkiemController'),
     taikhoan=require('./controllers/taikhoanController');
+var request = require('request');
 var session = require('express-session');
 // var fileStore = require('session-file-store')(session);
 var MySQLStore = require('express-mysql-session')(session);
-
 
 var app = express();
 
@@ -77,8 +76,6 @@ app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
 app.use('/huongdan',huongdan);
 app.use('/taikhoan',taikhoan);
-app.use('/timkiem',timkiemController);
-
 app.use(handle404);
 
 app.listen(3000,function () {

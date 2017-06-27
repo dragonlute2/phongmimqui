@@ -127,3 +127,12 @@ li{
     margin-right: -2px;
     color: red;
 }
+.sider_bar_page
+{
+    box-shadow:none;
+}
+ul.site-nav > li > a
+{
+    font-size: 14px;
+    padding-left: 6px;
+}
