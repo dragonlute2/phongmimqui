@@ -68,8 +68,6 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(handleLayout);
-
-
 app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);

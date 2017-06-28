@@ -102,16 +102,20 @@
                                     <label for="txtdc">Địa chỉ<span class="required"></span></label>
                                     <input type="text" class="input-text" id="txtdc" name="dc" placeholder="Địa chỉ">
                                 </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group">
+                                    <div  class="g-recaptcha" data-sitekey="6LcvtSYUAAAAAJdVqfvmUsDAcx794QLpkOLev9JE" data-callback="recaptchaCallback"></div>
+                                    <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center" class="form-group">
+                                    <input id="dangky" value="Đăng ký" type="submit" class="button login login_sign form-group" style="font-weight: bold;"></input>
+                                    <button id="trolai" value="Trở lại" type="button" class="button login login_sign form-group" ><span> Trở lại </span></button>
+
+                                </div>
+
                             </ul>
-                            <div>
-                                <div class="g-recaptcha" data-sitekey="6LcvtSYUAAAAAJdVqfvmUsDAcx794QLpkOLev9JE"></div>
-                            </div>
-                             <div class="buttons-set">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input id="dangky" value="Đăng ký" type="submit" class="button login login_sign" style="font-weight: bold;"></input>
-                            &nbsp;
-                            <button id="trolai" value="Trở lại" type="button" class="button login login_sign" ><span> Trở lại </span></button>        
-                            </div>
+
+
 
                     </form>
                 </div>
@@ -157,9 +161,11 @@ $(function () {
     <script src="/assests/jquery-validation-1.12.0/jquery.validate.min.js" type="text/javascript"></script>
     <script>
         $('#dangky').validate({
+            ignore: ".ignore",
             rules: {
                 tendangnhap: {
-                    required: true
+                    required: true,
+                    minlength: 4
                 },
                 rawPWD: {
                     required: true,
@@ -178,11 +184,24 @@ $(function () {
                 datepicker: {
                     required: true
                 },
+                dc:{
+                    required: true
+                },
+                hiddenRecaptcha: {
+                    required: function () {
+                        if (grecaptcha.getResponse() == '') {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
             },
 
             messages: {
                 tendangnhap: {
-                    required: 'Vui lòng nhập username.'
+                    required: 'Vui lòng nhập username.',
+                    minlength: 'Tên đăng nhập phải dài ít nhất 4 ký tự'
                 },
                 rawPWD: {
                     required: 'Vui lòng nhập mật khẩu',
@@ -196,11 +215,18 @@ $(function () {
                 },
                 Email: {
                     required: 'Vui lòng nhập email',
-                    email: 'EMail không đúng định dạng'
+                    email: 'Email không đúng định dạng'
                 },
                 datepicker: {
                     required: 'Vui lòng chọn ngày sinh'
                 },
+                dc:{
+                    required: 'Vui lòng nhập địa chỉ'
+                },
+                hiddenRecaptcha:
+                        {
+                            required: 'Bạn là Robot?'
+                        },
             },
 
             errorElement: 'span',
@@ -220,6 +246,9 @@ $(function () {
                 label.remove();
             },
         });
+        function recaptchaCallback() {
+            $('#hiddenRecaptcha').valid();
+        };
     </script>
 </body>
 </html>

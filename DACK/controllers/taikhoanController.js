@@ -5,7 +5,22 @@ var express = require('express'),
     q = require('q');
 var crypto = require('crypto');
 var moment = require('moment');
-var taikhoanr = express.Router()
+
+var taikhoanr = express.Router();
+var hbs=require('nodemailer-express-handlebars');
+var nodemailer=require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // secure:true for port 465, secure:false for port 587
+    auth: {
+        user: 'daugiangao',
+        pass: 'phuc11296'
+    }
+});
+
+
 taikhoanr.get('/dangky', function(req, res) {
     res.render('Đăng ký/dangky', {
         layoutModels: res.locals.layoutModels,
@@ -13,6 +28,7 @@ taikhoanr.get('/dangky', function(req, res) {
         errorMsg: ''
     });
 });
+
 taikhoanr.get('/dangnhap', function(req, res) {
     res.render('Đăng nhập/dangnhap');
 });
@@ -30,7 +46,8 @@ taikhoanr.post('/dangky',function(req, res){
         sdt: req.body.sdt,
         diachi: req.body.dc,
         ngay: 0,
-        chucvu: 0
+        chucvu: 0,
+        xacthuc:0
     };
     q.all([taikhoan.loadten(entity), taikhoan.loadmail(entity)])
         .spread(function(pRow1, pRow2)
@@ -61,19 +78,53 @@ taikhoanr.post('/dangky',function(req, res){
                 res.render('Đăng ký/dangky',a);
             }
             if(vm.khongten===true && vm.khongmail===true) {
+                transporter.use('compile',hbs({
+                    viewPath:'views',
+                    extName:'.hbs'
+                }))
+                transporter.sendMail({
+                    from:'daugiangao@gmail.com',
+                    to: entity.email,
+                    subject:'Quản lý đấu giá team ngáo',
+                    template:'Đăng ký/mail',
+                    context:{
+                        ten:entity.username
+                    }
+                },function (err) {
+                    if(err){console.log('that bai')}
+                    else
+                    {console.log('thanhcong')}
+                })
+
+
                 taikhoan.dangky(entity).then(function (insertId) {
                     var b= {
                         layoutModels: res.locals.layoutModels,
                         showError: true,
-                        errorMsg: 'Đăng ký thành công.'
+                        errorMsg: 'Đăng ký thành công.Mời bạn vào email để xác thực'
                     }
-                    //res.render('Đăng nhập/dangnhap',b);
-                    res.redirect('/taikhoan/dangnhap');
+                    res.render('Đăng ký/dangky',b);
                 });
 
             }
         })
 
+});
+taikhoanr.get('/xacthuc/:ten', function(req, res) {
+    var entity={
+        tendangnhap:req.params.ten,
+        xacthuc:1
+    }
+    taikhoan.xacthuc(entity)
+        .then(function(xacthuc) {
+            res.redirect('/taikhoan/thanhcong');
+        })
+});
+taikhoanr.get('/thanhcong', function(req, res) {
+    var b={
+        layout:false
+    }
+    res.render('Đăng ký/thanhcong',b);
 });
 taikhoanr.post('/dangnhap', function(req, res) {
 
@@ -82,7 +133,6 @@ taikhoanr.post('/dangnhap', function(req, res) {
         username: req.body.username,
         pass: ePWD
     };
-    console.log(entity);
     taikhoan.login(entity)
         .then(function(user) {
             if (user === null) {
@@ -92,22 +142,28 @@ taikhoanr.post('/dangnhap', function(req, res) {
                     errorMsg: 'Thông tin đăng nhập không đúng.'
                 });
             } else {
-                if(user.chucvu===1)
-                {
-                    req.session.isQL=true;
+                if (user.xacthuc === 0) {
+                    res.render('Đăng nhập/dangnhap', {
+                        layoutModels: res.locals.layoutModels,
+                        showError: true,
+                        errorMsg: 'Tài khoản chưa được xác thực'
+                    });
                 }
-                if(user.chucvu===0)
-                {
-                    req.session.isQL=false;
+                else {
+                    if (user.chucvu === 1) {
+                        req.session.isQL = true;
+                    }
+                    if (user.chucvu === 0) {
+                        req.session.isQL = false;
+                    }
+                    req.session.isLogged = true;
+                    req.session.user = user;
+                    var url = '/';
+                    if (req.query.retUrl) {
+                        url = req.query.retUrl;
+                    }
+                    res.redirect('/');
                 }
-                console.log(user);
-                req.session.isLogged = true;
-                req.session.user = user;
-                var url = '/';
-                if (req.query.retUrl) {
-                    url = req.query.retUrl;
-                }
-                res.redirect('/');
             }
         });
 });
@@ -119,32 +175,222 @@ taikhoanr.post('/thoat', restrict, function(req, res) {
     res.redirect('/');
     //req.session.cart = null;
 });
+taikhoanr.get('/thoat', restrict, function(req, res) {
+    req.session.isLogged = false;
+    req.session.user = null;
+    req.session.cookie.expires = new Date(Date.now() - 1000);
+    // res.redirect(req.headers.referer);
+    res.redirect('/');
+    //req.session.cart = null;
+});
 taikhoanr.post('/resetmatkhau', function(req, res) {
-    var passkhoiphuc = crypto.createHash('md5').update('123456').digest('hex');
-    var entity=
+    if(req.session.isLogged===true)
+    {
+        if(req.session.isQL===true)
         {
-            pass:passkhoiphuc,
-            idUSER:req.body.idUSER
+            var passkhoiphuc = crypto.createHash('md5').update('123456').digest('hex');
+            var entity=
+                {
+                    pass:passkhoiphuc,
+                    idUSER:req.body.idUSER
+                }
+            taikhoan.khoiphucmatkhau(entity).then(function(affectedRows) {
+                res.redirect('/quanliuser');
+            })
         }
-    taikhoan.khoiphucmatkhau(entity).then(function(affectedRows) {
-        res.redirect('/quanliuser');
-    })
+        else{
+            res.redirect('/');
+        }
+    }
+    else {
+        res.redirect('/taikhoan/dangnhap');
+    }
+
 });
 taikhoanr.post('/xoauser', function(req, res) {
-    var entity=
-        {
-            idUSER:req.body.idUSER
+    if(req.session.isLogged===true) {
+        if (req.session.isQL === true) {
+            var entity =
+                {
+                    idUSER: req.body.idUSER
+                }
+            console.log(entity);
+            taikhoan.xoanguoidung(entity).then(function (affectedRows) {
+                res.redirect('/quanliuser');
+            })
         }
-        console.log(entity);
-    taikhoan.xoanguoidung(entity).then(function(affectedRows) {
-        res.redirect('/quanliuser');
-    })
+        else{
+            res.redirect('/');
+        }
+    }
+    else {
+        res.redirect('/taikhoan/dangnhap');
+    }
+
 });
 taikhoanr.get('/thongtincanhan', function(req, res) {
-    res.render('Tài khoản/thongtincanhannew');
+    if(req.session.isLogged===true)
+    {
+        res.render('Tài khoản/thongtincanhannew');
+    }
+    else{
+        res.redirect('/')
+    }
 });
 taikhoanr.get('/thaydoithongtin', function(req, res) {
-    res.render('Tài khoản/thaydoithongtincanhan');
+    if(req.session.isLogged===true)
+    {
+        res.render('Tài khoản/thaydoithongtincanhan');
+    }
+    else{
+        res.redirect('/')
+    }
+});
+taikhoanr.post('/thaydoithongtin', function(req, res) {
+    if(req.session.isLogged===true) {
+        var ePWD = crypto.createHash('md5').update(req.body.passRW).digest('hex');
+        var nDOB = moment(req.body.datepicker, 'DD/MM/YYYY').format('DD/MM/YYYY');
+        var nDOB1 = moment(req.body.datepicker, 'DD/MM/YYYY').format('YYYY-MM-DDTHH:mm');
+
+        var entity = {
+            id: req.session.user.id,
+            username: req.session.user.username,
+            pass: ePWD,
+            name: req.body.hoten,
+            email: req.body.email,
+            ngaysinh: nDOB,
+            gioitinh: req.body.gioitinh,
+            sdt: req.body.sdt,
+            diachi: req.body.diachi,
+        };
+        var entity1 = {
+            id: req.session.user.id,
+            username: req.session.user.username,
+            pass: ePWD,
+            name: req.body.hoten,
+            email: req.body.email,
+            ngaysinh:nDOB1,
+            gioitinh: req.body.gioitinh,
+            sdt: req.body.sdt,
+            diachi: req.body.diachi,
+        };
+        q.all([taikhoan.login(entity)])
+            .spread(function (user) {
+                if (user === null) {
+                    res.render('Tài khoản/thaydoithongtincanhan', {
+                        layoutModels: res.locals.layoutModels,
+                        showError: true,
+                        errorMsg: 'Mật khẩu không chính xác'
+                    });
+                } else {
+                    req.session.user = entity;
+                    taikhoan.doithongtin(entity1).then(function (rows) {
+                        res.redirect('/taikhoan/thongtincanhan');
+                    })
+                }
+            });
+    }
+});
+taikhoanr.get('/chitietdanhgia', function(req, res) {
+    res.render('Tài khoản/chitietdanhgianew');
+});
+taikhoanr.get('/doimatkhau', function(req, res) {
+    if(req.session.isLogged===true)
+    {res.render('Đăng nhập/doimatkhau');}
+    else {
+        res.redirect('/taikhoan/dangnhap');
+    }
+
+});
+taikhoanr.post('/doimatkhau', function(req, res) {
+    if(req.session.isLogged===true) {
+        var ePWD = crypto.createHash('md5').update(req.body.pass).digest('hex');
+        var ePWD1 = crypto.createHash('md5').update(req.body.passcu).digest('hex');
+        var entity1 = {
+            pass: ePWD,
+            idUSER: req.session.user.id
+        }
+        var entity = {
+            username: req.session.user.username,
+            pass: ePWD1,
+        };
+        q.all([taikhoan.login(entity)])
+            .spread(function (user) {
+                if (user === null) {
+                    res.render('Đăng nhập/doimatkhau', {
+                        layoutModels: res.locals.layoutModels,
+                        showError: true,
+                        errorMsg: 'Mật khẩu không chính xác'
+                    });
+                } else {
+                    taikhoan.doimatkhau(entity1).then(function (affectedRows) {
+                        res.redirect('/taikhoan/thoat');
+                    });
+                }
+            });
+    }
+    else {
+        res.redirect('/taikhoan/dangnhap');
+    }
+});
+taikhoanr.get('/matkhau', function(req, res) {
+    res.render('Đăng nhập/resetmatkhau');
+});
+taikhoanr.post('/matkhau', function(req, res) {
+        var entity = {
+            email:req.body.email
+        };
+        q.all([taikhoan.kiemtramail(entity)])
+            .spread(function (user) {
+                if (user === null) {
+                    res.render('Đăng nhập/resetmatkhau', {
+                        layoutModels: res.locals.layoutModels,
+                        showError: true,
+                        errorMsg: 'Email chưa dùng để đăng ký tài khoản'
+                    });
+                } else {
+                    transporter.use('compile',hbs({
+                        viewPath:'views',
+                        extName:'.hbs'
+                    }))
+                    transporter.sendMail({
+                        from:'daugiangao@gmail.com',
+                        to: entity.email,
+                        subject:'Quản lý đấu giá team ngáo',
+                        template:'Đăng nhập/mailrs',
+                        context:{
+                            id:user.id,
+                            hoten:user.name
+                        }
+                    },function (err) {
+                        if(err){console.log('that bai')}
+                        else
+                        {console.log('thanhcong')}
+                    })
+
+                    res.render('Đăng nhập/resetmatkhau', {
+                        layoutModels: res.locals.layoutModels,
+                        showError: true,
+                        errorMsg: 'Mời quý khách vào email để đặt lại mật khẩu'
+                    });
+                }
+            });
+});
+taikhoanr.get('/reset/:id', function(req, res) {
+    res.render('Đăng nhập/matkhau');
+});
+taikhoanr.post('/reset/:id', function(req, res) {
+        var ePWD = crypto.createHash('md5').update(req.body.pass).digest('hex');
+        var entity = {
+            pass: ePWD,
+            idUSER: req.params.id
+        }
+    taikhoan.doimatkhau(entity).then(function (affectedRows) {
+        var vm={
+            layout:false
+        }
+        res.render('Đăng nhập/thanhcongrs',vm);
+    });
 });
 module.exports = taikhoanr;
 
