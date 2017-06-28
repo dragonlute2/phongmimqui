@@ -12,7 +12,10 @@ var express = require('express'),
     yeucau=require('./controllers/yeucauController'),
     huongdan=require('./controllers/huongdanController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
+    sanpham = require('./controllers/sanphamController'),
     taikhoan=require('./controllers/taikhoanController');
+
+
 var request = require('request');
 var session = require('express-session');
 // var fileStore = require('session-file-store')(session);
@@ -30,8 +33,8 @@ app.use(session({
         host: '127.0.0.1',
         port: 3306,
         user: 'root',
-        password: '',
-        database: 'quanlydaugia',
+        password: 'anhhai',
+        database: 'quanlysitedaugia',
         createDatabaseTable: true,
         schema: {
             tableName: 'sessions',
@@ -72,9 +75,11 @@ app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
+
 app.use('/huongdan',huongdan);
+app.use('/sanphamloai1', sanpham);
 app.use('/taikhoan',taikhoan);
-app.use('/taikhoan',taikhoan);
+
 app.use(handle404);
 
 app.listen(3000,function () {
