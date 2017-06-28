@@ -21,6 +21,10 @@
         {
             display:block;
         }
+        .sider_bar_page
+        {
+            box-shadow:none
+        }
     </style>
 
 </head>
@@ -267,7 +271,7 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12 header-title">
                         <div class="title-left">
-                            <h2><a href="#">{{tensanpham}}</a></h2>
+                            <h2><a href="/sanphamloai1/{{idLOAISANPHAM1}}">{{tensanpham}}</a></h2>
                         </div>
                     </div>
                 </div>
@@ -284,7 +288,7 @@
                                     <ul class="site-nav vertical-nav" id="quangcao{{idLOAISANPHAM1}}" style="margin-left: -15px; margin-right: -20px">
                                         {{#each ../bac2}}
                                             <li class="nav-item icon hidden" >
-                                                <a href="Nhóm%20sản%20phẩm/nhom_san_pham.html" class="quangcao{{LOAISANPHAM1_idLOAISANPHAM1}}">
+                                                <a href="/sanphamloai1/sanphamloai2/{{idLOAISANPHAM2}}" class="quangcao{{LOAISANPHAM1_idLOAISANPHAM1}}">
                                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                                     {{tensanpham}}
                                                 </a>

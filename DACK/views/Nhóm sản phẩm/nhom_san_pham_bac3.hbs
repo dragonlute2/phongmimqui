@@ -37,7 +37,12 @@
 
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                         {{#each nameBac2}}
-                        <li><a href="#">{{tensanpham}}</a></li>
+                        <li><a href="/sanphamloai1/sanphamloai2/{{idLOAISANPHAM2}}">{{tensanpham}}</a></li>
+                        {{/each}}
+
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        {{#each nameBac3}}
+                            <li><a href="#">{{tensanpham}}</a></li>
                         {{/each}}
 
                     </ul>
@@ -69,26 +74,6 @@
                                 <ul></ul>
                             </div>
                         </div>
-                        <!--HangSX-->
-
-                        <div class="filter-group">
-                            <div class="filter-group-title filter-group-title--green" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
-                                Chọn danh mục
-                            </div>
-                            <ul class="panel-collapse collapse product" id="collapse1">
-                                {{#each nameBac3}}
-                                    <li class="filter-item filter-item--green col-lg-12 col-md-12 col-sm-12 col-xs-12 filter-vendor" >
-                                        <a href="/sanphamloai1/sanphamloai2/sanphamloai3/{{idLOAISP3}}">{{tensanpham}} ({{soLuongSanPham}})</a>
-                                    </li>
-                                {{/each}}
-
-
-
-                            </ul>
-                        </div>
-
-
-
                         <!--KhoangGia-->
 
                         <div class="filter-group">
