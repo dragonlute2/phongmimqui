@@ -452,5 +452,19 @@ taikhoanr.post('/xinphep', function(req, res) {
         res.redirect('/taikhoan/thongtincanhan');
     })
 });
+taikhoanr.get('/daugiathang',function (req,res) {
+    var entity={
+        id:req.session.user.id
+    }
+    taikhoan.loadspdaugiathang(entity).then(function (rows) {
+        var vm={
+            sanphamthang:rows,
+            NoProduct:rows.length==0
+        }
+        console.log(vm)
+        res.render('Tài khoản/sanphamdaugiathangnew',vm);
+    })
+
+});
 module.exports = taikhoanr;
 
