@@ -22,3 +22,9 @@ exports.update = function(entity) {
     d.resolve(db.delete(sql));
     return d.promise;
 }
+exports.xinphep=function (entity) {
+    var d = q.defer();
+    var sql=mustache.render('INSERT INTO chitietxinban(idUser,comment,thoigian) VALUES ("{{id}}" ,"'+entity.comment+'","{{thoigian}}")', entity);
+    d.resolve(db.insert(sql));
+    return d.promise;
+}

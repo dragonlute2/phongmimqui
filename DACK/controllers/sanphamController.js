@@ -129,4 +129,26 @@ productController.get('/sanphamloai2/sanphamloai3/:id', function(req, res) {
 
         });
 });
+productController.get('/detail/:id', function(req, res) {
+    product.loadSanPham(req.params.id)
+        .then(function(pro) {
+            if (pro) {
+                res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
+                    layoutModels: res.locals.layoutModels,
+                    product: pro.list,
+                    isNguoiBan: pro.idBan === req.session.user.id,
+                    isDauGiaNull: pro.list.userDauGia === null,
+                    isGiaMuaLienNull: pro.list.giamualien === null,
+                    chiTietDauGia: pro.chiTietDauGia
+                });
+            }
+            else {
+                res.redirect('/');
+            }
+            console.log(pro.chiTietDauGia)
+
+
+        });
+
+});
 module.exports = productController;

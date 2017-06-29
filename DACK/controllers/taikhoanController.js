@@ -8,6 +8,7 @@ var moment = require('moment');
 
 var taikhoanr = express.Router();
 var hbs=require('nodemailer-express-handlebars');
+var yeucau=require('../models/yeucauRepo');
 var nodemailer=require('nodemailer');
 
 var transporter = nodemailer.createTransport({
@@ -162,6 +163,22 @@ taikhoanr.post('/dangnhap', function(req, res) {
                     if (req.query.retUrl) {
                         url = req.query.retUrl;
                     }
+                    var entity1={
+                        id:user.id
+                    }
+                    q.all([taikhoan.diemtot(entity1),taikhoan.diemxau(entity1)])
+                        .spread(function(diemtot,diemxau)
+                        {
+                            var x=diemtot.Count/(diemtot.Count+diemxau.Count)*100;
+                            x = parseFloat(x).toFixed(2);
+                            if(x<79)
+                            {
+                                req.session.isBan=false;
+                            }
+                            if(x>=79){
+                                req.session.isBan=true;
+                            }
+                        })
                     res.redirect('/');
                 }
             }
@@ -228,10 +245,27 @@ taikhoanr.post('/xoauser', function(req, res) {
     }
 
 });
+
 taikhoanr.get('/thongtincanhan', function(req, res) {
     if(req.session.isLogged===true)
     {
-        res.render('Tài khoản/thongtincanhannew');
+        var entity={
+            id:req.session.user.id
+        }
+        q.all([taikhoan.diemtot(entity),taikhoan.diemxau(entity),])
+            .spread(function(diemtot,diemxau)
+            {
+                var x=diemtot.Count/(diemtot.Count+diemxau.Count)*100;
+                x = parseFloat(x).toFixed(0);
+                var vm = {
+                    layoutModels: res.locals.layoutModels,
+                    diemt:diemtot,
+                    diemx:diemxau,
+                    diemtincay:x,
+                }
+                res.render('Tài khoản/thongtincanhannew',vm);
+            })
+
     }
     else{
         res.redirect('/')
@@ -292,7 +326,17 @@ taikhoanr.post('/thaydoithongtin', function(req, res) {
     }
 });
 taikhoanr.get('/chitietdanhgia', function(req, res) {
-    res.render('Tài khoản/chitietdanhgianew');
+    var entity={
+        id:req.session.user.id
+    }
+    taikhoan.loadchitiet(entity).then(function (rows) {
+        var vm={
+            chitiet:rows,
+        }
+        console.log(vm);
+        res.render('Tài khoản/chitietdanhgianew',vm);
+    })
+
 });
 taikhoanr.get('/doimatkhau', function(req, res) {
     if(req.session.isLogged===true)
@@ -391,6 +435,22 @@ taikhoanr.post('/reset/:id', function(req, res) {
         }
         res.render('Đăng nhập/thanhcongrs',vm);
     });
+});
+taikhoanr.get('/xinphep', function(req, res) {
+    res.render('Tài khoản/donxinphep');
+});
+taikhoanr.post('/xinphep', function(req, res) {
+    var date=new Date();
+    var thoigian = moment(date).format('YYYY-MM-DD HH:mm:ss');
+    var a={
+        id:req.session.user.id,
+        comment: req.body.comment,
+        thoigian:thoigian
+    }
+    console.log(a);
+    yeucau.xinphep(a).then(function (rows) {
+        res.redirect('/taikhoan/thongtincanhan');
+    })
 });
 module.exports = taikhoanr;
 
