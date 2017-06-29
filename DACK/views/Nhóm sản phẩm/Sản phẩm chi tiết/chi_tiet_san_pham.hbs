@@ -628,7 +628,6 @@
     $('.thoigiandaugia').each(function()
     {
         var id = $(this).attr('id');
-        alert(id);
         var value = $(this).attr('value');
         dateDauGia = new Date(value);
         $('#'+id).text(dateDauGia.getDate() + "/" + dateDauGia.getMonth() + "/" + dateDauGia.getFullYear() + " "+checkTime(dateDauGia.getHours()) + ":" + checkTime(dateDauGia.getMinutes()));

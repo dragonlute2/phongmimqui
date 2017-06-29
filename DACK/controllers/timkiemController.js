@@ -37,6 +37,7 @@ r.get('/', function(req, res) {
                 isEmpty: data.total === 0,
                 total: data.total,
                 timKiemName: req.query.timKiem,
+                sanphamyeuthich: req.session.sanphamyeuthich,
 
                 pages: pages,
                 curPage: curPage,
@@ -46,10 +47,33 @@ r.get('/', function(req, res) {
                 showNextPage: curPage < number_of_pages - 1,
 
             });
-            console.log(req.query.timKiem);
+            console.log(req.session.sanphamyeuthich);
 
 
         });
+});
+r.post('/', function(req, res) {
+
+    var x = req.body.sanphamyeuthich;
+    var sanpham = [];
+    for (var i = 0; i < x.length; i++) {
+
+        sanpham.push({
+            idUser: req.session.user.id,
+            idSanPham: x[i].slice(5, x[i].length)
+        });
+    }
+    for(var i = 0; i < sanpham.length; i++)
+    {
+        var entity={
+            idUser:sanpham[i].idUser,
+            idSanPham:sanpham[i].idSanPham
+        }
+        danhsachtimkiem.them(entity).then(function (affe)
+        {
+        });
+    }
+    res.redirect('/');
 });
 
 r.get('/:id', function(req, res) {
@@ -83,6 +107,7 @@ r.get('/:id', function(req, res) {
                 isSortTime:req.params.id === "sortbytimedesc",
                 total: data.total,
                 timKiemName: req.query.timKiem,
+                sanphamyeuthich: req.session.sanphamyeuthich,
 
                 pages: pages,
                 curPage: curPage,
@@ -92,10 +117,32 @@ r.get('/:id', function(req, res) {
                 showNextPage: curPage < number_of_pages - 1,
 
             });
-            console.log(req.query.timKiem);
+            console.log(req.session.sanphamyeuthich);
 
 
         });
 });
+r.post('/:id', function(req, res) {
 
+    var x = req.body.sanphamyeuthich;
+    var sanpham = [];
+    for (var i = 0; i < x.length; i++) {
+
+        sanpham.push({
+            idUser: req.session.user.id,
+            idSanPham: x[i].slice(5, x[i].length)
+        });
+    }
+    for(var i = 0; i < sanpham.length; i++)
+    {
+        var entity={
+            idUser:sanpham[i].idUser,
+            idSanPham:sanpham[i].idSanPham
+        }
+        danhsachtimkiem.them(entity).then(function (affe)
+        {
+        });
+    }
+    res.redirect('/');
+});
 module.exports = r;

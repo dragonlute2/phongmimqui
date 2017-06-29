@@ -32,6 +32,11 @@
 
 
 
+    {{#each sanphamyeuthich}}
+        <div class="hidden sanphamyeuthich" value="{{idsanpham}}">
+
+        </div>
+    {{/each}}
     <h2 class="name_title">
         <p class="alignCenter">
             Tìm thấy {{total}} kết quả của từ khóa " <a href="#"><font color= #DC3333>{{timKiemName}}</font></a> "
@@ -48,6 +53,11 @@
         </form>
     </div>
 
+    <form id="frm1" method="post" action="">
+    <a href="javascript:{}" onclick="document.getElementById('frm1').submit();" class="themvaomucyeuthich"style="display:scroll; text-align:center; position:fixed;margin-left: 2%;color: blue " title="Lưu và xem sản phẩm yêu thích" data-toggle="modal">
+    <span style="line-height: 2">Lưu và xem <br/>sản phẩm yêu thích</span>
+    <img src="/Images/add.png" >
+    </a>
 {{#if isSortMoney }}
     <div class="block-title block">
         <h5>
@@ -117,7 +127,7 @@
                         <div class="time daugia{{idSANPHAM}}"  style="color: red; margin-top: 8px; margin-right: -7px" value="{{thoigiankethuc}}">
                         </div>
                         <div class="checkbox">
-                            <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="check" value="check{{idSANPHAM}}">
+                            <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="sanphamyeuthich" value="check{{idSANPHAM}}">
                             <label for="check{{idSANPHAM}}"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
                         </div>
                         <p class="btn_see">
@@ -168,6 +178,7 @@
             {{/if}}
         </ul>
     </div>
+
 
 {{else}}
 
@@ -241,7 +252,7 @@
                         <div class="time daugia{{idSANPHAM}}"  style="color: red; margin-top: 8px; margin-right: -7px" value="{{thoigiankethuc}}">
                         </div>
                         <div class="checkbox">
-                            <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="check" value="check{{idSANPHAM}}">
+                            <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="sanphamyeuthich" value="check{{idSANPHAM}}">
                             <label for="check{{idSANPHAM}}"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
                         </div>
                         <p class="btn_see">
@@ -292,6 +303,7 @@
             {{/if}}
         </ul>
     </div>
+
 
 {{else}}
     <div class="block-title block">
@@ -362,7 +374,7 @@
                     <div class="time daugia{{idSANPHAM}}"  style="color: red; margin-top: 8px; margin-right: -7px" value="{{thoigiankethuc}}">
                     </div>
                     <div class="checkbox">
-                        <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="check" value="check{{idSANPHAM}}">
+                        <input class="checked" id="check{{idSANPHAM}}" type="checkbox" name="sanphamyeuthich" value="check{{idSANPHAM}}">
                         <label for="check{{idSANPHAM}}"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
                     </div>
                     <p class="btn_see">
@@ -414,10 +426,14 @@
         </ul>
     </div>
 
+
 {{/if}}
 {{/if}}
+    </form>
+
 
 </div>
+
 
 
 
@@ -517,6 +533,42 @@
             }
             return i;
         }
+    });
+</script>
+<script>
+    var sanpham = [];
+    $('.hidden.sanphamyeuthich').each(function()
+    {
+
+        sanpham.push($(this).attr('value'));
+    });
+
+    $('.checkbox .checked').each(function()
+    {
+
+        var x = $(this).attr('value').slice(5, $(this).attr('value').length);
+        for(var i = 0; i < sanpham.length; i++)
+        {
+            if( x === sanpham[i])
+            {
+                var y = $(this).attr('id');
+                $('#'+y).prop('checked', true);
+
+            }
+        }
+    });
+
+</script>
+<script>
+    $(".themvaomucyeuthich").hide();
+    $(".checked").click(function() {
+        if($(".collection_container.list-items input[type=checkbox]:checked").length > 0)
+        {
+            $(".themvaomucyeuthich").show(300);
+        }
+
+        else
+            $(".themvaomucyeuthich").hide(200);
     });
 </script>
 

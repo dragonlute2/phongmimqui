@@ -68,6 +68,7 @@ exports.loadTrangBac1 = function(id, limit, offset) {
             name: rows1,
             nameBac2:rows2
         }
+
         deferred.resolve(data);
     });
 
@@ -203,7 +204,6 @@ exports.loadTrangBac3 = function(id, limit, offset) {
             nameBac2:pRow2,
             nameBac3:pRow3
         }
-        console.log(data);
         deferred.resolve(data);
     });
 
@@ -262,4 +262,20 @@ exports.loadSanPham = function(id) {
     });
 
     return deferred.promise;
+}
+exports.them = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('INSERT INTO sanphamyeuthich(USER_idUSER,idsanpham) ' +
+        'SELECT * FROM (SELECT {{idUser}}, {{idSanPham}}) AS tmp ' +
+        'WHERE NOT EXISTS  ' +
+        '(SELECT USER_idUSER,idsanpham FROM sanphamyeuthich WHERE USER_idUSER = {{idUser}} AND sanphamyeuthich.idsanpham = {{idSanPham}})',entity);
+    d.resolve(db.insert(sql));
+    return d.promise;
+}
+
+exports.loadSanPhamYeuThich = function(id) {
+    var d = q.defer();
+    var sql = mustache.render('SELECT * FROM sanphamyeuthich WHERE sanphamyeuthich.USER_idUSER =' + id);
+    d.resolve(db.load(sql));
+    return d.promise;
 }

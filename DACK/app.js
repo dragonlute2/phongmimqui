@@ -34,8 +34,8 @@ app.use(session({
         host: '127.0.0.1',
         port: 3306,
         user: 'root',
-        password: '',
-        database: 'quanlydaugia',
+        password: 'anhhai',
+        database: 'quanlysitedaugia',
         createDatabaseTable: true,
         schema: {
             tableName: 'sessions',

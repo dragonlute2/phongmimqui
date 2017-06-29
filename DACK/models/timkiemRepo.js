@@ -58,11 +58,6 @@ exports.loadTrangTimKiem = function(timKiem, limit, offset) {
                     var x = rows[i].hoTenNguoiDauGia.substring(0, j) + "*" + rows[i].hoTenNguoiDauGia.substring(j+1);
                     rows[i].hoTenNguoiDauGia = x;
                 }
-
-
-                // var x = rows[i].hoTenNguoiDauGia.slice(7, rows[i].hoTenNguoiDauGia.length);
-                // x = "*******" + x;
-                // rows[i].hoTenNguoiDauGia = x;
             }
 
 
@@ -70,11 +65,11 @@ exports.loadTrangTimKiem = function(timKiem, limit, offset) {
         var data = {
             total: totalRow[0].total,
             list: rows
+
             // nameBac1: pRow1,
             // nameBac2:pRow2,
             // nameBac3:pRow3
         }
-        console.log(data);
         deferred.resolve(data);
     });
 
@@ -130,7 +125,6 @@ exports.loadTrangTimKiemSapXep = function(timKiem, loai, limit, offset) {
             'WHERE  (loaisanpham2.tensanpham like "%{{timKiem}}%" OR sanpham.tensanpham like "%{{timKiem}}%" OR loaisanpham1.tensanpham like "%{{timKiem}}%" OR loaisanpham2.tensanpham like "%{{timKiem}}%") '+
             'GROUP BY sanpham.idSANPHAM ORDER BY thoigiankethuc DESC limit {{limit}} offset {{offset}}', view);
     }
-    console.log(loai);
 
 
     promises.push(db.load(sql));
@@ -156,9 +150,11 @@ exports.loadTrangTimKiemSapXep = function(timKiem, loai, limit, offset) {
             }
             if(rows[i].hoTenNguoiDauGia != null)
             {
-                var x = rows[i].hoTenNguoiDauGia.slice(7, rows[i].hoTenNguoiDauGia.length);
-                x = "*******" + x;
-                rows[i].hoTenNguoiDauGia = x;
+                for(var j = 1; j < rows[i].hoTenNguoiDauGia.length; j= j + 2)
+                {
+                    var x = rows[i].hoTenNguoiDauGia.substring(0, j) + "*" + rows[i].hoTenNguoiDauGia.substring(j+1);
+                    rows[i].hoTenNguoiDauGia = x;
+                }
             }
 
 
@@ -167,10 +163,18 @@ exports.loadTrangTimKiemSapXep = function(timKiem, loai, limit, offset) {
             total: totalRow[0].total,
             list: rows,
         }
-        console.log(data);
         deferred.resolve(data);
     });
 
     return deferred.promise;
+}
+exports.them = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('INSERT INTO sanphamyeuthich(USER_idUSER,idsanpham) ' +
+        'SELECT * FROM (SELECT {{idUser}}, {{idSanPham}}) AS tmp ' +
+        'WHERE NOT EXISTS  ' +
+        '(SELECT USER_idUSER,idsanpham FROM sanphamyeuthich WHERE USER_idUSER = {{idUser}} AND sanphamyeuthich.idsanpham = {{idSanPham}})',entity);
+    d.resolve(db.insert(sql));
+    return d.promise;
 }
 
