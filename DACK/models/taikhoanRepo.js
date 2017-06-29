@@ -138,10 +138,20 @@ exports.diemxau=function (entity) {
 }
 exports.loadchitiet = function(entity) {
     var d = q.defer();
-    var sql=mustache.render('select hoten,noidungcomment, sanpham.idSANPHAM,idUSER,`comment`.diemdanhgia from `user` ' +
-        'INNER JOIN sanpham ON sanpham.idnguoithang=`user`.idUSER ' +
-        'INNER JOIN `comment` ON sanpham.idnguoithang=`comment`.idnguoicomment ' +
-        'where sanpham.idnguoiban="{{id}}" GROUP BY hoten',entity);
+    var sql=mustache.render('SELECT `user`.hoten,sanpham.idSANPHAM,`comment`.noidungcomment,`comment`.diemdanhgia from sanpham,`user`,`comment` where sanpham.idSANPHAM=`comment`.idsanpham and `comment`.idnguoicomment=sanpham.idnguoithang and `user`.idUSER=`comment`.idnguoicomment and `comment`.idnguoiduocomment=sanpham.idnguoiban and sanpham.idnguoiban="{{id}}" GROUP BY `comment`.idsanpham',entity);
+    d.resolve(db.load(sql));
+    return d.promise;
+}
+exports.loadspdaugiathang = function(entity) {
+    var d = q.defer();
+    var sql=mustache.render('SELECT sanpham.idSANPHAM,sanpham.tensanpham,`user`.tendangnhap,`user`.idUSER,MAX(chitietdaugia.sotien) as gia,sanpham.soluotdaugia,sanpham.motasanphamngangon ' +
+        'from sanpham,`user`,chitietdaugia ' +
+        'where chitietdaugia.idsanphamdaugia=sanpham.idSANPHAM ' +
+        'and `user`.idUSER=sanpham.idnguoiban ' +
+        'and sanpham.idnguoithang=chitietdaugia.idnguoidaugia ' +
+        'and sanpham.idnguoithang="{{id}}" ' +
+        'and sanpham.conhan=0 ' +
+        'GROUP BY sanpham.idSANPHAM ',entity);
     d.resolve(db.load(sql));
     return d.promise;
 }

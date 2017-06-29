@@ -187,6 +187,9 @@ $(function () {
                 dc:{
                     required: true
                 },
+                sdt:{
+                    number:true
+                },
                 hiddenRecaptcha: {
                     required: function () {
                         if (grecaptcha.getResponse() == '') {
@@ -222,6 +225,9 @@ $(function () {
                 },
                 dc:{
                     required: 'Vui lòng nhập địa chỉ'
+                },
+                sdt:{
+                    required: 'Vui lòng nhập số'
                 },
                 hiddenRecaptcha:
                         {

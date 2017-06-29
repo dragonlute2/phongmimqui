@@ -1,5 +1,7 @@
 var express = require('express'),
-    product = require('../models/sanphamRepo');
+    product = require('../models/sanphamRepo'),
+    q = require('q'),
+taikhoan=require('../models/taikhoanRepo');
 
 var productController = express.Router();
 
@@ -130,23 +132,42 @@ productController.get('/sanphamloai2/sanphamloai3/:id', function(req, res) {
         });
 });
 productController.get('/detail/:id', function(req, res) {
-    product.loadSanPham(req.params.id)
-        .then(function(pro) {
-            if (pro) {
-                res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
-                    layoutModels: res.locals.layoutModels,
-                    product: pro.list,
-                    isNguoiBan: pro.idBan === req.session.user.id,
-                    isDauGiaNull: pro.list.userDauGia === null,
-                    isGiaMuaLienNull: pro.list.giamualien === null,
-                    chiTietDauGia: pro.chiTietDauGia
-                });
+    q.all([ product.loadSanPham(req.params.id)])
+        .spread(function(pro){
+            var entity={
+                id:pro.list.idnguoiban
             }
-            else {
-                res.redirect('/');
-            }
-            console.log(pro.chiTietDauGia)
+            console.log(entity);
+            taikhoan.loadchitiet(entity).then(function (rows) {
+                if (pro) {
+                    if(req.session.user == null)
+                    {
+                        res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
+                            layoutModels: res.locals.layoutModels,
+                            product: pro.list,
+                            isDauGiaNull: pro.list.userDauGia === null,
+                            isGiaMuaLienNull: pro.list.giamualien === null,
+                            chiTietDauGia: pro.chiTietDauGia,
+                            chitiet:rows
+                        });
+                    }
+                    else {
+                        res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
+                            layoutModels: res.locals.layoutModels,
+                            product: pro.list,
+                            isNguoiBan: pro.idBan === req.session.user.id,
+                            isDauGiaNull: pro.list.userDauGia === null,
+                            isGiaMuaLienNull: pro.list.giamualien === null,
+                            chiTietDauGia: pro.chiTietDauGia,
+                            chitiet:rows
+                        });
+                    }
 
+                }
+                else {
+                    res.redirect('/');
+                }
+            })
 
         });
 

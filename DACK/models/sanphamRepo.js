@@ -256,8 +256,6 @@ exports.loadSanPham = function(id) {
             list: rows[0],
             chiTietDauGia: pRow1
         }
-
-        console.log(pRow1);
         deferred.resolve(data);
     });
 
