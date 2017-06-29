@@ -34,9 +34,12 @@
 
                         </div>
                         <div class="search_form">
-                            <form action="https://golden-mart.bizwebvietnam.net/search" method="get" class="search-form" role="search">
-                                <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="query" value="">
+                            <form action="/timkiem" method="get" class="search-form" role="search">
+                                <input placeholder="Nhập từ khóa cần tìm..." class="search_input" maxlength="70" id="search" type="text" name="timKiem" value="">
                                 <span class="search-before"></span><input type="submit" value="Tìm kiếm" class="btnsearch">
+
+                                <!--<input placeholder="Nhập từ khóa cần tìm..." class="search_input_page" type="text" name="timKiem">-->
+                                <!--<button class="submit_button" type="submit"><i class="btnsearch_page fa fa-search" aria-hidden="true"></i></button>-->
                             </form>
                         </div>
                     </div>
@@ -109,7 +112,7 @@
                             </div>
                         </div>
 
-                        <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page abc" role="menu" style=" margin-top: -4px">
+                        <div id="menucontentother" class="col-lg-12 col-md-12 cate-sidebar sider_bar_page layout_menu" role="menu" style=" margin-top: -4px">
                             <ul class="site-nav vertical-nav ">
                                 {{#each layoutModels.bac1}}
                                     <li class="nav-item icon" data-submenu-id="{{idLOAISANPHAM1}}" id="{{idLOAISANPHAM1}}">

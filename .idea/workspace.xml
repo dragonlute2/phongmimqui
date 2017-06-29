@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cddd850-7b67-4216-8a77-c7b62d2045dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/Dien-thoai.hbs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/app.js" afterPath="$PROJECT_DIR$/DACK/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/models/indexRepo.js" afterPath="$PROJECT_DIR$/DACK/models/indexRepo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/sanphamController.js" afterPath="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/timkiemController.js" afterPath="$PROJECT_DIR$/DACK/controllers/timkiemController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/models/sanphamRepo.js" afterPath="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/models/timkiemRepo.js" afterPath="$PROJECT_DIR$/DACK/models/timkiemRepo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/public/CSS/home.css" afterPath="$PROJECT_DIR$/DACK/public/CSS/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Hướng dẫn/huongdan.hbs" afterPath="$PROJECT_DIR$/DACK/views/Hướng dẫn/huongdan.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/public/CSS/timkiem.css" afterPath="$PROJECT_DIR$/DACK/public/CSS/timkiem.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs" afterPath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs" afterPath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs" afterPath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" afterPath="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" afterPath="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/index.hbs" afterPath="$PROJECT_DIR$/DACK/views/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csdl/quanlydaugia.sql" afterPath="$PROJECT_DIR$/csdl/quanlydaugia.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,18 +35,28 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DACK/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="80" column="17" lean-forward="false" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nhom_san_pham_bac3.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/public/CSS/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="95">
+              <caret line="120" column="12" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -49,38 +65,49 @@
       <file leaf-file-name="sanphamRepo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-537">
-              <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+            <state relative-caret-position="-98">
+              <caret line="237" column="63" lean-forward="false" selection-start-line="237" selection-start-column="63" selection-end-line="237" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanphamController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+      <file leaf-file-name="chi_tiet_san_pham.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="111" column="56" lean-forward="false" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="267">
+              <caret line="589" column="16" lean-forward="false" selection-start-line="589" selection-start-column="16" selection-end-line="589" selection-end-column="16" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nhom_san_pham_bac2.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="80" column="99" lean-forward="false" selection-start-line="80" selection-start-column="99" selection-end-line="80" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="630">
+              <caret line="437" column="8" lean-forward="true" selection-start-line="437" selection-start-column="8" selection-end-line="437" selection-end-column="8" />
+              <folding>
+                <element signature="e#12106#16467#0#Handlebars" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="128" column="116" lean-forward="false" selection-start-line="128" selection-start-column="116" selection-end-line="128" selection-end-column="116" />
+            <state relative-caret-position="2373">
+              <caret line="113" column="117" lean-forward="false" selection-start-line="113" selection-start-column="117" selection-end-line="113" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -103,12 +130,24 @@
       <find>rows</find>
       <find>sqlCount</find>
       <find>name</find>
-      <find>total</find>
       <find>count</find>
       <find>conhan</find>
       <find>c</find>
       <find>menucontentother</find>
       <find>bac2</find>
+      <find>SearchFilter</find>
+      <find>tensanpham4</find>
+      <find>load2</find>
+      <find>danhsachtimkiem.load2</find>
+      <find>to</find>
+      <find>pageValue</find>
+      <find>showPrevPage</find>
+      <find>abc</find>
+      <find>time</find>
+      <find>button-bid</find>
+      <find>total</find>
+      <find>chiTietDauGia</find>
+      <find>calcNewYear</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,17 +158,23 @@
       <list>
         <option value="$PROJECT_DIR$/DACK/fn/db.js" />
         <option value="$PROJECT_DIR$/DACK/views/Hướng dẫn/huongdan.hbs" />
-        <option value="$PROJECT_DIR$/DACK/public/CSS/home.css" />
-        <option value="$PROJECT_DIR$/DACK/app.js" />
-        <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs" />
         <option value="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" />
         <option value="$PROJECT_DIR$/DACK/models/indexRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/app.js" />
+        <option value="$PROJECT_DIR$/DACK/public/CSS/timkiem.css" />
+        <option value="$PROJECT_DIR$/../web/timkiemController.js" />
+        <option value="$PROJECT_DIR$/DACK/controllers/timkiemController.js" />
+        <option value="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" />
+        <option value="$PROJECT_DIR$/DACK/public/CSS/home.css" />
+        <option value="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
         <option value="$PROJECT_DIR$/DACK/views/index.hbs" />
+        <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs" />
         <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs" />
         <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs" />
-        <option value="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/models/timkiemRepo.js" />
         <option value="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
-        <option value="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
+        <option value="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs" />
       </list>
     </option>
   </component>
@@ -227,6 +272,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Đăng nhập" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Đăng ký" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -271,7 +338,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Quản trị" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Nhóm sản phẩm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nhóm sản phẩm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sản phẩm chi tiết" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,24 +431,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phongmimqui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phongmimqui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DACK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,6 +516,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -528,22 +626,23 @@
       <updated>1498190970267</updated>
       <workItem from="1498190972450" duration="19000" />
       <workItem from="1498538234512" duration="26816000" />
-      <workItem from="1498610718203" duration="14795000" />
+      <workItem from="1498610718203" duration="50249000" />
+      <workItem from="1498698658200" duration="17477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41630000" />
+    <option name="totallyTimeSpent" value="94561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25597268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34357223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -565,15 +664,62 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="rows[i].conhan[0]" language="JavaScript" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2877">
+          <caret line="137" column="32" lean-forward="true" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4641">
+          <caret line="221" column="66" lean-forward="false" selection-start-line="221" selection-start-column="66" selection-end-line="221" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9324">
+          <caret line="444" column="9" lean-forward="true" selection-start-line="438" selection-start-column="8" selection-end-line="444" selection-end-column="9" />
+          <folding>
+            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2373">
+          <caret line="113" column="117" lean-forward="false" selection-start-line="113" selection-start-column="117" selection-end-line="113" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7476">
+          <caret line="356" column="7" lean-forward="true" selection-start-line="356" selection-start-column="7" selection-end-line="356" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
@@ -594,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5943">
           <caret line="283" column="145" lean-forward="false" selection-start-line="283" selection-start-column="145" selection-end-line="283" selection-end-column="145" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +754,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3969">
           <caret line="189" column="73" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="73" />
-          <folding />
+          <folding>
+            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -645,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/taikhoanRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/models/yeucauRepo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -663,22 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/timkiemController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/taikhoanController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng ký/dangky.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2407">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/middle-wares/retricts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -717,105 +833,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/timkiemRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/middle-wares/handleLayout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/timkiemRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiem.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="774" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/timkiemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/node_modules/nodemailer/lib/nodemailer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng nhập/dangnhap.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng ký/dangky.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng ký/mail.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/danhsachyeucau.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/quanlydanhsachdanhmuc.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2898">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/quanlynguoidung.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/timkiem.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/indexRepo.js">
+    <entry file="file://$PROJECT_DIR$/DACK/models/quanlydanhmucRepo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="106" column="145" lean-forward="false" selection-start-line="106" selection-start-column="145" selection-end-line="106" selection-end-column="145" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="80" column="17" lean-forward="false" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="289" column="54" lean-forward="false" selection-start-line="289" selection-start-column="54" selection-end-line="289" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="290" column="102" lean-forward="false" selection-start-line="290" selection-start-column="102" selection-end-line="290" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="131" column="24" lean-forward="false" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-777">
+          <caret line="290" column="87" lean-forward="false" selection-start-line="290" selection-start-column="87" selection-end-line="290" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="80" column="99" lean-forward="false" selection-start-line="80" selection-start-column="99" selection-end-line="80" selection-end-column="99" />
-          <folding />
+        <state relative-caret-position="878">
+          <caret line="270" column="110" lean-forward="false" selection-start-line="270" selection-start-column="110" selection-end-line="270" selection-end-column="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="1284">
+          <caret line="277" column="91" lean-forward="false" selection-start-line="277" selection-start-column="91" selection-end-line="277" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
+    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/product.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="111" column="56" lean-forward="false" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
+        <state relative-caret-position="378">
+          <caret line="207" column="11" lean-forward="false" selection-start-line="207" selection-start-column="11" selection-end-line="207" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="128" column="116" lean-forward="false" selection-start-line="128" selection-start-column="116" selection-end-line="128" selection-end-column="116" />
+        <state relative-caret-position="2373">
+          <caret line="113" column="117" lean-forward="false" selection-start-line="113" selection-start-column="117" selection-end-line="113" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/taikhoanRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/indexRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-745">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3211">
+          <caret line="493" column="53" lean-forward="false" selection-start-line="493" selection-start-column="53" selection-end-line="493" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="120" column="12" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="237" column="63" lean-forward="false" selection-start-line="237" selection-start-column="63" selection-end-line="237" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="437" column="8" lean-forward="true" selection-start-line="437" selection-start-column="8" selection-end-line="437" selection-end-column="8" />
+          <folding>
+            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/timkiemRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/timkiemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/taikhoanController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7751">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="589" column="16" lean-forward="false" selection-start-line="589" selection-start-column="16" selection-end-line="589" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
           <folding />
         </state>
       </provider>

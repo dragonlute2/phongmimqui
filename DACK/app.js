@@ -11,6 +11,7 @@ var express = require('express'),
     quanlinguoidung=require('./controllers/danhsachnguoidungController'),
     yeucau=require('./controllers/yeucauController'),
     huongdan=require('./controllers/huongdanController'),
+    timkiem = require('./controllers/timkiemController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
     sanpham = require('./controllers/sanphamController'),
     taikhoan=require('./controllers/taikhoanController');
@@ -75,7 +76,7 @@ app.use('/', index);
 app.use('/quanliuser',quanlinguoidung);
 app.use('/quanliyeucau',yeucau);
 app.use('/quanlidanhmuc',danhsachdanhmuc);
-
+app.use('/timkiem', timkiem);
 app.use('/huongdan',huongdan);
 app.use('/sanphamloai1', sanpham);
 app.use('/taikhoan',taikhoan);
