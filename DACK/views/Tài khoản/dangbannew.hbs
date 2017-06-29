@@ -826,7 +826,11 @@
                   <span>Bán</span>
               </h5>
           </div>
-              <li class="active"><a data-toggle="pill" href="dangbannew.html"> Đăng bán </a></li>
+              {{#if layoutModels.isBan}}
+                  <li><a data-toggle="pill" href="/dangban"> Đăng bán </a></li>
+              {{else}}
+                  <li><a data-toggle="pill" href="#"> Đăng bán </a></li>
+              {{/if}}
               <li><a data-toggle="pill" href="sanphamconhannew.html"> Sản phẩm còn hạn </a></li>
               <li><a data-toggle="pill" href="sanphamconguoimuanew.html"> Sản phẩm có người mua </a></li>
           </ul>

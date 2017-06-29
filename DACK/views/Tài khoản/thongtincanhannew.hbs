@@ -53,10 +53,10 @@
           <ul class="nav nav-pills nav-stacked">
               
 
-              <li class="active"><a data-toggle="pill" href="/thongtincanhan"> Thông tin cá nhân </a></li>
+              <li class="active"><a  href="/taikhoan/thongtincanhan"> Thông tin cá nhân </a></li>
 
               
-              <li ><a data-toggle="pill" href="/taikhoan/chitietdanhgia"> Chi tiết đánh giá </a></li>
+              <li ><a  href="/taikhoan/chitietdanhgia"> Chi tiết đánh giá </a></li>
          
           <div class="block-title block" style="margin-top: 20px">
               <h5>
@@ -74,7 +74,11 @@
                   <span>Bán</span>
               </h5>
           </div>
-              <li><a data-toggle="pill" href="dangbannew.html"> Đăng bán </a></li>
+{{#if layoutModels.isBan}}
+              <li><a data-toggle="pill" href="/dangban"> Đăng bán </a></li>
+{{else}}
+    <li><a data-toggle="pill" href="#"> Đăng bán </a></li>
+{{/if}}
               <li><a data-toggle="pill" href="sanphamconhannew.html"> Sản phẩm còn hạn </a></li>
               <li><a data-toggle="pill" href="sanphamconguoimuanew.html"> Sản phẩm có người mua </a></li>
           </ul>
@@ -158,31 +162,42 @@
 
                   <tr>
                   <td>Điểm tin cậy</td>
-                  <td>75 điểm</td>
+                  <td>{{diemtincay}} %</td>
                   </tr>
 
 
                   <tr>
                   <td>Đánh giá</td>
-                  <td>Tốt: 15<br>Không tốt: 5</td>
+                  <td>Tốt: {{diemt.Count}}<br>Không tốt: {{diemx.Count}}</td>
                   </tr>
 
 
-
+{{#if layoutModels.isBan}}
                   <tr>
                       <td>Quyền bán</td>
                       <td>
                           <div class="row">
                               <div class="col-md-8">
-                                Không
-                              </div>
-                              <div class="col-md-4">
-                                  <a href="donxinphep.html" ><font color= #72AFEB>Xin phép</font></a>
+                                Có
                               </div>
                           </div>
                       </td>
                   </tr>
-
+{{else}}
+    <tr>
+        <td>Quyền bán</td>
+        <td>
+            <div class="row">
+                <div class="col-md-8">
+                    Không
+                </div>
+                <div class="col-md-4">
+                    <a href="/taikhoan/xinphep" ><font color= #72AFEB>Xin phép</font></a>
+                </div>
+            </div>
+        </td>
+    </tr>
+{{/if}}
 
 
 

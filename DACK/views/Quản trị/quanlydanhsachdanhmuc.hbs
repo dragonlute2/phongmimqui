@@ -37,51 +37,35 @@
     <div class="row">
         <h3 class="fw_600 txt_u" style="font-weight: bold;margin-left: 20px;font-size:18px;font-family: Arial">QUẢN LÝ DANH MỤC SẢN PHẨM </h3>
     </div>
+
     <div class="row">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            {{#if showError }}
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    {{ errorMsg }}
+                </div>
+            {{/if}}
             <table class="table table-bordered" style="text-align: center;font-weight: bold;">
                 <!-- Đồng hồ và trang sức -->
-                {{#each bac1}}
+
+                    <tr>
+                        <td>Id loại sản phẩm 2</td>
+                        <td>Id loại sản phẩm 3</td>
+                        <td>Tên danh mục</td>
+                    </tr>
+                {{#each bac3}}
                 <tr>
-                    <td rowspan="6">{{tensanpham}}</td>
-                    <td rowspan="4">Trang sức cổ</td>
-                    <td>Trang sức cổ</td>
+                    <td>{{LOAISANPHAM2_idLOAISANPHAM2}}</td>
+                    <td>{{idLOAISP3}}</td>
+                    <td>{{tensanpham}}</td>
                     <td>
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-wrench" title="Sửa danh mục"></span></button>
+                        <a href="/quanlidanhmuc/sua?id={{idLOAISP3}}"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-wrench" title="Sửa danh mục"></span></button></a>
                         &nbsp
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-remove" title="Xóa danh mục"></span></button>
+                        <a href="javascript:;" class="btn btn-info xoadanhmuc" data-id="{{idLOAISP3}}" title="Xóa danh mục"><span class="glyphicon glyphicon-remove"></span></a>
                     </td>
                 </tr>
-                <tr>
-                    <td>Trang sức hôn lễ</td>
-                    <td>
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-wrench" title="Sửa danh mục"></span></button>
-                        &nbsp
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-remove" title="Xóa danh mục"></span></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Trang sức cho trẻ</td>
-                    <td>
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-wrench" title="Sửa danh mục"></span></button>
-                        &nbsp
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-remove" title="Xóa danh mục"></span></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Trang sức thủ công</td>
-                    <td>
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-wrench" title="Sửa danh mục"></span></button>
-                        &nbsp
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-remove" title="Xóa danh mục"></span></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Đồng hồ nam</td>
-                </tr>
-                <tr>
-                    <td>Đồng hồ nữ</td>
-                </tr>
+
                 {{/each}}
 
                 <a style="display: scroll;position:fixed;margin-left: 900px;color: blue " href="#themdanhmuc" title="Thêm danh mục" data-toggle="modal"><span>Thêm danh mục</span><img src="/Images/add.png" ></a>
@@ -96,7 +80,7 @@
                             </div>
 
                             <div class="modal-body">
-                                <form accept-charset="UTF-8" action="quanlydanhsachdanhmuc.html" id="customer_login" name="customer_register" method="post" >
+                                <form accept-charset="UTF-8" action="" id="customer_login" name="customer_register" method="post" >
                                     <h4 class="fw_600 txt_u hidden-sm-down">Thêm danh sách danh mục</h4>
                                     <ul class="form-list">
                                         <li>
@@ -109,7 +93,7 @@
                                         </li>
                                         <li>
                                             <label for="id">Chọn danh sách danh mục cấp 2</label>
-                                            <select class="form-control" name="values[]" id="bac2">
+                                            <select class="form-control" name="values" id="bac2">
                                                 {{#each bac2}}
                                                 <option value="{{idLOAISANPHAM2}}" id="{{LOAISANPHAM1_idLOAISANPHAM1}}" >{{tensanpham}}</option>
                                                 {{/each}}
@@ -122,7 +106,7 @@
                                     </ul>
                                     <div class="buttons-set" style="margin-left: 250px">
                                         <input id="adddanhmuc" name="login" type="submit" class="button login login_sign" value="Thêm" style="font-weight: bold;"></input>
-                                        <a href="#"><button class="button login login_sign" onclick="" type="button"><span> Hủy </span></button></a>
+                                        <a href="#"><button class="button login login_sign" type="button" class="close" data-dismiss="modal" aria-hidden="true"><span> Hủy </span></button></a>
                                     </div>
                                 </form>
                             </div>
@@ -134,7 +118,9 @@
     </div>
 
 </div>
-
+<form method="post" action="/quanlidanhmuc/xoa" id="frmxoadanhmuc">
+    <input type="hidden" name="id" id="txtDelCatId">
+</form>
 
 <script type="text/javascript" src="/JS/jquery.flexslider.js"></script>
 <script type="text/javascript" src="/JS/common.js"></script>
@@ -209,6 +195,13 @@
 
     });
 
+</script>
+<script type="text/javascript">
+    $('.xoadanhmuc').on('click', function() {
+        var id = $(this).data('id');
+        $('#txtDelCatId').val(id);
+        $('#frmxoadanhmuc').submit();
+    });
 </script>
 
 </body>

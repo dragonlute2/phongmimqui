@@ -10,8 +10,9 @@ module.exports = function(req, res, next) {
             bac2:cRows2,
             bac3:cRows3,
             isLogged: req.session.isLogged,
-        curUser: req.session.user,
-        isQL: req.session.isQL
+            curUser: req.session.user,
+            isQL: req.session.isQL,
+            isBan:req.session.isBan
 }
 next();
 });

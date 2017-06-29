@@ -119,3 +119,29 @@ exports.kiemtramail=function (entity) {
     });
     return deferred.promise;
 }
+
+exports.diemtot=function (entity) {
+    var deferred = q.defer();
+    var sql=mustache.render('SELECT COUNT(*) AS Count from comment where idnguoiduocomment="{{id}}" and diemdanhgia=1', entity);
+    db.load(sql).then(function(rows) {
+            deferred.resolve(rows[0]);
+    });
+    return deferred.promise;
+}
+exports.diemxau=function (entity) {
+    var deferred = q.defer();
+    var sql=mustache.render('SELECT COUNT(*) AS Count from comment where idnguoiduocomment="{{id}}" and diemdanhgia=0', entity);
+    db.load(sql).then(function(rows) {
+        deferred.resolve(rows[0]);
+    });
+    return deferred.promise;
+}
+exports.loadchitiet = function(entity) {
+    var d = q.defer();
+    var sql=mustache.render('select hoten,noidungcomment, sanpham.idSANPHAM,idUSER,`comment`.diemdanhgia from `user` ' +
+        'INNER JOIN sanpham ON sanpham.idnguoithang=`user`.idUSER ' +
+        'INNER JOIN `comment` ON sanpham.idnguoithang=`comment`.idnguoicomment ' +
+        'where sanpham.idnguoiban="{{id}}" GROUP BY hoten',entity);
+    d.resolve(db.load(sql));
+    return d.promise;
+}

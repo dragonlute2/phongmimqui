@@ -4,6 +4,7 @@
      Chi tiết đánh giá
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+{{#section 'css'}}
   <link rel="stylesheet" type="text/css" href="/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="/assests/font-awesome-4.7.0/css/font-awesome.min.css"/>
 
@@ -21,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/CSS/sanphamyeuthich.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/danhgianhanxetcomment.css"/>
   <link rel="stylesheet" type="text/css" href="/CSS/danhgia.css"/>
-
+{{/section}}
 </head>
 <body>
   <div class="brd">
@@ -71,7 +72,11 @@
                   <span>Bán</span>
               </h5>
           </div>
-              <li><a data-toggle="pill" href="dangbannew.html"> Đăng bán </a></li>
+              {{#if layoutModels.isBan}}
+                  <li><a data-toggle="pill" href="/dangban"> Đăng bán </a></li>
+              {{else}}
+                  <li><a data-toggle="pill" href="#"> Đăng bán </a></li>
+              {{/if}}
               <li><a data-toggle="pill" href="sanphamconhannew.html"> Sản phẩm còn hạn </a></li>
               <li><a data-toggle="pill" href="sanphamconguoimuanew.html"> Sản phẩm có người mua </a></li>
           </ul>
@@ -112,49 +117,23 @@
  <p>&nbsp;</p>
 
 <!-- đánh giá 1 -->
- <div class="row">
-
-            <div class="col-md-4">
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
-            </div>
-
-            <div class="col-md-4">
-            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
-            </div>
-
-            <div class="col-md-4">
-                Tốt
-                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             afe df e gg "
-            </div> 
-            
-
-  </div>
-
-
-<hr>
 
 <!-- đánh giá 2 -->
+        {{#each chitiet}}
  <div class="row">
 
             <div class="col-md-4">
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{hoten}}</strong>
             </div>
 
             <div class="col-md-4">
-            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
+            &nbsp;&nbsp;&nbsp;<a href="{{idSANPHAM}}" style="color: #72AFEB">Chi tiết sản phẩm </a>
             </div>
 
             <div class="col-md-4">
-                Tốt
+            Điểm:{{diemdanhgia}}
                 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             afe df e gg "
+            Nội dung: {{noidungcomment}}
             </div> 
             
 
@@ -162,88 +141,7 @@
 
 
 <hr>
-
-
-<!-- đánh giá 3 -->
- <div class="row">
-
-            <div class="col-md-4">
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
-            </div>
-
-            <div class="col-md-4">
-            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
-            </div>
-
-            <div class="col-md-4">
-                Tốt
-                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             afe df e gg "
-            </div> 
-            
-
-  </div>
-
-
-<hr>
-
-
-<!-- đánh giá 4 -->
- <div class="row">
-
-            <div class="col-md-4">
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
-            </div>
-
-            <div class="col-md-4">
-            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
-            </div>
-
-            <div class="col-md-4">
-                Tốt
-                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             afe df e gg "
-            </div> 
-            
-
-  </div>
-
-
-  <hr>
-
-
-
-      <!-- đánh giá 5 -->
-      <div class="row">
-
-            <div class="col-md-4">
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***Hoa 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23:27|30/05/2017
-            </div>
-
-            <div class="col-md-4">
-            &nbsp;&nbsp;&nbsp;<a href="#" style="color: #72AFEB">Chi tiết sản phẩm </a>
-            </div>
-
-            <div class="col-md-4">
-                Tốt
-                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-            "thái độ nhân viên vận chuyển không tốt <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-             afe df e gg "
-            </div> 
-            
-
-      </div>
-
-
-  <hr>
+{{/each}}
     
 </div>
 
