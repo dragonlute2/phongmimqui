@@ -256,11 +256,14 @@ exports.loadSanPham = function(id) {
             list: rows[0],
             chiTietDauGia: pRow1
         }
+
         deferred.resolve(data);
     });
 
     return deferred.promise;
 }
+
+
 exports.them = function(entity) {
     var d = q.defer();
     var sql = mustache.render('INSERT INTO sanphamyeuthich(USER_idUSER,idsanpham) ' +

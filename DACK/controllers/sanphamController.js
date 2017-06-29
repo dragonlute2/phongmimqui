@@ -233,8 +233,9 @@ productController.get('/detail/:id', function(req, res) {
             var entity={
                 id:pro.list.idnguoiban
             }
-            console.log(entity);
+
             taikhoan.loadchitiet(entity).then(function (rows) {
+
                 if (pro) {
                     if(req.session.user == null)
                     {
@@ -244,21 +245,22 @@ productController.get('/detail/:id', function(req, res) {
                             isDauGiaNull: pro.list.userDauGia === null,
                             isGiaMuaLienNull: pro.list.giamualien === null,
                             chiTietDauGia: pro.chiTietDauGia,
-                            chitiet:rows
+                            chitiet:rows,
                         });
                     }
                     else {
                         res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
                             layoutModels: res.locals.layoutModels,
                             product: pro.list,
-                            isNguoiBan: pro.idBan === req.session.user.id,
+                            isNguoiBan: pro.list.idBan === req.session.user.id,
                             isDauGiaNull: pro.list.userDauGia === null,
                             isGiaMuaLienNull: pro.list.giamualien === null,
                             chiTietDauGia: pro.chiTietDauGia,
-                            chitiet:rows
+                            sanphamyeuthich: req.session.sanphamyeuthich,
+                            chitiet:rows,
                         });
                     }
-
+                    console.log(rows);
                 }
                 else {
                     res.redirect('/');
@@ -268,5 +270,23 @@ productController.get('/detail/:id', function(req, res) {
         });
 
 });
+productController.post('/detail/:id', function(req, res) {
+    var id = req.params.id;
+    var x = req.body.sanphamyeuthich;
+
+    console.log(id);
+    var entity={
+        idUser:req.session.user.id,
+        idSanPham:x.slice(5, x.length)
+    }
+    console.log(entity);
+    product.them(entity).then(function (affe)
+    {
+        res.redirect('/sanphamloai1/detail/' + id);
+    });
+
+
+});
+
 
 module.exports = productController;

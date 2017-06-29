@@ -30,14 +30,14 @@ r.get('/', function(req, res) {
 
 /*
 
-r.get('/', function(req, res) {
-    console.log(req.body.link1);
-    var vm = {
-        layout: false,
-    };
-    res.render('Tài khoản/dangbannew', vm);
-});
-*/
+ r.get('/', function(req, res) {
+ console.log(req.body.link1);
+ var vm = {
+ layout: false,
+ };
+ res.render('Tài khoản/dangbannew', vm);
+ });
+ */
 
 
 
@@ -64,7 +64,7 @@ r.post('/', function(req, res) {
         giamuangay: req.body.giamuangay,
         motachitiet: req.body.motachitietsanpham,
         buocgia: req.body.buocgia,
-        idnguoiban: req.session.id,
+        idnguoiban: req.session.user.id,
         tudonggiahan: req.body.tudonggiahan,
         thoigiandang: req.body.thoigiandang,
         thoigianketthuc: req.body.thoigianketthuc,
@@ -98,9 +98,9 @@ r.post('/', function(req, res) {
 
 
 /*app.get('/test.js', function(req, res) {
-    res.set('Content-Type', 'application/javascript');
-    res.render('testPage', { myVar : 'TEST'});
-});*/
+ res.set('Content-Type', 'application/javascript');
+ res.render('testPage', { myVar : 'TEST'});
+ });*/
 
 
 
@@ -109,18 +109,18 @@ r.post('/', function(req, res) {
 
 
 /*
-r.post('/add', function(req, res) {
+ r.post('/add', function(req, res) {
 
-    console.log(req.body.input700);
+ console.log(req.body.input700);
 
 
-    categoryRepo.insert(req.body).then(function(data) {
-        var vm = {
-            layout: false,
-        };
-        res.render('Tài khoản/dangbannew', vm);
-    })
-});*/
+ categoryRepo.insert(req.body).then(function(data) {
+ var vm = {
+ layout: false,
+ };
+ res.render('Tài khoản/dangbannew', vm);
+ })
+ });*/
 
 
 

@@ -57,52 +57,52 @@ exports.loadLoaiSanPhamQuangCao = function()
 exports.loadSanPhamQuangCao = function()
 {
     var d = q.defer();
-    var sql = '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+    var sql = '(SELECT sanpham.hinhanh2,  sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1,loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 1 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) '+
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1, loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 2 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) '+
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1, loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 3 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1,loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 4 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1,loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 5 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1,loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 6 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1,loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 7 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1, loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 8 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1, loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 9 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ' +
         'UNION ALL ' +
-        '(SELECT sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
+        '(SELECT sanpham.hinhanh2, sanpham.tensanpham, sanpham.gia, sanpham.thoigiankethuc, loaisanpham1.idLOAISANPHAM1, sanpham.idSANPHAM ' +
         'from sanpham, loaisanpham2, loaisanpham1, loaisanpham3 ' +
         'where sanpham.LOAISANPHAM3_idLOAISP3 = loaisanpham3.idLOAISP3 AND loaisanpham3.LOAISANPHAM2_idLOAISANPHAM2 = loaisanpham2.idLOAISANPHAM2 AND loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham1.idLOAISANPHAM1 = 10 AND sanpham.conhan = 1 ' +
         'ORDER BY sanpham.thoigiankethuc ASC LIMIT 6) ';

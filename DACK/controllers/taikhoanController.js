@@ -178,6 +178,7 @@ taikhoanr.post('/dangnhap', function(req, res) {
                             if(x>=79){
                                 req.session.isBan=true;
                             }
+                            console.log(req.session.isBan);
                         })
                     res.redirect('/');
                 }
@@ -456,15 +457,28 @@ taikhoanr.get('/daugiathang',function (req,res) {
     var entity={
         id:req.session.user.id
     }
-    taikhoan.loadspdaugiathang(entity).then(function (rows) {
+
+    q.all([taikhoan.loadspdaugiathang(entity)]).spread(function (rows) {
         var vm={
             sanphamthang:rows,
             NoProduct:rows.length==0
         }
-        console.log(vm)
+        var a={
+            idsp:req.query.idsp,
+            idnguoiduoc:req.query.iduser,
+            idcomment:req.session.user.id,
+            noidung:req.query.comment,
+            diem:req.query.optradio
+        }
+        taikhoan.comment(a).then(function (asd) {
+        })
         res.render('Tài khoản/sanphamdaugiathangnew',vm);
+
     })
 
+});
+taikhoanr.get('/splike', function(req, res) {
+    res.render('Tài khoản/sanphamyeuthichnew');
 });
 module.exports = taikhoanr;
 

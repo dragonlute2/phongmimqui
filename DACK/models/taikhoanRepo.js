@@ -137,6 +137,7 @@ exports.diemxau=function (entity) {
     return deferred.promise;
 }
 exports.loadchitiet = function(entity) {
+    console.log(entity);
     var d = q.defer();
     var sql=mustache.render('SELECT `user`.hoten,sanpham.idSANPHAM,`comment`.noidungcomment,`comment`.diemdanhgia from sanpham,`user`,`comment` where sanpham.idSANPHAM=`comment`.idsanpham and `comment`.idnguoicomment=sanpham.idnguoithang and `user`.idUSER=`comment`.idnguoicomment and `comment`.idnguoiduocomment=sanpham.idnguoiban and sanpham.idnguoiban="{{id}}" GROUP BY `comment`.idsanpham',entity);
     d.resolve(db.load(sql));
@@ -153,5 +154,12 @@ exports.loadspdaugiathang = function(entity) {
         'and sanpham.conhan=0 ' +
         'GROUP BY sanpham.idSANPHAM ',entity);
     d.resolve(db.load(sql));
+    return d.promise;
+}
+exports.comment = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('INSERT INTO comment (idsanpham,idnguoicomment,noidungcomment,idnguoiduocomment,diemdanhgia) ' +
+        'VALUES("{{idsp}}","{{idcomment}}","{{noidung}}","{{idnguoiduoc}}","{{diem}}")',entity);
+    d.resolve(db.insert(sql));
     return d.promise;
 }
