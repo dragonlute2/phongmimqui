@@ -14,6 +14,7 @@ var express = require('express'),
     timkiem = require('./controllers/timkiemController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
     sanpham = require('./controllers/sanphamController'),
+    dangbanController = require('./controllers/dangbanController'),
     taikhoan=require('./controllers/taikhoanController');
 
 
@@ -80,6 +81,7 @@ app.use('/timkiem', timkiem);
 app.use('/huongdan',huongdan);
 app.use('/sanphamloai1', sanpham);
 app.use('/taikhoan',taikhoan);
+app.use('/dangban',dangbanController);
 
 app.use(handle404);
 
