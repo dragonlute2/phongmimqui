@@ -97,11 +97,13 @@ input[type='radio'] {
 
 
 
-@media (min-width: 768px) {
-.modal-content{
-    width: 950;
-    margin-left: -124px;
-    margin-top: -20px;
-}
+
+
+
+
+    .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+        color: #a94442;
+        margin-top: 18px;
+    }
 
 

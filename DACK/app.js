@@ -13,6 +13,7 @@ var express = require('express'),
     huongdan=require('./controllers/huongdanController'),
     danhsachdanhmuc=require('./controllers/quanlydanhmucController'),
     sanpham = require('./controllers/sanphamController'),
+    dangbanController = require('./controllers/dangbanController'),
     taikhoan=require('./controllers/taikhoanController');
 
 
@@ -33,8 +34,8 @@ app.use(session({
         host: '127.0.0.1',
         port: 3306,
         user: 'root',
-        password: 'anhhai',
-        database: 'quanlysitedaugia',
+        password: '',
+        database: 'quanlydaugia',
         createDatabaseTable: true,
         schema: {
             tableName: 'sessions',
@@ -79,6 +80,7 @@ app.use('/quanlidanhmuc',danhsachdanhmuc);
 app.use('/huongdan',huongdan);
 app.use('/sanphamloai1', sanpham);
 app.use('/taikhoan',taikhoan);
+app.use('/dangban',dangbanController);
 
 app.use(handle404);
 
