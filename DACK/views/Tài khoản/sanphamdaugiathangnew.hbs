@@ -124,12 +124,12 @@
                         <!--sản phẩm 1-->
                         {{#each sanphamthang}}
                             <tr>
-                                <td class="mota" style="text-align: center">
-                                    <a href="#" title="Samsung Galaxy Note 5">
-                                        <img src="/Images/dienthoai1_1_medium.jpg" alt="{{tensanpham}}">
+                                <td class="mota" style="text-align: center", width="10%">
+                                    <a href="/sanphamloai1/detail/{{idSANPHAM}}" title="Samsung Galaxy Note 5">
+                                        <img style="padding-left: 10px; width: 100px; height: 100px" src="{{hinhanh1}}" alt="{{tensanpham}}">
                                     </a>
                                 </td>
-                                <td class="mota">
+                                <td class="mota" width="30%">
                                     <div class="item_loop_list_title fs15">
                                         <h3 class="fw_600"><a href="/sanphamloai1/detail/{{idSANPHAM}}" title="{{tensanpham}}">{{tensanpham}} </a></h3>
                                     </div>
@@ -142,16 +142,22 @@
                                         <p> Mô tả:{{motasanphamngangon}}</p>
                                     </div>
                                 </td>
-                                <td style="font-size: 15px"> {{gia}}</td>
+                                <td style="font-size: 15px"> {{number_format1 gia}}</td>
                                 <td style="font-size: 15px"> <a href="#" style="color: #843534">{{tendangnhap}}</a> </td>
                                 <td style="font-size: 15px">{{soluotdaugia}}
 
 
-                                    <p class="btn_see" style="margin-top: 40px">
+                                    <p class="btn_see" style="margin-top: 40px; text-align: center">
                                         <a href="#{{tendangnhap}}" data-toggle="modal">
                                             <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                                             Đánh giá </a>
                                     </p>
+
+                                    <div  style="margin-top: 20px; margin-bottom: 10px">
+                                        <a style="color: blue" href="/sanphamloai1/detail/{{idSANPHAM}}" data-toggle="modal">
+                                            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                                            Xem chi tiết </a>
+                                    </div>
 
 
                                     <div class="modal fade" id="{{tendangnhap}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -293,6 +299,18 @@
         $("#menucontentother").hide();
     });
 
+</script>
+<script>
+    $('.product-sub p').each(function()
+    {
+        if($.trim($(this).text()).length > 73)
+        {
+            var x = $.trim($(this).text());
+            x = x.slice(0, 73) + "...";
+            $.trim($(this).text(x));
+        }
+
+    });
 </script>
 
 

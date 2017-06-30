@@ -33,11 +33,9 @@ module.exports = function(req, res, next) {
                 curUser: req.session.user,
                 isQL: req.session.isQL,
                 isBan:req.session.isBan,
-
             };
             next();
         });
     }
-
 
 }

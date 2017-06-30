@@ -145,14 +145,14 @@ exports.loadchitiet = function(entity) {
 }
 exports.loadspdaugiathang = function(entity) {
     var d = q.defer();
-    var sql=mustache.render('SELECT sanpham.idSANPHAM,sanpham.tensanpham,`user`.tendangnhap,`user`.idUSER,MAX(chitietdaugia.sotien) as gia,sanpham.soluotdaugia,sanpham.motasanphamngangon ' +
-        'from sanpham,`user`,chitietdaugia ' +
-        'where chitietdaugia.idsanphamdaugia=sanpham.idSANPHAM ' +
-        'and `user`.idUSER=sanpham.idnguoiban ' +
-        'and sanpham.idnguoithang=chitietdaugia.idnguoidaugia ' +
-        'and sanpham.idnguoithang="{{id}}" ' +
-        'and sanpham.conhan=0 ' +
-        'GROUP BY sanpham.idSANPHAM ',entity);
+    var sql=mustache.render('SELECT * ' +
+        'from sanpham ' +
+        'left outer join ' +
+        '(select *, max(sotien) as tienmax ' +
+        'from chitietdaugia ' +
+        'GROUP BY chitietdaugia.idsanphamdaugia) d on sanpham.idSANPHAM = d.idsanphamdaugia  ' +
+        'INNER JOIN user as nguoiban ON sanpham.idnguoiban = nguoiban.idUSER ' +
+        'WHERE sanpham.idnguoithang = "{{id}}"',entity);
     d.resolve(db.load(sql));
     return d.promise;
 }
@@ -161,5 +161,34 @@ exports.comment = function(entity) {
     var sql = mustache.render('INSERT INTO comment (idsanpham,idnguoicomment,noidungcomment,idnguoiduocomment,diemdanhgia) ' +
         'VALUES("{{idsp}}","{{idcomment}}","{{noidung}}","{{idnguoiduoc}}","{{diem}}")',entity);
     d.resolve(db.insert(sql));
+    return d.promise;
+}
+
+exports.loadspconhan = function(entity) {
+    var d = q.defer();
+    var sql=mustache.render('SELECT *, nguoiban.tendangnhap as user1, nguoidaugia.tendangnhap as user2, GREATEST(IFNULL(tienmax, 0),sanpham.gia) as tiencaonhat ' +
+        'from sanpham ' +
+        'left outer join ' +
+        '(select *, max(sotien) as tienmax ' +
+        'from chitietdaugia ' +
+        'GROUP BY chitietdaugia.idsanphamdaugia) d on sanpham.idSANPHAM = d.idsanphamdaugia ' +
+        'INNER JOIN user as nguoiban on sanpham.idnguoiban = nguoiban.idUSER  ' +
+        'Left outer join user as nguoidaugia on d.idnguoidaugia = nguoidaugia.idUSER ' +
+        'WHERE sanpham.conhan = 1 AND sanpham.idnguoiban = "{{id}}"',entity);
+    d.resolve(db.load(sql));
+    return d.promise;
+}
+exports.loadspconguoimua = function(entity) {
+    var d = q.defer();
+    var sql=mustache.render('SELECT *, nguoiban.tendangnhap as user1, nguoimua.tendangnhap as user2, GREATEST(IFNULL(tienmax, 0),sanpham.gia) as tiencaonhat ' +
+        'from sanpham ' +
+        'left outer join ' +
+        '(select *, max(sotien) as tienmax ' +
+        'from chitietdaugia ' +
+        'GROUP BY chitietdaugia.idsanphamdaugia) d on sanpham.idSANPHAM = d.idsanphamdaugia ' +
+        'INNER JOIN user as nguoiban on sanpham.idnguoiban = nguoiban.idUSER  ' +
+        'INNER JOIN user as nguoimua on sanpham.idnguoithang = nguoimua.idUSER ' +
+        'WHERE sanpham.idnguoiban = "{{id}}"',entity);
+    d.resolve(db.load(sql));
     return d.promise;
 }

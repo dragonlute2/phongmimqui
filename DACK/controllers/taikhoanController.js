@@ -178,15 +178,28 @@ taikhoanr.post('/dangnhap', function(req, res) {
                             if(x>=79){
                                 req.session.isBan=true;
                             }
-                            console.log(req.session.isBan);
+<<<<<<< HEAD
+<<<<<<< HEAD
+                            res.redirect('/');
+=======
+                            req.session.diem = x;
+                            res.redirect('/');
+
+>>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
+=======
+                            req.session.diem = x;
+                            res.redirect('/');
+
+>>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
                         })
-                    res.redirect('/');
+
                 }
             }
         });
 });
 taikhoanr.post('/thoat', restrict, function(req, res) {
     req.session.isLogged = false;
+    req.session.isBan=false;
     req.session.user = null;
     req.session.cookie.expires = new Date(Date.now() - 1000);
    // res.redirect(req.headers.referer);
@@ -195,6 +208,7 @@ taikhoanr.post('/thoat', restrict, function(req, res) {
 });
 taikhoanr.get('/thoat', restrict, function(req, res) {
     req.session.isLogged = false;
+    req.session.isBan=false;
     req.session.user = null;
     req.session.cookie.expires = new Date(Date.now() - 1000);
     // res.redirect(req.headers.referer);
@@ -257,7 +271,6 @@ taikhoanr.get('/thongtincanhan', function(req, res) {
             .spread(function(diemtot,diemxau)
             {
                 var x=diemtot.Count/(diemtot.Count+diemxau.Count)*100;
-                x = parseFloat(x).toFixed(0);
                 var vm = {
                     layoutModels: res.locals.layoutModels,
                     diemt:diemtot,
@@ -334,7 +347,6 @@ taikhoanr.get('/chitietdanhgia', function(req, res) {
         var vm={
             chitiet:rows,
         }
-        console.log(vm);
         res.render('Tài khoản/chitietdanhgianew',vm);
     })
 
@@ -448,7 +460,6 @@ taikhoanr.post('/xinphep', function(req, res) {
         comment: req.body.comment,
         thoigian:thoigian
     }
-    console.log(a);
     yeucau.xinphep(a).then(function (rows) {
         res.redirect('/taikhoan/thongtincanhan');
     })
@@ -477,8 +488,39 @@ taikhoanr.get('/daugiathang',function (req,res) {
     })
 
 });
-taikhoanr.get('/splike', function(req, res) {
-    res.render('Tài khoản/sanphamyeuthichnew');
+taikhoanr.get('/spconhan', function(req, res) {
+    var entity={
+        id:req.session.user.id
+    }
+    q.all([taikhoan.loadspconhan(entity)]).spread(function (rows) {
+
+        var vm={
+            sanphamconhan:rows,
+            NoProduct:rows.length === 0
+        }
+        console.log(rows);
+
+        res.render('Tài khoản/sanphamconhannew',vm);
+
+    })
+
+});
+taikhoanr.get('/sanphamconguoimua', function(req, res) {
+    var entity={
+        id:req.session.user.id
+    }
+    q.all([taikhoan.loadspconguoimua(entity)]).spread(function (rows) {
+
+        var vm={
+            sanphamconguoimua:rows,
+            NoProduct:rows.length === 0
+        }
+        console.log(rows);
+
+        res.render('Tài khoản/sanphamconguoimuanew',vm);
+
+    })
+
 });
 module.exports = taikhoanr;
 

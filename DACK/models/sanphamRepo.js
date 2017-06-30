@@ -5,6 +5,7 @@ var mustache = require('mustache'),
     q = require('q'),
     db = require('../fn/db');
 
+
 exports.loadTrangBac1 = function(id, limit, offset) {
 
     var deferred = q.defer();
@@ -103,7 +104,7 @@ exports.loadTrangBac2 = function(id, limit, offset) {
         'WHERE loaisanpham2.idLOAISANPHAM2  = {{idBac2}} ' +
         'GROUP BY sanpham.idSANPHAM LIMIT {{limit}} offset {{offset}}', view);
     promises.push(db.load(sql));
-    console.log(sql);
+
     var sqlNameBac1 = mustache.render('select loaisanpham1.*  ' +
         'from loaisanpham2, loaisanpham1 ' +
         'where loaisanpham2.LOAISANPHAM1_idLOAISANPHAM1 = loaisanpham1.idLOAISANPHAM1 AND loaisanpham2.idLOAISANPHAM2 = {{idBac2}}', view);
@@ -280,3 +281,22 @@ exports.loadSanPhamYeuThich = function(id) {
     d.resolve(db.load(sql));
     return d.promise;
 }
+exports.loadluotdaugia = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('SELECT * FROM sanpham where idSANPHAM="{{id}}"',entity);
+    d.resolve(db.load(sql));
+    return d.promise;
+}
+exports.themchitiet = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('INSERT INTO chitietdaugia (idsanphamdaugia,idnguoidaugia,sotien,thoigiandaugia) VALUES("{{id}}","{{idUser}}","{{x}}","{{thoigian}}")',entity);
+    d.resolve(db.insert(sql));
+    return d.promise;
+}
+exports.themluotdaugia = function(entity) {
+    var d = q.defer();
+    var sql = mustache.render('update sanpham set soluotdaugia="{{soluot}}" where idSANPHAM="{{id}}"',entity);
+    d.resolve(db.update(sql));
+    return d.promise;
+}
+

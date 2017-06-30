@@ -19,14 +19,14 @@
     <link rel="stylesheet" type="text/css" href="/CSS/home.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/thongtincanhan.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/nhomsanpham.css"/>
-    <link rel="stylesheet" type="text/css" href="/CSS/sanphamyeuthich.css"/>
     <link rel="stylesheet" type="text/css" href="/CSS/danhgianhanxetcomment.css"/>
   <link rel="stylesheet" type="text/css" href="/CSS/danhgia.css"/>
-        <style>
-            body{
-                line-height: normal;
-            }
-        </style>
+    <style>
+        #menucontentother
+        {
+            margin-top:-7px!important;
+        }
+    </style>
 {{/section}}
 
 </head>
@@ -38,7 +38,7 @@
           <ul class="breadcrumbs">
             <li class="home"> <a title="Quay lại trang chủ" href="/">Trang chủ</a></li>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <li> <span>Tài khoản</span></li>
+            <li> <span>Sản phẩm yêu thích</span></li>
 
 
           </ul>
@@ -68,7 +68,7 @@
               </h5>
           </div>
 
-              <li><a  href="/taikhoan/splike"> Sản phẩm yêu thích </a></li>
+              <li><a  href="#"> Sản phẩm yêu thích </a></li>
               <li><a  href="sanphamdaugianew.html"> Sản phẩm đấu giá </a></li>
               <li><a  href="/taikhoan/daugiathang"> Sản phẩm đấu giá thắng </a></li>
               
@@ -110,320 +110,94 @@
             </h5>
         </div>
         <div class="col-lg-12 col-md-12 collection_container list-items">
-            <table width="100%">
+            <table width="100%" style="line-height: normal">
                 <tbody>
                 <tr >
                     <th colspan="2">Mô tả sản phẩm</th>
                     <th> Giá hiện tại </th>
                     <th> Giá mua ngay </th>
-                    <th> Số lượt ra giá hiện tại </th>
+                    <th> Số lượt đấu giá </th>
                     <th> Thời gian còn lại</th>
                 </tr>
                 <!--sản phẩm 1-->
-                <tr>
-                    <td class="mota" style="text-align: center">
-                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
-                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
-                        </a>
-                    </td>
-                    <td class="mota">
-                        <div class="item_loop_list_title fs15">
-                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
-                        </div>
-                        <div class="product-seller">
-                            <p> Người bán:
-                                <a href="#">tranvanphong1004@gmail.com</a>
+                {{#each productsYeuThich}}
+                    <tr id="daugia{{idSANPHAM}}" class="daugia">
+                        <td class="mota" style="text-align: center; width: 10%">
+                            <a href="/sanphamloai1/detail/{{idSANPHAM}}" title="{{tensanpham}}">
+                                <img src="{{hinhanh1}}" style="width: 100px; height: 100px" alt="{{tensanpham}}">
+                            </a>
+                        </td>
+                        <td class="mota" width="30%" style="padding-left: 10px">
+                            <div class="item_loop_list_title fs15">
+                                <h3 class="fw_600"><a href="/sanphamloai1/detail/{{idSANPHAM}}" title="{{tensanpham}}"> {{tensanpham}} </a></h3>
+                            </div>
+                            <div class="product-seller">
+                                <p> Người bán:
+                                    <a href="#">{{tendangnhap}}</a>
+                                </p>
+                            </div>
+                            <div class="product-sub" title="{{motasanphamngangon}}">
+                                <p> Mô tả:{{motasanphamngangon}}</p>
+                            </div>
+                        </td>
+                        <td>
+                            {{tiencaonhat}}
+                        </td>
+                        <td> <span> {{giamualien}} </span></td>
+                        <td> {{soluotdaugia}} </td>
+                        <td>
+                            <div class="time daugia{{idSANPHAM}}"  style="color: red; margin-top: 8px; margin-right: -7px" value="{{thoigiankethuc}}">
+                            </div>
+                            <p class="btn_see" style="text-align: center">
+                                <a href="/sanphamloai1/detail/{{idSANPHAM}}" title="Xem chi tiết sản phẩm">
+                                    <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                                    Xem chi tiết</a>
                             </p>
-                        </div>
-                        <div class="product-sub">
-                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
-                        </div>
-                    </td>
-                    <td> 
-                      12.000.000đ
-                      <p>&nbsp;</p>
-                      Người ra giá: <a href="#"><font color="#d2092d">*****qui@gmail.com</font></a>
-                    </td>
-                    <td>  
-                            15.000.000đ     
-                    </td>
-                    <td> 20 </td>
-                    <td> 5 ngày <br/> 2:30:20
 
-                        <div class="checkbox">
-                          <input class="checked" id="check1" type="checkbox" name="check" value="check1" checked>
-                          <label for="check1"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                        </div>
-                        <p class="btn_see">
-                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
-                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                                Xem chi tiết</a>
-                        </p>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6" class="border-under">
-                    </td>
-                </tr>
-                <!--sản phẩm 2-->
-                <tr>
-                    <td class="mota" style="text-align: center">
-                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
-                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
-                        </a>
-                    </td>
-                    <td class="mota">
-                        <div class="item_loop_list_title fs15">
-                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
-                        </div>
-                        <div class="product-seller">
-                            <p> Người bán:
-                                <a href="#">tranvanphong1004@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="product-sub">
-                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
-                        </div>
-                    </td>
-                    <td> 12.000.000đ</td>
-                    <td> <span> - </span></td>
-                    <td> 20 </td>
-                    <td> 5 ngày <br/> 2:30:20
-                         <div class="checkbox">
-                          <input class="checked" id="check2" type="checkbox" name="check" value="check2" checked>
-                          <label for="check2"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                        </div>
-                        <p class="btn_see">
-                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
-                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                                Xem chi tiết</a>
-                        </p>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6" class="border-under">
-                    </td>
-                </tr>
-                <!--sản phẩm 3-->
-                <tr>
-                    <td class="mota" style="text-align: center">
-                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
-                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
-                        </a>
-                    </td>
-                    <td class="mota">
-                        <div class="item_loop_list_title fs15">
-                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
-                        </div>
-                        <div class="product-seller">
-                            <p> Người bán:
-                                <a href="#">tranvanphong1004@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="product-sub">
-                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
-                        </div>
-                    </td>
-                    <td> 12.000.000đ</td>
-                    <td> <span> - </span></td>
-                    <td> 20 </td>
-                    <td> 5 ngày <br/> 2:30:20
-                          <div class="checkbox">
-                          <input class="checked" id="check3" type="checkbox" name="check" value="check3" checked>
-                          <label for="check3"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                        </div>
-                        <p class="btn_see">
-                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
-                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                                Xem chi tiết</a>
-                        </p>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6" class="border-under">
-                    </td>
-                </tr>
-                <!--sản phẩm 4-->
-                <tr>
-                    <td class="mota" style="text-align: center">
-                        <a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
-                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
-                        </a>
-                    </td>
-                    <td class="mota">
-                        <div class="item_loop_list_title fs15">
-                            <h3 class="fw_600"><a href="Sản%20phẩm%20chi%20tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
-                        </div>
-                        <div class="product-seller">
-                            <p> Người bán:
-                                <a href="#">tranvanphong1004@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="product-sub">
-                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
-                        </div>
-                    </td>
-                    <td> 12.000.000đ</td>
-                    <td> <span> - </span></td>
-                    <td> 20 </td>
-                    <td> 5 ngày <br/> 2:30:20
-                         <div class="checkbox">
-                          <input class="checked" id="check4" type="checkbox" name="check" value="check4" checked>
-                          <label for="check4"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                        </div>
-                        <p class="btn_see">
-                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
-                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                                Xem chi tiết</a>
-                        </p>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6" class="border-under">
-                    </td>
-                </tr>
-                <!--sản phẩm 5-->
-                <tr>
-                    <td class="mota" style="text-align: center">
-                        <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">
-                            <img src="../../public/Images/dienthoai1_1_medium.jpg" alt="Samsung Galaxy Note 5">
-                        </a>
-                    </td>
-                    <td class="mota">
-                        <div class="item_loop_list_title fs15">
-                            <h3 class="fw_600"><a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html" title="Samsung Galaxy Note 5">Samsung Galaxy Note </a></h3>
-                        </div>
-                        <div class="product-seller">
-                            <p> Người bán:
-                                <a href="#">tranvanphong1004@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="product-sub">
-                            <p> Mô tả:Samsung Galaxy Note 5 thiết kế khung kim loại...</p>
-                        </div>
-                    </td>
-                    <td> 12.000.000đ</td>
-                    <td> <span> - </span></td>
-                    <td> 20 </td>
-                    <td> 5 ngày <br/> 2:30:20
-                          <div class="checkbox">
-                          <input class="checked" id="check5" type="checkbox" name="check" value="check5" checked>
-                          <label for="check5"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                        </div>
-                        <p class="btn_see">
-                            <a href="../Nhóm sản phẩm/sản phẩm chi tiết/Dien-thoai.html">
-                                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                                Xem chi tiết</a>
-                        </p>
-                        <br>
-                    </td>
-                </tr>
-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="border-under">
+                        </td>
+                    </tr>
+                {{/each}}
                 </tbody>
             </table>
         </div>
         <div class="col-lg-12 col-md-12 menu">
             <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
+                {{#if showPrevPage}}
+                    <li>
+                        <a href="?page={{prevPage}}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {{/if}}
+                {{#each pages }}
+                    {{#if isActive }}
+                        <li class="active">
+                            <a href="?page={{pageValue}}">{{pageValue}}</a>
+                        </li>
+                    {{else}}
+                        <li>
+                            <a href="?page={{pageValue}}">{{pageValue}}</a>
+                        </li>
+                    {{/if}}
+                {{/each}}
+                {{#if showNextPage }}
+                    <li>
+                        <a href="?page={{nextPage}}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {{/if}}
             </ul>
         </div>
-    </div> -->
-
-
-  
-  
-
-
-
-
-</div>
-
 </div>
 
   </div>  <!-- của container -->
 
 
-  <footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="footer">
-    <div class="container">
-      <section class="footer-up hidden-xs-down">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-            <h5>Thông tin công ty</h5>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/thong-tin-cong-ty">Thông tin công ty</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/gioi-thieu-cong-ty">Giới thiệu công ty</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/he-thong-cac-sieu-thi">Hệ thống các siêu thị</a></li>
-
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-            <h5>Hỗ trợ khách hàng</h5>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/lien-he-va-gop-y">Liên hệ và góp ý</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-online">Hướng dẫn mua hàng online</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/huong-dan-mua-hang-tra-gop">Hướng dẫn mua hàng trả góp</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/quy-che-quan-ly-hoat-dong">Quy chế quản lý hoạt động</a></li>
-
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 hidden-sm-down footer-vertical">
-            <h5>Chính sách mua hàng</h5>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/quy-dinh-chinh-sach">Quy định, chính sách</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-bao-hanh-doi-tra">Chính sách bảo hành - Đổi trả</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/chinh-sach-hoi-vien">Chính sách hội viên</a></li>
-
-            <li><a href="https://golden-mart.bizwebvietnam.net/giao-hang-va-lap-dat">Giao hàng và lắp đặt</a></li>
-
-
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-
-
-    </div>
-  </div>
-  <div class="ft-bottom">
-    <div class="container ft">
-      <div class="row">
-        <div class="col-lg-12 col-xs-12 copyright">
-          <p>© Bản quyền thuộc về <b style="color:#fff;">Team Ngáo</b>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   
   <script type="text/javascript" src="/assests/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -447,6 +221,62 @@
       });
 
   </script>
+  <script>
+      $('.product-sub p').each(function()
+      {
+          if($.trim($(this).text()).length > 73)
+          {
+              var x = $.trim($(this).text());
+              x = x.slice(0, 73) + "...";
+              $.trim($(this).text(x));
+          }
+
+      });
+  </script>
+      <script>
+          $('.time','.daugia').each(function(){
+              var m = $(this).attr('class').slice(5, $(this).attr('class').length);
+
+              var n = $(this).parents('.daugia').attr('id');
+              if(m === n)
+              {
+
+                  var timeFinish = $(this).attr('value');
+                  if(timeFinish == "null")
+                  {
+                      $('.time.'+m).html("HẾT HẠN");
+                      return;
+
+                  }
+
+                  var calcNewYear = setInterval(function(){
+
+                      date_future = new Date(timeFinish);
+                      date_now = new Date();
+                      seconds = Math.floor((date_future - (date_now))/1000);
+                      minutes = Math.floor(seconds/60);
+                      hours = Math.floor(minutes/60);
+                      days = Math.floor(hours/24);
+                      hours = hours-(days*24);
+                      minutes = minutes-(days*24*60)-(hours*60);
+                      seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60)
+                      if(days < 0)
+                      {
+
+                      }
+
+                      $('.time.'+m).html((days) + " ngày " + '<br>' + checkTime(hours) + ":" + checkTime(minutes) + ":" + checkTime(seconds));
+                  },1000);
+              }
+              function checkTime(i)
+              {
+                  if (i < 10) {
+                      i = "0" + i;
+                  }
+                  return i;
+              }
+          });
+      </script>
 
 
 
