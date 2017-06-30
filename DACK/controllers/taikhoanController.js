@@ -178,19 +178,10 @@ taikhoanr.post('/dangnhap', function(req, res) {
                             if(x>=79){
                                 req.session.isBan=true;
                             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            res.redirect('/');
-=======
+
                             req.session.diem = x;
                             res.redirect('/');
 
->>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
-=======
-                            req.session.diem = x;
-                            res.redirect('/');
-
->>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
                         })
 
                 }

@@ -20,14 +20,7 @@ r.get('/', function(req, res) {
             loaiSanPhamQuangCao:pRow5,
             sanPhamQuangCao:pRow6
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
-=======
-
->>>>>>> 9478cd6da8190417bd3e635aabc28fa5e554f55f
         res.render('index', vm);
     })
 });
