@@ -58,7 +58,13 @@ app.engine('hbs', handlebars({
              var nf = wnumb({
                  thousand: ','
              });
-             return nf.to(n);
+             return nf.to(n) + " VNĐ";
+         },
+         number_format1: function (n) {
+             var nf = wnumb({
+                 thousand: ','
+             });
+             return nf.to(n) + " Đ";
          }
      }
 }));

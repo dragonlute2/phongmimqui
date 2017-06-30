@@ -135,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="item-price-bid">
-                                    {{tienmax}}
+                                    {{number_format tienmax}}
                                 </div>
 
                                 {{#if ../isDauGiaNull}}
@@ -180,7 +180,7 @@
                                     <tbody>
                                     {{#each ../tv}}
                                     <tr>
-                                        <td>{{sotien}}</td>
+                                        <td>{{number_format sotien}}</td>
                                         <td>{{thoigiandaugia}}</td>
                                         <td>{{userDauGia}}</td>
                                         <td> <a href="#{{userDauGia}}" data-toggle="modal"> <button class="btn btn-success"> Xem đánh giá </button> </a></td>
@@ -264,7 +264,7 @@
                                     <h2 > <b> Giá mua ngay: </b></h2>
                                 </div>
                                 <div class="item-price-buy">
-                                    {{giamualien}}
+                                    {{number_format giamualien}}
                                 </div>
                                 <div class="btn" style="margin-left: 19%">
                                     <a href="../../index.html" class="button-bid" title="Click để đặt giá">
@@ -501,7 +501,7 @@
                                     </div>
                                 </div>
                                 <div class="item-price-bid">
-                                    {{tienmax}}
+                                    {{number_format tienmax}}
                                 </div>
                                 {{#if ../isDauGiaNull}}
                                     <div class="daugiacaonhat">
@@ -565,7 +565,7 @@
                                     <h2 > <b> Giá mua ngay: </b></h2>
                                 </div>
                                 <div class="item-price-buy">
-                                    {{giamualien}}
+                                    {{number_format giamualien}}
                                 </div>
                                 <div class="btn" style="margin-left: 19%">
                                     <a href="../../index.html" class="button-bid" title="Click để đặt giá">
