@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cddd850-7b67-4216-8a77-c7b62d2045dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DACK/controllers/quanlisanphamcanhanController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DACK/models/quanlisanphamcanhanRepo.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DACK/public/CSS/sanphamyeuthich.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/app.js" afterPath="$PROJECT_DIR$/DACK/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/indexController.js" afterPath="$PROJECT_DIR$/DACK/controllers/indexController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/sanphamController.js" afterPath="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/timkiemController.js" afterPath="$PROJECT_DIR$/DACK/controllers/timkiemController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/controllers/taikhoanController.js" afterPath="$PROJECT_DIR$/DACK/controllers/taikhoanController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/fn/db.js" afterPath="$PROJECT_DIR$/DACK/fn/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/models/sanphamRepo.js" afterPath="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/models/timkiemRepo.js" afterPath="$PROJECT_DIR$/DACK/models/timkiemRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs" afterPath="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Tài khoản/sanphamyeuthichnew.hbs" afterPath="$PROJECT_DIR$/DACK/views/Tài khoản/sanphamyeuthichnew.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" afterPath="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" afterPath="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csdl/quanlydaugia.sql" afterPath="$PROJECT_DIR$/csdl/quanlydaugia.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,40 +30,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="timkiemnew.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs">
+      <file leaf-file-name="taikhoanController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/taikhoanController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="376" column="108" lean-forward="false" selection-start-line="376" selection-start-column="108" selection-end-line="376" selection-end-column="108" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timkiemRepo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DACK/models/timkiemRepo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="157" column="13" lean-forward="false" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+            <state relative-caret-position="47">
+              <caret line="373" column="36" lean-forward="false" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nhom_san_pham_bac1.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="291" column="128" lean-forward="false" selection-start-line="291" selection-start-column="113" selection-end-line="291" selection-end-column="128" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +43,58 @@
       <file leaf-file-name="timkiemController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DACK/controllers/timkiemController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3045">
-              <caret line="145" column="19" lean-forward="true" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
+            <state relative-caret-position="530">
+              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/indexController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="huongdanController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/huongdanController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-126">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="danhsachnguoidungController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/danhsachnguoidungController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="20" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanphamController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1729">
+              <caret line="312" column="33" lean-forward="false" selection-start-line="312" selection-start-column="33" selection-end-line="312" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -76,18 +103,30 @@
       <file leaf-file-name="sanphamRepo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="273" column="1" lean-forward="true" selection-start-line="265" selection-start-column="0" selection-end-line="273" selection-end-column="1" />
+            <state relative-caret-position="-16">
+              <caret line="276" column="0" lean-forward="true" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanphamController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+      <file leaf-file-name="quanlydanhsachdanhmuc.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/quanlydanhsachdanhmuc.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="190" column="61" lean-forward="true" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="61" />
+            <state relative-caret-position="104">
+              <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="114" selection-end-column="38" />
+              <folding>
+                <element signature="n#div#0;n#table#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handleLayout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DACK/middle-wares/handleLayout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -104,20 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>taikhoan</find>
-      <find>q</find>
-      <find>products</find>
-      <find>rows</find>
-      <find>sqlCount</find>
-      <find>name</find>
-      <find>count</find>
-      <find>conhan</find>
-      <find>c</find>
-      <find>menucontentother</find>
-      <find>bac2</find>
-      <find>SearchFilter</find>
-      <find>tensanpham4</find>
-      <find>load2</find>
       <find>danhsachtimkiem.load2</find>
       <find>to</find>
       <find>pageValue</find>
@@ -132,8 +157,22 @@
       <find>tendanhmuc</find>
       <find>danhmuc</find>
       <find>affe</find>
-      <find>form</find>
       <find>them</find>
+      <find>conso</find>
+      <find>product-sub</find>
+      <find>người bán</find>
+      <find>con</find>
+      <find>cons</find>
+      <find>người</find>
+      <find>78</find>
+      <find>Đánh giá</find>
+      <find>Đánh giá:</find>
+      <find>bird</find>
+      <find>Bid</find>
+      <find>form</find>
+      <find>&lt;/form</find>
+      <find>sản</find>
+      <find>&lt;form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,22 +186,29 @@
         <option value="$PROJECT_DIR$/DACK/public/CSS/timkiem.css" />
         <option value="$PROJECT_DIR$/../web/timkiemController.js" />
         <option value="$PROJECT_DIR$/DACK/public/CSS/home.css" />
-        <option value="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
         <option value="$PROJECT_DIR$/DACK/views/index.hbs" />
-        <option value="$PROJECT_DIR$/DACK/app.js" />
-        <option value="$PROJECT_DIR$/DACK/fn/db.js" />
-        <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs" />
         <option value="$PROJECT_DIR$/DACK/public/CSS/nhomsanpham.css" />
         <option value="$PROJECT_DIR$/DACK/models/quanlydanhmucRepo.js" />
-        <option value="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" />
-        <option value="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
         <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs" />
-        <option value="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
         <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs" />
         <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs" />
-        <option value="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" />
         <option value="$PROJECT_DIR$/DACK/controllers/timkiemController.js" />
         <option value="$PROJECT_DIR$/DACK/models/timkiemRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/fn/db.js" />
+        <option value="$PROJECT_DIR$/DACK/models/quanlisanphamcanhan.js" />
+        <option value="$PROJECT_DIR$/DACK/views/_layouts/main.hbs" />
+        <option value="$PROJECT_DIR$/DACK/app.js" />
+        <option value="$PROJECT_DIR$/DACK/models/quanlisanphamcanhanRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/controllers/quanlisanphamcanhanController.js" />
+        <option value="$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs" />
+        <option value="$PROJECT_DIR$/DACK/public/CSS/sanphamyeuthich.css" />
+        <option value="$PROJECT_DIR$/DACK/views/Tài khoản/sanphamyeuthichnew.hbs" />
+        <option value="$PROJECT_DIR$/DACK/controllers/indexController.js" />
+        <option value="$PROJECT_DIR$/DACK/controllers/taikhoanController.js" />
+        <option value="$PROJECT_DIR$/DACK/middle-wares/handleLayout.js" />
+        <option value="$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs" />
+        <option value="$PROJECT_DIR$/DACK/models/sanphamRepo.js" />
+        <option value="$PROJECT_DIR$/DACK/controllers/sanphamController.js" />
       </list>
     </option>
   </component>
@@ -219,7 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,6 +373,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tìm kiếm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phongmimqui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tài khoản" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,7 +586,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -638,21 +706,22 @@
       <workItem from="1498538234512" duration="26816000" />
       <workItem from="1498610718203" duration="50249000" />
       <workItem from="1498698658200" duration="42134000" />
+      <workItem from="1498782724672" duration="23092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119218000" />
+    <option name="totallyTimeSpent" value="142310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24232082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21615472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -665,6 +734,24 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3185438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -674,76 +761,66 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4641">
-          <caret line="221" column="66" lean-forward="false" selection-start-line="221" selection-start-column="66" selection-end-line="221" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9324">
-          <caret line="444" column="9" lean-forward="true" selection-start-line="438" selection-start-column="8" selection-end-line="444" selection-end-column="9" />
-          <folding>
-            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2373">
-          <caret line="113" column="117" lean-forward="false" selection-start-line="113" selection-start-column="117" selection-end-line="113" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7476">
-          <caret line="356" column="7" lean-forward="true" selection-start-line="356" selection-start-column="7" selection-end-line="356" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5943">
           <caret line="283" column="145" lean-forward="false" selection-start-line="283" selection-start-column="145" selection-end-line="283" selection-end-column="145" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1498782026163" expanded="true" signature="15805:21719" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="17055:20079" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18725:19813" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="18813:18860" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18888:18935" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18998:19366" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19426:19770" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19546:19725" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19888:20042" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19962:20004" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20236:21647" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20284:21620" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20332:20652" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20370:20617" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20458:20579" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="20525:20532" ph="«" />
+            <marker date="1498782026163" expanded="true" signature="20697:21223" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20747:21185" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20804:20934" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21016:21146" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21273:21589" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21311:21554" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21395:21516" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="21462:21469" ph="»" />
+            <marker date="1498782026163" expanded="true" signature="21799:21896" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21867:21883" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22172:22569" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22211:22373" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22257:22361" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22421:22475" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22499:22553" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22582:22875" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22636:22860" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22701:22849" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22888:24360" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22934:24345" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23114:24166" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23230:23329" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23387:24145" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23961:23985" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24213:24335" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24243:24295" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24373:24725" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="24455:24710" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24563:24630" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24738:25313" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="24827:24888" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24948:25297" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="25097:25287" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="25153:25273" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -760,9 +837,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3969">
           <caret line="189" column="73" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="73" />
-          <folding>
-            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -770,9 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2394">
           <caret line="114" column="62" lean-forward="false" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,13 +866,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/models/yeucauRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/huongdanController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -827,13 +893,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../web/timkiemRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/timkiemRepo.js" />
     <entry file="file://$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiem.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -841,13 +901,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../web/timkiemController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/timkiemController.js" />
     <entry file="file://$PROJECT_DIR$/DACK/node_modules/nodemailer/lib/nodemailer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -855,24 +909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Đăng nhập/dangnhap.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
           <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng ký/dangky.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -901,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,81 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="207" column="11" lean-forward="false" selection-start-line="207" selection-start-column="11" selection-end-line="207" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/indexRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-745">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/fn/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="629" column="36" lean-forward="false" selection-start-line="629" selection-start-column="36" selection-end-line="629" selection-end-column="36" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="437" column="8" lean-forward="false" selection-start-line="437" selection-start-column="8" selection-end-line="437" selection-end-column="8" />
-          <folding>
-            <element signature="e#12106#16467#0#Handlebars" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="114" column="117" lean-forward="false" selection-start-line="114" selection-start-column="117" selection-end-line="114" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/quanlydanhsachdanhmuc.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="103" column="129" lean-forward="false" selection-start-line="103" selection-start-column="119" selection-end-line="103" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/nhomsanpham.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="140" column="19" lean-forward="false" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="120" column="12" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,102 +973,308 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/taikhoanController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2982">
-          <caret line="160" column="44" lean-forward="true" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/middle-wares/handleLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/taikhoanRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac2.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="293" column="132" lean-forward="false" selection-start-line="293" selection-start-column="132" selection-end-line="293" selection-end-column="132" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="330" column="19" lean-forward="false" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="273" column="1" lean-forward="true" selection-start-line="265" selection-start-column="0" selection-end-line="273" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+    <entry file="file://$PROJECT_DIR$/DACK/fn/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="190" column="61" lean-forward="true" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="61" />
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac1.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="21">
           <caret line="291" column="128" lean-forward="false" selection-start-line="291" selection-start-column="113" selection-end-line="291" selection-end-column="128" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1498782026163" expanded="true" signature="15805:21719" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="17055:20079" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18725:19813" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="18813:18860" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18888:18935" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="18998:19366" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19426:19770" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19546:19725" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19888:20042" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="19962:20004" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20236:21647" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20284:21620" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20332:20652" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20370:20617" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20458:20579" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="20525:20532" ph="«" />
+            <marker date="1498782026163" expanded="true" signature="20697:21223" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20747:21185" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="20804:20934" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21016:21146" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21273:21589" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21311:21554" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21395:21516" ph="..." />
+            <marker date="1498782026163" expanded="false" signature="21462:21469" ph="»" />
+            <marker date="1498782026163" expanded="true" signature="21799:21896" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="21867:21883" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22172:22569" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22211:22373" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22257:22361" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22421:22475" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22499:22553" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22582:22875" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22636:22860" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22701:22849" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="22888:24360" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="22934:24345" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23114:24166" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23230:23329" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23387:24145" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="23961:23985" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24213:24335" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24243:24295" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24373:24725" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="24455:24710" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24563:24630" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24738:25313" ph="..." />
+            <marker date="1498782026163" expanded="true" signature="24827:24888" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="24948:25297" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="25097:25287" ph="{...}" />
+            <marker date="1498782026163" expanded="true" signature="25153:25273" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9177">
+          <caret line="437" column="8" lean-forward="false" selection-start-line="437" selection-start-column="8" selection-end-line="437" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/views/Tìm kiếm/timkiemnew.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="376" column="108" lean-forward="false" selection-start-line="376" selection-start-column="108" selection-end-line="376" selection-end-column="108" />
+        <state relative-caret-position="443">
+          <caret line="386" column="17" lean-forward="true" selection-start-line="346" selection-start-column="12" selection-end-line="386" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#10;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#10;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DACK/controllers/timkiemController.js">
+    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/sanphamyeuthich.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3045">
-          <caret line="145" column="19" lean-forward="true" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/_layouts/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="232" column="87" lean-forward="false" selection-start-line="232" selection-start-column="49" selection-end-line="232" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/public/CSS/nhomsanpham.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="140" column="19" lean-forward="false" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/nhom_san_pham_bac3.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="423" column="13" lean-forward="true" selection-start-line="380" selection-start-column="3" selection-end-line="423" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#section#0;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Tài khoản/sanphamyeuthichnew.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/quanlisanphamcanhanController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/quanlisanphamcanhanRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="26" column="156" lean-forward="false" selection-start-line="26" selection-start-column="145" selection-end-line="26" selection-end-column="156" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/indexRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DACK/models/timkiemRepo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="157" column="13" lean-forward="false" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+        <state relative-caret-position="293">
+          <caret line="100" column="32" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="100" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Đăng ký/dangky.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="51" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Nhóm sản phẩm/Sản phẩm chi tiết/chi_tiet_san_pham.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="541" column="130" lean-forward="false" selection-start-line="541" selection-start-column="123" selection-end-line="541" selection-end-column="130" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/middle-wares/handleLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/views/Quản trị/quanlydanhsachdanhmuc.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="114" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#0;n#table#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/timkiemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/taikhoanRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/taikhoanController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="373" column="36" lean-forward="false" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/models/sanphamRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="276" column="0" lean-forward="true" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/huongdanController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/danhsachnguoidungController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DACK/controllers/sanphamController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="312" column="33" lean-forward="false" selection-start-line="312" selection-start-column="33" selection-end-line="312" selection-end-column="33" />
           <folding />
         </state>
       </provider>

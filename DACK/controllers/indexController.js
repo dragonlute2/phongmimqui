@@ -20,7 +20,7 @@ r.get('/', function(req, res) {
             loaiSanPhamQuangCao:pRow5,
             sanPhamQuangCao:pRow6
         }
-        console.log(pRow6)
+
         res.render('index', vm);
     })
 });

@@ -2,7 +2,7 @@ var express = require('express'),
     product = require('../models/sanphamRepo'),
     q = require('q'),
 taikhoan=require('../models/taikhoanRepo');
-
+var moment = require('moment');
 var productController = express.Router();
 
 productController.get('/:id', function(req, res) {
@@ -233,12 +233,12 @@ productController.get('/detail/:id', function(req, res) {
             var entity={
                 id:pro.list.idnguoiban
             }
-
-            taikhoan.loadchitiet(entity).then(function (rows) {
-
+            q.all([taikhoan.loadchitiet(entity),taikhoan.diemtot(entity),taikhoan.diemxau(entity)]).spread(function (rows,tot,xau) {
                 if (pro) {
                     if(req.session.user == null)
                     {
+                        var x=tot.Count/(xau.Count+tot.Count)*100;
+                        var a=pro.list.tienmax+pro.list.buocgia;
                         res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
                             layoutModels: res.locals.layoutModels,
                             product: pro.list,
@@ -246,9 +246,13 @@ productController.get('/detail/:id', function(req, res) {
                             isGiaMuaLienNull: pro.list.giamualien === null,
                             chiTietDauGia: pro.chiTietDauGia,
                             chitiet:rows,
+                            diemban:x,
+                            bid:a
                         });
                     }
                     else {
+                        var x=tot.Count/(xau.Count+tot.Count)*100;
+                        var a=pro.list.buocgia+pro.list.tienmax;
                         res.render('nhóm sản phẩm/sản phẩm chi tiết/chi_tiet_san_pham', {
                             layoutModels: res.locals.layoutModels,
                             product: pro.list,
@@ -258,10 +262,13 @@ productController.get('/detail/:id', function(req, res) {
                             chiTietDauGia: pro.chiTietDauGia,
                             sanphamyeuthich: req.session.sanphamyeuthich,
                             chitiet:rows,
+                            danhgia: req.session.diem,
+                            diemban:x,
+                            bid:a
                         });
                     }
-                    console.log(rows);
                 }
+
                 else {
                     res.redirect('/');
                 }
@@ -272,20 +279,44 @@ productController.get('/detail/:id', function(req, res) {
 });
 productController.post('/detail/:id', function(req, res) {
     var id = req.params.id;
-    var x = req.body.sanphamyeuthich;
-
-    console.log(id);
-    var entity={
-        idUser:req.session.user.id,
-        idSanPham:x.slice(5, x.length)
-    }
-    console.log(entity);
-    product.them(entity).then(function (affe)
+    var l = req.body.sanphamyeuthich;
+    if(l != null)
     {
-        res.redirect('/sanphamloai1/detail/' + id);
-    });
 
+        var entity={
+            idUser:req.session.user.id,
+            idSanPham:x.slice(5, l.length)
+        }
+        product.them(entity).then(function (affe)
+        {
+            res.redirect('/sanphamloai1/detail/' + id);
+        });
 
+    }
+    else {
+        var thoigian = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+        var bid_object =
+        {
+             x : req.body.tienbid,
+             id : req.params.id,
+             idUser : req.session.user.id,
+            thoigian : thoigian
+        }
+        q.all([product.themchitiet(bid_object),product.loadluotdaugia(bid_object)])
+            .spread(function (changedRows,rows) {
+                var entity={
+                    soluot:rows[0].soluotdaugia+1,
+                    id : req.params.id
+                }
+console.log(entity);
+                q.all([product.themluotdaugia(entity)]).then(function (changedRows) {
+                    res.redirect(req.params.id);
+                }).fail(function (err) {
+                    console.log(err);
+                    res.end('fail');})
+
+            });
+    }
 });
 
 

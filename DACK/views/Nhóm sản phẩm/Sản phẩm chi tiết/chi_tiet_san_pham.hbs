@@ -21,7 +21,6 @@
 </head>
 
 <body id="dien-thoai-1 home" class="cms-index-index cms-home-page">
-<form id="frm1" method="post" action="">
 {{#with product}}
     <div class="brd">
         <div class="container">
@@ -110,8 +109,7 @@
                                 </div>
                                 <div class="danhgia">
                                     <p> Đánh giá:
-                                        <a href="#">78 </a>
-                                        (Tốt: 80 | Không tốt: 2)
+                                        <a href="#">{{../danhgia}}%</a>
                                     </p>
                                 </div>
                                 <div class="start-time-row" value="{{thoigianbatdauban}}">
@@ -154,7 +152,7 @@
                                 {{/if}}
 
                                 <div class="btn">
-                                    <a href="../../index.html" class="button-bid" title="Click để đặt giá">
+                                    <a href="#" class="button-bid" title="Click để đặt giá">
                                         Bid
                                     </a>
                                 </div>
@@ -165,7 +163,6 @@
 
                             </div>
 
-                        </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 hidden-md-down" style="margin-top: 16px">
                             <div class="">
                                 <table class="table table-hover">
@@ -209,6 +206,7 @@
                                                                         <div class="col-md-4">
                                                                             <li class="nhanxet">Độ tin cậy</li>
                                                                         </div>
+
                                                                     </div>
                                                                 </ul>
                                                             </div>
@@ -407,10 +405,13 @@
                                 <div class="product_title">
                                     <h1 class="fw_600"> <b> {{tenSanPham}} </b></h1>
                                 </div>
-                                <div class="checkbox">
-                                    <input onclick="document.getElementById('frm1').submit();" class="checked" id="check{{idSANPHAM}}" type="checkbox" name="sanphamyeuthich" value="check{{idSANPHAM}}">
-                                    <label for="check{{idSANPHAM}}"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
-                                </div>
+                                <form id = "frm1" method="post" action="">
+                                    <div class="checkbox">
+                                        <input onclick="document.getElementById('frm1').submit();" class="checked" id="check{{idSANPHAM}}" type="checkbox" name="sanphamyeuthich" value="check{{idSANPHAM}}">
+                                        <label for="check{{idSANPHAM}}"> <span title="Lưu sản phẩm yêu thích" class="glyphicon glyphicon-star"></span></label>
+                                    </div>
+                                </form>
+
                                 <div class="product-seller">
                                     <p> Người bán:
                                         <a href="#{{userBan}}" data-toggle="modal">{{userBan}}</a>
@@ -477,8 +478,7 @@
                                 </div>
                                 <div class="danhgia">
                                     <p> Đánh giá:
-                                        <a href="#">78 </a>
-                                        (Tốt: 80 | Không tốt: 2)
+                                        <a href="#">{{../diemban}}% </a>
                                     </p>
                                 </div>
                                 <div class="start-time-row" value="{{thoigianbatdauban}}">
@@ -517,13 +517,44 @@
 
                                     </div>
                                 {{/if}}
-
+                {{#if ../layoutModels.isBan}}
 
                                 <div class="btn">
-                                    <a href="../../index.html" class="button-bid" title="Click để đặt giá">
-                                        Bid
+                                    <a href="#bird_san_pham" class="button-bid" data-toggle="modal" title="Click để đặt giá">
+                                            Bid
                                     </a>
                                 </div>
+                    <div class="modal fade" id="bird_san_pham" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="line-height: 1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header modal-header-success">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">[ × ]</button>
+                                    <h2><span class="glyphicon glyphicon-plus" style="margin-left:200px"></span> Bid đấu giá </h2>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form accept-charset="UTF-8" action="" id="customer_login" name="customer_register" method="post" >
+                                        <h4 class="fw_600 txt_u hidden-sm-down">Thêm danh sách danh mục</h4>
+                                        <ul class="form-list">
+                                            <li>
+                                                <label for="id">Bạn muốn đấu giá với số tiền</label>
+                                                <input type="text" class="input-text" title="Tên danh sách cần thêm" name="tienbid" id="ok" value="{{../bid}}" required="">
+                                            </li>
+                                        </ul>
+                                        <div class="buttons-set" style="margin-left: 200px">
+                                            <input id="adddanhmuc" name="ok" type="submit" class="button login login_sign"  style="font-weight: bold;"></input>
+                                            <a href="#"><button class="button login login_sign" type="button" class="close" data-dismiss="modal" aria-hidden="true"><span> Hủy </span></button></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                {{else}}
+                    <h1>Bạn không có quyền đấu giá</h1>
+                {{/if}}
                             </div>
 
                         </div>
@@ -666,14 +697,13 @@
 
 
 {{/with}}
-</form>
+
 
 {{#each sanphamyeuthich}}
     <div class="hidden sanphamyeuthich" value="{{idsanpham}}">
 
     </div>
 {{/each}}
-
 
 
 <script type="text/javascript" src="/JS/jquery.flexslider.js"></script>
